@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{2A63C5AB-D4D8-4FE7-99A2-BF8838617BF3}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>OpenAPITest</RootNamespace>
+    <AssemblyName>OpenAPITest</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>.\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaseRequest.cs" />
+    <Compile Include="BaseResponse.cs" />
+    <Compile Include="BaseTest.cs" />
+    <Compile Include="GModel\GCreateOrderCondition.cs" />
+    <Compile Include="GModel\GHotelDetailCondition.cs" />
+    <Compile Include="GModel\GHotelListCondition.cs" />
+    <Compile Include="GModel\GhotelModel.cs" />
+    <Compile Include="GModel\GHotelRoomAvalilableCondition.cs" />
+    <Compile Include="GModel\GOrderDetailCondition.cs" />
+    <Compile Include="Gtest\GHotelDetailTest.cs" />
+    <Compile Include="Gtest\GHotelListTest.cs" />
+    <Compile Include="Gtest\GHotelOrderListTest.cs" />
+    <Compile Include="Gtest\GOrderCancelTest.cs" />
+    <Compile Include="Gtest\GOrderCreateTest.cs" />
+    <Compile Include="Gtest\GOrderDetailTest.cs" />
+    <Compile Include="Gtest\GOrderUpdateTest.cs" />
+    <Compile Include="Gtest\GRoomAvailableTest.cs" />
+    <Compile Include="Test\CreditCardValidateTest.cs" />
+    <Compile Include="Test\FeedbackTest.cs" />
+    <Compile Include="Test\InstantOrderTest.cs" />
+    <Compile Include="Test\CancelOrderTest.cs" />
+    <Compile Include="Test\CreateOrderTest.cs" />
+    <Compile Include="Test\HotelDetailTest.cs" />
+    <Compile Include="Test\HotelListTest.cs" />
+    <Compile Include="HttpRequest.cs" />
+    <Compile Include="Model.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SearilizeObject.cs" />
+    <Compile Include="Test\IncrInvTest.cs" />
+    <Compile Include="Test\IncrOrderTest.cs" />
+    <Compile Include="Test\IncrRateTest.cs" />
+    <Compile Include="Test\InventoryTest.cs" />
+    <Compile Include="Test\IncrLastIdTest.cs" />
+    <Compile Include="Test\OrderDetailTest.cs" />
+    <Compile Include="Test\OrderListTest.cs" />
+    <Compile Include="Test\PerformanceTest.cs" />
+    <Compile Include="Test\RatePlanTest.cs" />
+    <Compile Include="Test\RateTest.cs" />
+    <Compile Include="Test\RecentOrderTest.cs" />
+    <Compile Include="Test\RelatedOrderTest.cs" />
+    <Compile Include="Test\Testable.cs" />
+    <Compile Include="Test\UpdateOrderTest.cs" />
+    <Compile Include="Test\ValidateTest.cs" />
+    <Compile Include="util\CreditCardEncrypt.cs" />
+    <Compile Include="util\Tools.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
