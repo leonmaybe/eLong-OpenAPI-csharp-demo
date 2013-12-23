@@ -20,15 +20,15 @@ namespace OpenAPITest.Gtest
 
                 Condition = new GHotelListCondition()
                 {
-                    checkInDate = "08/27/2013",  //"2013-08-04" , //
-                    checkOutDate = "08/28/2013",  // "2013-08-05", //
-                    hotelIdList = "412162",// "144875,164116,144875",
-                    destinationId = "2EBABFD7-C0B7-4EDC-A830-BE4D93D426FF",// "Seattle",
+                    checkInDate = "2013-12-29" , //
+                    checkOutDate =  "2013-12-30", //
+                    //hotelIdList = "412162",// "144875,164116,144875",
+                    destinationId = "DC0497B4-E6DC-4CFA-87DB-14EC03E5DCB6",// "Seattle",
                      
-                    pageIndex = 1,
-                    pageSize = 10,
-                    minStarRating=3,
-                    maxStarRating=5,
+                    //pageIndex = 1,
+                    //pageSize = 10,
+                    //minStarRating=3,
+                    //maxStarRating=5,
                      
                     RoomGroup = new OpenAPITest.GModel.Room[1] {
                         new OpenAPITest.GModel.Room(){

@@ -18,9 +18,9 @@ namespace OpenAPITest.Test
             {
                 Condition = new InventoryCondition()
                 {
-                    StartDate = DateTime.Now.Date.AddDays(0),
-                    EndDate = DateTime.Now.Date.AddDays(0),
-                    HotelIds = "20101487", RoomTypeId ="0006"
+                    StartDate = DateTime.Now.Date.AddDays(1),
+                    EndDate = DateTime.Now.Date.AddDays(3),
+                    HotelIds = "02501374",
                 };
             }
             return Condition;

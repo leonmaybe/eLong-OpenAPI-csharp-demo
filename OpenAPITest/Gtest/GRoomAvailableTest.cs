@@ -19,13 +19,13 @@ namespace OpenAPITest.Gtest
             {
                 Condition = new GHotelRoomAvalilableCondition()
                 {
-                    hotelID = "266151",// "144875",
-                    checkInDate = "07/26/2013",
-                    checkOutDate = "07/29/2013",
+                    hotelID = "144875",// "144875",
+                    checkInDate = "12/10/2013",
+                    checkOutDate = "12/13/2013",
                     includeDetails = true,
                     RoomGroup = new List<OpenAPITest.GModel.Room>() {
                     new OpenAPITest.GModel.Room(){
-                     numberOfAdults = 2, numberOfChildren = 0
+                     numberOfAdults = 1, numberOfChildren = 0
                    }
                 }   
                     

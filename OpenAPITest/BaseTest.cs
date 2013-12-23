@@ -10,7 +10,7 @@ namespace OpenAPITest
 {
     public abstract class BaseTest<T, T2>  // : Testable
     {
-        private string _format = "xml";
+        private string _format = "json";
         public static string URL = System.Configuration.ConfigurationManager.AppSettings["BASE_URL"];
         public static string URL_HTTPS = System.Configuration.ConfigurationManager.AppSettings["BASE_URL_HTTPS"];
 
@@ -46,8 +46,8 @@ namespace OpenAPITest
             {
                 var request = new BaseRequest<T>()
                 {
-                    Local = EnumLocal.en_US,
-                    Version = 1.07,
+                    Local = EnumLocal.zh_CN,
+                    Version = 1.10,
                     Request = condition
                 };
                 str = SearilizeObject.Searilize(_format, typeof(BaseRequest<T>), request, typeof(T));
@@ -100,7 +100,14 @@ namespace OpenAPITest
             }
 
             string res = HttpRequest.Get(url);
-            System.IO.File.WriteAllText(@"c:\api-res.txt", res);
+
+
+            String filePath = @"c:\api-res." + _format;
+            System.IO.File.AppendAllText(filePath, res);
+            System.IO.File.AppendAllText(filePath, "<!-- \r\n ");
+            System.IO.File.AppendAllText(filePath, url);
+            System.IO.File.AppendAllText(filePath, "\r\n --> ");
+
             if (res == null)
             {
                 Console.WriteLine("ERROR: Response NULL");

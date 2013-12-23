@@ -18,8 +18,8 @@ namespace OpenAPITest.Test
                 Condition = new RateCondition()
                 {
                     StartDate = DateTime.Now.Date.AddDays(1),
-                    EndDate = DateTime.Now.Date.AddDays(2),
-                    HotelIds = "02201455",
+                    EndDate = DateTime.Now.Date.AddDays(4),
+                    HotelIds = "02501374",
                     //PaymentType = EnumPaymentType.SelfPay
                 };
             }

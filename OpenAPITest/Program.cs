@@ -46,18 +46,32 @@ namespace OpenAPITest
             //GOrderCreateTest
             //GHotelListTest
             //var test = new GHotelDetailTest();
+            //var test = new GHotelListTest();
             //GHotelOrderListTest
+
+            //var test = new GRoomAvailableTest();
+            //var test = new GHotelListTest();
+
             
-            //GRoomAvailableTest
-            //var test = new OrderDetailTest();
             //var test = new ValidateTest();
             //var test = new RatePlanTest();
-            //var test = new CreateOrderTest();
+
+            var test = new CreateOrderTest();
+            //var test = new InstantOrderTest();
+            //var test = new OrderDetailTest();
+            // var test = new UpdateOrderTest();
+
+            //var test = new RateTest();
+            //var test = new InventoryTest();
             //var test = new IncrRateTest();
-            //var test = new HotelDetailTest();
-            var test = new InstantOrderTest();
+
             //var test = new HotelListTest();
-           // var test = new UpdateOrderTest();
+            //var test = new HotelDetailTest();
+            //var test = new InvValidateTest();
+            //var test = new IncrStateTest();
+
+            //var test = new ExchangeRateTest();
+
             //test.SetParameters("52003050", "0005", 2621, DateTime.Now.Date.AddDays(5), DateTime.Now.Date.AddDays(6), 508, EnumGuestTypeCode.All, EnumCurrencyCode.RMB, EnumPaymentType.SelfPay,1);
             var r = test.Test(true);
 
@@ -166,7 +180,7 @@ namespace OpenAPITest
                                                 {
                                                     foreach (var inv in res2.Result.Inventories)
                                                     {
-                                                        if (inv.RoomTypeId == r.RoomTypeId)
+                                                        if (inv.RoomTypeId == r.RoomId)
                                                         {
                                                             invCount = inv.Status ? (inv.OverBooking == 0 ? 999 : inv.Amount) : -1;
                                                         }
@@ -186,7 +200,7 @@ namespace OpenAPITest
 
                                                 }
 
-                                                Console.WriteLine(string.Format("{0} {1} {2} {3} {4}", h.HotelId, r.RoomTypeId, rp.RatePlanId, invCount, price));
+                                                Console.WriteLine(string.Format("{0} {1} {2} {3} {4}", h.HotelId, r.RoomId, rp.RatePlanId, invCount, price));
 
 
                                                 showed = true;

@@ -41,13 +41,16 @@ namespace OpenAPITest.Test
             if (!_isInited)
             {
 
-                SetParameters("10101129", "0002", 104658, DateTime.Now.Date.AddDays(10),
-                    DateTime.Now.Date.AddDays(11), 800, EnumGuestTypeCode.Chinese, EnumCurrencyCode.RMB, EnumPaymentType.SelfPay, 1);
+                //SetParameters("10101129", "0001", 115250, DateTime.Now.Date.AddDays(6),
+                //    DateTime.Now.Date.AddDays(7), 600, EnumGuestTypeCode.Chinese, EnumCurrencyCode.RMB, EnumPaymentType.Prepay, 1);
+
+                SetParameters("10101129", "0006", 103794, DateTime.Now.Date.AddDays(1),
+                    DateTime.Now.Date.AddDays(2), 800, EnumGuestTypeCode.Chinese, EnumCurrencyCode.RMB, EnumPaymentType.SelfPay, 1);
 
             }
 
             DateTime checkInDate = cin;
-            DateTime checkOutDate = cout;
+            DateTime checkOutDate = cout; 
 
             Random rnd = new Random();
             
@@ -71,7 +74,7 @@ namespace OpenAPITest.Test
                 EarliestArrivalTime = checkInDate.AddHours(14),
                 LatestArrivalTime = checkInDate.AddHours(19),
                 IsNeedInvoice = false,
-                IsGuaranteeOrCharged = false,
+                IsGuaranteeOrCharged = true,
                 NumberOfCustomers = numOfRooms,
                 NumberOfRooms = numOfRooms,
                 PaymentType = paymentType,

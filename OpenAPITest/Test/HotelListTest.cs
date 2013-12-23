@@ -17,13 +17,13 @@ namespace OpenAPITest.Test
             {
                 ArrivalDate = DateTime.Now.Date.AddDays(0),
                 DepartureDate = DateTime.Now.Date.AddDays(1),
-                CityId = "0101",
+                CityId = "2407",
                 
                 //PaymentType = EnumPaymentType.Prepay,
-                ProductProperties = EnumProductProperty.LimitedTimeSale,
-                PageIndex = 1,
-                PageSize = 10,
-                 ResultType="1,2,3",
+                //ProductProperties = EnumProductProperty.LimitedTimeSale,
+                //PageIndex = 1,
+                //PageSize = 10,
+                // ResultType="1,2,3",
                   
             };
 
