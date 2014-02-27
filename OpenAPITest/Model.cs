@@ -86,6 +86,10 @@ namespace OpenAPITest {
         
         private string googleLonField;
         
+        private string baiduLatField;
+        
+        private string baiduLonField;
+        
         private string cityIdField;
         
         private string businessZoneField;
@@ -271,6 +275,26 @@ namespace OpenAPITest {
             }
             set {
                 this.googleLonField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string BaiduLat {
+            get {
+                return this.baiduLatField;
+            }
+            set {
+                this.baiduLatField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string BaiduLon {
+            get {
+                return this.baiduLonField;
+            }
+            set {
+                this.baiduLonField = value;
             }
         }
         
@@ -722,6 +746,8 @@ namespace OpenAPITest {
         
         private string roomCodesField;
         
+        private string capacityField;
+        
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
         public string Id {
@@ -829,6 +855,17 @@ namespace OpenAPITest {
             }
             set {
                 this.roomCodesField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string Capacity {
+            get {
+                return this.capacityField;
+            }
+            set {
+                this.capacityField = value;
             }
         }
     }
@@ -1400,6 +1437,8 @@ namespace OpenAPITest {
         
         private string hotelCodeField;
         
+        private System.Nullable<EnumInvoiceMode> invoiceModeField;
+        
         /// <remarks/>
         public bool Status {
             get {
@@ -1640,6 +1679,17 @@ namespace OpenAPITest {
                 this.hotelCodeField = value;
             }
         }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public System.Nullable<EnumInvoiceMode> InvoiceMode {
+            get {
+                return this.invoiceModeField;
+            }
+            set {
+                this.invoiceModeField = value;
+            }
+        }
     }
     
     /// <remarks/>
@@ -1687,6 +1737,375 @@ namespace OpenAPITest {
         
         /// <remarks/>
         TWD,
+        
+        /// <remarks/>
+        AFA,
+        
+        /// <remarks/>
+        ALL,
+        
+        /// <remarks/>
+        ARP,
+        
+        /// <remarks/>
+        ATS,
+        
+        /// <remarks/>
+        AUD,
+        
+        /// <remarks/>
+        BBD,
+        
+        /// <remarks/>
+        BEF,
+        
+        /// <remarks/>
+        BGL,
+        
+        /// <remarks/>
+        BHD,
+        
+        /// <remarks/>
+        BIF,
+        
+        /// <remarks/>
+        BOP,
+        
+        /// <remarks/>
+        BRC,
+        
+        /// <remarks/>
+        BSD,
+        
+        /// <remarks/>
+        BUK,
+        
+        /// <remarks/>
+        CAD,
+        
+        /// <remarks/>
+        CHF,
+        
+        /// <remarks/>
+        CLP,
+        
+        /// <remarks/>
+        CNY,
+        
+        /// <remarks/>
+        COP,
+        
+        /// <remarks/>
+        CRC,
+        
+        /// <remarks/>
+        CSK,
+        
+        /// <remarks/>
+        CUP,
+        
+        /// <remarks/>
+        CYP,
+        
+        /// <remarks/>
+        DEM,
+        
+        /// <remarks/>
+        DJF,
+        
+        /// <remarks/>
+        DKK,
+        
+        /// <remarks/>
+        DOP,
+        
+        /// <remarks/>
+        DZD,
+        
+        /// <remarks/>
+        ECS,
+        
+        /// <remarks/>
+        EGP,
+        
+        /// <remarks/>
+        ESP,
+        
+        /// <remarks/>
+        EUR,
+        
+        /// <remarks/>
+        FIM,
+        
+        /// <remarks/>
+        FJD,
+        
+        /// <remarks/>
+        FRF,
+        
+        /// <remarks/>
+        GBP,
+        
+        /// <remarks/>
+        GHC,
+        
+        /// <remarks/>
+        GMD,
+        
+        /// <remarks/>
+        GNS,
+        
+        /// <remarks/>
+        GQE,
+        
+        /// <remarks/>
+        GRD,
+        
+        /// <remarks/>
+        GTQ,
+        
+        /// <remarks/>
+        GWP,
+        
+        /// <remarks/>
+        GYD,
+        
+        /// <remarks/>
+        HNL,
+        
+        /// <remarks/>
+        HTG,
+        
+        /// <remarks/>
+        HUF,
+        
+        /// <remarks/>
+        IDR,
+        
+        /// <remarks/>
+        IEP,
+        
+        /// <remarks/>
+        INR,
+        
+        /// <remarks/>
+        IQD,
+        
+        /// <remarks/>
+        IRR,
+        
+        /// <remarks/>
+        ISK,
+        
+        /// <remarks/>
+        ITL,
+        
+        /// <remarks/>
+        JMD,
+        
+        /// <remarks/>
+        JOD,
+        
+        /// <remarks/>
+        JPY,
+        
+        /// <remarks/>
+        KES,
+        
+        /// <remarks/>
+        KHR,
+        
+        /// <remarks/>
+        KMF,
+        
+        /// <remarks/>
+        KPW,
+        
+        /// <remarks/>
+        KWD,
+        
+        /// <remarks/>
+        LAK,
+        
+        /// <remarks/>
+        LBP,
+        
+        /// <remarks/>
+        LKR,
+        
+        /// <remarks/>
+        LRD,
+        
+        /// <remarks/>
+        LUF,
+        
+        /// <remarks/>
+        LYD,
+        
+        /// <remarks/>
+        MAD,
+        
+        /// <remarks/>
+        MCF,
+        
+        /// <remarks/>
+        MRO,
+        
+        /// <remarks/>
+        MTP,
+        
+        /// <remarks/>
+        MUR,
+        
+        /// <remarks/>
+        MVR,
+        
+        /// <remarks/>
+        MXP,
+        
+        /// <remarks/>
+        MYR,
+        
+        /// <remarks/>
+        NGN,
+        
+        /// <remarks/>
+        NIC,
+        
+        /// <remarks/>
+        NLG,
+        
+        /// <remarks/>
+        NOK,
+        
+        /// <remarks/>
+        NPR,
+        
+        /// <remarks/>
+        NTD,
+        
+        /// <remarks/>
+        NZD,
+        
+        /// <remarks/>
+        OMR,
+        
+        /// <remarks/>
+        PAB,
+        
+        /// <remarks/>
+        PES,
+        
+        /// <remarks/>
+        PHP,
+        
+        /// <remarks/>
+        PLZ,
+        
+        /// <remarks/>
+        PRK,
+        
+        /// <remarks/>
+        PTE,
+        
+        /// <remarks/>
+        PYG,
+        
+        /// <remarks/>
+        QAR,
+        
+        /// <remarks/>
+        ROL,
+        
+        /// <remarks/>
+        RWF,
+        
+        /// <remarks/>
+        SAR,
+        
+        /// <remarks/>
+        SBD,
+        
+        /// <remarks/>
+        SCR,
+        
+        /// <remarks/>
+        SDP,
+        
+        /// <remarks/>
+        SEK,
+        
+        /// <remarks/>
+        SLL,
+        
+        /// <remarks/>
+        SOS,
+        
+        /// <remarks/>
+        SRG,
+        
+        /// <remarks/>
+        SUR,
+        
+        /// <remarks/>
+        SVC,
+        
+        /// <remarks/>
+        SYP,
+        
+        /// <remarks/>
+        THP,
+        
+        /// <remarks/>
+        TND,
+        
+        /// <remarks/>
+        TRL,
+        
+        /// <remarks/>
+        TTD,
+        
+        /// <remarks/>
+        TZS,
+        
+        /// <remarks/>
+        UGS,
+        
+        /// <remarks/>
+        UYP,
+        
+        /// <remarks/>
+        VEB,
+        
+        /// <remarks/>
+        VND,
+        
+        /// <remarks/>
+        XAF,
+        
+        /// <remarks/>
+        XOF,
+        
+        /// <remarks/>
+        YDD,
+        
+        /// <remarks/>
+        YER,
+        
+        /// <remarks/>
+        YUD,
+        
+        /// <remarks/>
+        ZAR,
+        
+        /// <remarks/>
+        ZMK,
+        
+        /// <remarks/>
+        ZRZ,
+        
+        /// <remarks/>
+        ZWD,
     }
     
     /// <remarks/>
@@ -1769,6 +2188,22 @@ namespace OpenAPITest {
                 this.dateField = value;
             }
         }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
+    [System.SerializableAttribute()]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=false)]
+    public enum EnumInvoiceMode {
+        
+        /// <remarks/>
+        NoSense,
+        
+        /// <remarks/>
+        Elong,
+        
+        /// <remarks/>
+        Hotel,
     }
     
     /// <remarks/>
@@ -2740,6 +3175,8 @@ namespace OpenAPITest {
         
         private EnumDrrFeeType feeTypeField;
         
+        private string roomTypeIdsField;
+        
         /// <remarks/>
         public EnumDrrRuleCode TypeCode {
             get {
@@ -2867,6 +3304,16 @@ namespace OpenAPITest {
             }
             set {
                 this.feeTypeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string RoomTypeIds {
+            get {
+                return this.roomTypeIdsField;
+            }
+            set {
+                this.roomTypeIdsField = value;
             }
         }
     }
@@ -4090,6 +4537,60 @@ namespace OpenAPITest {
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
     [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
+    public partial class CheckGuestNameResponse {
+        
+        private CheckGuestNameItem[] resultField;
+        
+        /// <remarks/>
+        public CheckGuestNameItem[] Result {
+            get {
+                return this.resultField;
+            }
+            set {
+                this.resultField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
+    public partial class CheckGuestNameItem {
+        
+        private string nameField;
+        
+        private bool isValidField;
+        
+        /// <remarks/>
+        public string Name {
+            get {
+                return this.nameField;
+            }
+            set {
+                this.nameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public bool IsValid {
+            get {
+                return this.isValidField;
+            }
+            set {
+                this.isValidField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
+    [System.SerializableAttribute()]
     [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=false)]
     public enum EnumPromotionType {
         
@@ -4336,6 +4837,8 @@ namespace OpenAPITest {
         
         private MSRoomRelation[] roomsField;
         
+        private System.Nullable<EnumInvoiceMode> invoiceModeField;
+        
         /// <remarks/>
         public string HotelCode {
             get {
@@ -4385,6 +4888,17 @@ namespace OpenAPITest {
                 this.roomsField = value;
             }
         }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public System.Nullable<EnumInvoiceMode> InvoiceMode {
+            get {
+                return this.invoiceModeField;
+            }
+            set {
+                this.invoiceModeField = value;
+            }
+        }
     }
     
     /// <remarks/>
@@ -4398,6 +4912,8 @@ namespace OpenAPITest {
         private string roomTypeIdField;
         
         private string roomIdField;
+        
+        private System.Nullable<bool> statusField;
         
         /// <remarks/>
         public string RoomTypeId {
@@ -4416,6 +4932,17 @@ namespace OpenAPITest {
             }
             set {
                 this.roomIdField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public System.Nullable<bool> Status {
+            get {
+                return this.statusField;
+            }
+            set {
+                this.statusField = value;
             }
         }
     }
@@ -8235,6 +8762,39 @@ namespace OpenAPITest {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
+    public partial class CheckGuestNameRequest {
+        
+        private string[] namesField;
+        
+        private bool isGangAoField;
+        
+        /// <remarks/>
+        public string[] Names {
+            get {
+                return this.namesField;
+            }
+            set {
+                this.namesField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public bool IsGangAo {
+            get {
+                return this.isGangAoField;
+            }
+            set {
+                this.isGangAoField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
     public partial class RateResult {
         
         private Rate[] ratesField;
@@ -8551,6 +9111,8 @@ namespace OpenAPITest {
         
         private RatePlan[] ratePlansField;
         
+        private HotelGift[] giftsField;
+        
         /// <remarks/>
         public string HotelID {
             get {
@@ -8578,6 +9140,259 @@ namespace OpenAPITest {
             }
             set {
                 this.ratePlansField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public HotelGift[] Gifts {
+            get {
+                return this.giftsField;
+            }
+            set {
+                this.giftsField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
+    public partial class HotelGift {
+        
+        private int hotelGiftIdField;
+        
+        private string hotelCodeField;
+        
+        private HotelGiftProductRelation[] relatedProductsField;
+        
+        private HotelGiftDate[] effectiveDatesField;
+        
+        private HotelGiftDateTypeEnum dateTypeField;
+        
+        private string weekSetField;
+        
+        private string giftContentField;
+        
+        private string giftContentEnField;
+        
+        private string giftTypesField;
+        
+        private int hourNumberField;
+        
+        private HotelGiftHourTypeEnum hourTypeField;
+        
+        private HotelGiftWayOfGivingEnum wayOfGivingField;
+        
+        private string wayOfGivingOtherField;
+        
+        private string wayOfGivingOtherEnField;
+        
+        /// <remarks/>
+        public int HotelGiftId {
+            get {
+                return this.hotelGiftIdField;
+            }
+            set {
+                this.hotelGiftIdField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string HotelCode {
+            get {
+                return this.hotelCodeField;
+            }
+            set {
+                this.hotelCodeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public HotelGiftProductRelation[] RelatedProducts {
+            get {
+                return this.relatedProductsField;
+            }
+            set {
+                this.relatedProductsField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public HotelGiftDate[] EffectiveDates {
+            get {
+                return this.effectiveDatesField;
+            }
+            set {
+                this.effectiveDatesField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public HotelGiftDateTypeEnum DateType {
+            get {
+                return this.dateTypeField;
+            }
+            set {
+                this.dateTypeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string WeekSet {
+            get {
+                return this.weekSetField;
+            }
+            set {
+                this.weekSetField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string GiftContent {
+            get {
+                return this.giftContentField;
+            }
+            set {
+                this.giftContentField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string GiftContentEn {
+            get {
+                return this.giftContentEnField;
+            }
+            set {
+                this.giftContentEnField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string GiftTypes {
+            get {
+                return this.giftTypesField;
+            }
+            set {
+                this.giftTypesField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public int HourNumber {
+            get {
+                return this.hourNumberField;
+            }
+            set {
+                this.hourNumberField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public HotelGiftHourTypeEnum HourType {
+            get {
+                return this.hourTypeField;
+            }
+            set {
+                this.hourTypeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public HotelGiftWayOfGivingEnum WayOfGiving {
+            get {
+                return this.wayOfGivingField;
+            }
+            set {
+                this.wayOfGivingField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string WayOfGivingOther {
+            get {
+                return this.wayOfGivingOtherField;
+            }
+            set {
+                this.wayOfGivingOtherField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string WayOfGivingOtherEn {
+            get {
+                return this.wayOfGivingOtherEnField;
+            }
+            set {
+                this.wayOfGivingOtherEnField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
+    public partial class HotelGiftProductRelation {
+        
+        private string roomTypeIdsField;
+        
+        private int ratePlanIdField;
+        
+        /// <remarks/>
+        public string RoomTypeIds {
+            get {
+                return this.roomTypeIdsField;
+            }
+            set {
+                this.roomTypeIdsField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public int RatePlanId {
+            get {
+                return this.ratePlanIdField;
+            }
+            set {
+                this.ratePlanIdField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
+    public partial class HotelGiftDate {
+        
+        private System.DateTime startDateField;
+        
+        private System.DateTime endDateField;
+        
+        /// <remarks/>
+        public System.DateTime StartDate {
+            get {
+                return this.startDateField;
+            }
+            set {
+                this.startDateField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public System.DateTime EndDate {
+            get {
+                return this.endDateField;
+            }
+            set {
+                this.endDateField = value;
             }
         }
     }
@@ -8849,6 +9664,8 @@ namespace OpenAPITest {
         
         private bool hasInvoiceField;
         
+        private System.Nullable<EnumInvoiceMode> invoiceModeField;
+        
         private InvoiceWithStatus invoiceField;
         
         private CreditCardWithStatus creditCardField;
@@ -8976,6 +9793,17 @@ namespace OpenAPITest {
             }
             set {
                 this.hasInvoiceField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public System.Nullable<EnumInvoiceMode> InvoiceMode {
+            get {
+                return this.invoiceModeField;
+            }
+            set {
+                this.invoiceModeField = value;
             }
         }
         
@@ -9726,6 +10554,51 @@ namespace OpenAPITest {
             }
             set {
                 this.hotelsField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
+    public partial class MSHotelRelation {
+        
+        private string mHotelIdField;
+        
+        private string sHotelIdField;
+        
+        private int supplierIdField;
+        
+        /// <remarks/>
+        public string MHotelId {
+            get {
+                return this.mHotelIdField;
+            }
+            set {
+                this.mHotelIdField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string SHotelId {
+            get {
+                return this.sHotelIdField;
+            }
+            set {
+                this.sHotelIdField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public int SupplierId {
+            get {
+                return this.supplierIdField;
+            }
+            set {
+                this.supplierIdField = value;
             }
         }
     }
