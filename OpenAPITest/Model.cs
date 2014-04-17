@@ -128,6 +128,8 @@ namespace OpenAPITest {
         
         private Supplier[] suppliersField;
         
+        private ServiceRank serviceRankField;
+        
         /// <remarks/>
         public string Name {
             get {
@@ -487,6 +489,16 @@ namespace OpenAPITest {
                 this.suppliersField = value;
             }
         }
+        
+        /// <remarks/>
+        public ServiceRank ServiceRank {
+            get {
+                return this.serviceRankField;
+            }
+            set {
+                this.serviceRankField = value;
+            }
+        }
     }
     
     /// <remarks/>
@@ -714,6 +726,119 @@ namespace OpenAPITest {
             }
             set {
                 this.endDateField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
+    public partial class ServiceRank {
+        
+        private string summaryScoreField;
+        
+        private string instantConfirmScoreField;
+        
+        private string bookingSuccessScoreField;
+        
+        private string complaintScoreField;
+        
+        private string summaryRateField;
+        
+        private string instantConfirmRateField;
+        
+        private string bookingSuccessRateField;
+        
+        private string complaintRateField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string SummaryScore {
+            get {
+                return this.summaryScoreField;
+            }
+            set {
+                this.summaryScoreField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string InstantConfirmScore {
+            get {
+                return this.instantConfirmScoreField;
+            }
+            set {
+                this.instantConfirmScoreField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string BookingSuccessScore {
+            get {
+                return this.bookingSuccessScoreField;
+            }
+            set {
+                this.bookingSuccessScoreField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string ComplaintScore {
+            get {
+                return this.complaintScoreField;
+            }
+            set {
+                this.complaintScoreField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string SummaryRate {
+            get {
+                return this.summaryRateField;
+            }
+            set {
+                this.summaryRateField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string InstantConfirmRate {
+            get {
+                return this.instantConfirmRateField;
+            }
+            set {
+                this.instantConfirmRateField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string BookingSuccessRate {
+            get {
+                return this.bookingSuccessRateField;
+            }
+            set {
+                this.bookingSuccessRateField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string ComplaintRate {
+            get {
+                return this.complaintRateField;
+            }
+            set {
+                this.complaintRateField = value;
             }
         }
     }
@@ -4150,6 +4275,27 @@ namespace OpenAPITest {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
+    public partial class HotelSimpleList {
+        
+        private string hotelIdsField;
+        
+        /// <remarks/>
+        public string HotelIds {
+            get {
+                return this.hotelIdsField;
+            }
+            set {
+                this.hotelIdsField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
     public partial class OrderLog {
         
         private long orderIdField;
@@ -5419,6 +5565,27 @@ namespace OpenAPITest {
         
         /// <remarks/>
         Data,
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
+    public partial class RackRateRequest {
+        
+        private string hotelIdsField;
+        
+        /// <remarks/>
+        public string HotelIds {
+            get {
+                return this.hotelIdsField;
+            }
+            set {
+                this.hotelIdsField = value;
+            }
+        }
     }
     
     /// <remarks/>
@@ -6716,6 +6883,51 @@ namespace OpenAPITest {
             }
             set {
                 this.baidu_lngField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
+    public partial class HotelCity {
+        
+        private string hotelIdField;
+        
+        private string cityIdField;
+        
+        private string subCityIdField;
+        
+        /// <remarks/>
+        public string HotelId {
+            get {
+                return this.hotelIdField;
+            }
+            set {
+                this.hotelIdField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string CityId {
+            get {
+                return this.cityIdField;
+            }
+            set {
+                this.cityIdField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string SubCityId {
+            get {
+                return this.subCityIdField;
+            }
+            set {
+                this.subCityIdField = value;
             }
         }
     }
@@ -9483,6 +9695,141 @@ namespace OpenAPITest {
         
         /// <remarks/>
         Rate,
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
+    public partial class RackRateResponse {
+        
+        private RackRateHotel[] rackRatesField;
+        
+        /// <remarks/>
+        public RackRateHotel[] RackRates {
+            get {
+                return this.rackRatesField;
+            }
+            set {
+                this.rackRatesField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
+    public partial class RackRateHotel {
+        
+        private string hotelIDField;
+        
+        private RackRateRoomType[] roomTypesField;
+        
+        /// <remarks/>
+        public string HotelID {
+            get {
+                return this.hotelIDField;
+            }
+            set {
+                this.hotelIDField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public RackRateRoomType[] RoomTypes {
+            get {
+                return this.roomTypesField;
+            }
+            set {
+                this.roomTypesField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
+    public partial class RackRateRoomType {
+        
+        private string hotelIDField;
+        
+        private string roomTypeIDField;
+        
+        private System.DateTime beginDateField;
+        
+        private System.DateTime endDateField;
+        
+        private decimal rackRateField;
+        
+        private string currencyCodeField;
+        
+        /// <remarks/>
+        public string HotelID {
+            get {
+                return this.hotelIDField;
+            }
+            set {
+                this.hotelIDField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string RoomTypeID {
+            get {
+                return this.roomTypeIDField;
+            }
+            set {
+                this.roomTypeIDField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public System.DateTime BeginDate {
+            get {
+                return this.beginDateField;
+            }
+            set {
+                this.beginDateField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public System.DateTime EndDate {
+            get {
+                return this.endDateField;
+            }
+            set {
+                this.endDateField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public decimal RackRate {
+            get {
+                return this.rackRateField;
+            }
+            set {
+                this.rackRateField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string CurrencyCode {
+            get {
+                return this.currencyCodeField;
+            }
+            set {
+                this.currencyCodeField = value;
+            }
+        }
     }
     
     /// <remarks/>
