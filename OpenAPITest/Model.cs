@@ -21,29 +21,4004 @@ namespace OpenAPITest {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
-    public partial class HotelStaticInfo {
+    public partial class Hotel {
         
-        private HotelBaseInfo hbiField;
+        private string hotelIdField;
         
-        private HotelRoom[] hrlistField;
+        private decimal lowRateField;
+        
+        private EnumCurrencyCode currencyCodeField;
+        
+        private string facilitiesField;
+        
+        private decimal distanceField;
+        
+        private BookingRule[] bookingRulesField;
+        
+        private GuaranteeRule[] guaranteeRulesField;
+        
+        private PrepayRule[] prepayRulesField;
+        
+        private ValueAdd[] valueAddsField;
+        
+        private DrrRule[] drrRulesField;
+        
+        private Room[] roomsField;
+        
+        private Detail detailField;
+        
+        private HotelImg[] imagesField;
+        
+        private Gift[] giftsField;
+        
+        private HAvailPolicy[] hAvailPolicysField;
         
         /// <remarks/>
-        public HotelBaseInfo Hbi {
+        public string HotelId {
             get {
-                return this.hbiField;
+                return this.hotelIdField;
             }
             set {
-                this.hbiField = value;
+                this.hotelIdField = value;
             }
         }
         
         /// <remarks/>
-        public HotelRoom[] Hrlist {
+        public decimal LowRate {
             get {
-                return this.hrlistField;
+                return this.lowRateField;
             }
             set {
-                this.hrlistField = value;
+                this.lowRateField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public EnumCurrencyCode CurrencyCode {
+            get {
+                return this.currencyCodeField;
+            }
+            set {
+                this.currencyCodeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string Facilities {
+            get {
+                return this.facilitiesField;
+            }
+            set {
+                this.facilitiesField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public decimal Distance {
+            get {
+                return this.distanceField;
+            }
+            set {
+                this.distanceField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public BookingRule[] BookingRules {
+            get {
+                return this.bookingRulesField;
+            }
+            set {
+                this.bookingRulesField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public GuaranteeRule[] GuaranteeRules {
+            get {
+                return this.guaranteeRulesField;
+            }
+            set {
+                this.guaranteeRulesField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public PrepayRule[] PrepayRules {
+            get {
+                return this.prepayRulesField;
+            }
+            set {
+                this.prepayRulesField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public ValueAdd[] ValueAdds {
+            get {
+                return this.valueAddsField;
+            }
+            set {
+                this.valueAddsField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public DrrRule[] DrrRules {
+            get {
+                return this.drrRulesField;
+            }
+            set {
+                this.drrRulesField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Room[] Rooms {
+            get {
+                return this.roomsField;
+            }
+            set {
+                this.roomsField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Detail Detail {
+            get {
+                return this.detailField;
+            }
+            set {
+                this.detailField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlArrayItemAttribute("Image")]
+        public HotelImg[] Images {
+            get {
+                return this.imagesField;
+            }
+            set {
+                this.imagesField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Gift[] Gifts {
+            get {
+                return this.giftsField;
+            }
+            set {
+                this.giftsField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public HAvailPolicy[] HAvailPolicys {
+            get {
+                return this.hAvailPolicysField;
+            }
+            set {
+                this.hAvailPolicysField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
+    [System.SerializableAttribute()]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=false)]
+    public enum EnumCurrencyCode {
+        
+        /// <remarks/>
+        RMB,
+        
+        /// <remarks/>
+        USD,
+        
+        /// <remarks/>
+        HKD,
+        
+        /// <remarks/>
+        MOP,
+        
+        /// <remarks/>
+        SGD,
+        
+        /// <remarks/>
+        TWD,
+        
+        /// <remarks/>
+        AFA,
+        
+        /// <remarks/>
+        ALL,
+        
+        /// <remarks/>
+        ARP,
+        
+        /// <remarks/>
+        ATS,
+        
+        /// <remarks/>
+        AUD,
+        
+        /// <remarks/>
+        BBD,
+        
+        /// <remarks/>
+        BEF,
+        
+        /// <remarks/>
+        BGL,
+        
+        /// <remarks/>
+        BHD,
+        
+        /// <remarks/>
+        BIF,
+        
+        /// <remarks/>
+        BOP,
+        
+        /// <remarks/>
+        BRC,
+        
+        /// <remarks/>
+        BSD,
+        
+        /// <remarks/>
+        BUK,
+        
+        /// <remarks/>
+        CAD,
+        
+        /// <remarks/>
+        CHF,
+        
+        /// <remarks/>
+        CLP,
+        
+        /// <remarks/>
+        CNY,
+        
+        /// <remarks/>
+        COP,
+        
+        /// <remarks/>
+        CRC,
+        
+        /// <remarks/>
+        CSK,
+        
+        /// <remarks/>
+        CUP,
+        
+        /// <remarks/>
+        CYP,
+        
+        /// <remarks/>
+        DEM,
+        
+        /// <remarks/>
+        DJF,
+        
+        /// <remarks/>
+        DKK,
+        
+        /// <remarks/>
+        DOP,
+        
+        /// <remarks/>
+        DZD,
+        
+        /// <remarks/>
+        ECS,
+        
+        /// <remarks/>
+        EGP,
+        
+        /// <remarks/>
+        ESP,
+        
+        /// <remarks/>
+        EUR,
+        
+        /// <remarks/>
+        FIM,
+        
+        /// <remarks/>
+        FJD,
+        
+        /// <remarks/>
+        FRF,
+        
+        /// <remarks/>
+        GBP,
+        
+        /// <remarks/>
+        GHC,
+        
+        /// <remarks/>
+        GMD,
+        
+        /// <remarks/>
+        GNS,
+        
+        /// <remarks/>
+        GQE,
+        
+        /// <remarks/>
+        GRD,
+        
+        /// <remarks/>
+        GTQ,
+        
+        /// <remarks/>
+        GWP,
+        
+        /// <remarks/>
+        GYD,
+        
+        /// <remarks/>
+        HNL,
+        
+        /// <remarks/>
+        HTG,
+        
+        /// <remarks/>
+        HUF,
+        
+        /// <remarks/>
+        IDR,
+        
+        /// <remarks/>
+        IEP,
+        
+        /// <remarks/>
+        INR,
+        
+        /// <remarks/>
+        IQD,
+        
+        /// <remarks/>
+        IRR,
+        
+        /// <remarks/>
+        ISK,
+        
+        /// <remarks/>
+        ITL,
+        
+        /// <remarks/>
+        JMD,
+        
+        /// <remarks/>
+        JOD,
+        
+        /// <remarks/>
+        JPY,
+        
+        /// <remarks/>
+        KES,
+        
+        /// <remarks/>
+        KHR,
+        
+        /// <remarks/>
+        KMF,
+        
+        /// <remarks/>
+        KPW,
+        
+        /// <remarks/>
+        KWD,
+        
+        /// <remarks/>
+        LAK,
+        
+        /// <remarks/>
+        LBP,
+        
+        /// <remarks/>
+        LKR,
+        
+        /// <remarks/>
+        LRD,
+        
+        /// <remarks/>
+        LUF,
+        
+        /// <remarks/>
+        LYD,
+        
+        /// <remarks/>
+        MAD,
+        
+        /// <remarks/>
+        MCF,
+        
+        /// <remarks/>
+        MRO,
+        
+        /// <remarks/>
+        MTP,
+        
+        /// <remarks/>
+        MUR,
+        
+        /// <remarks/>
+        MVR,
+        
+        /// <remarks/>
+        MXP,
+        
+        /// <remarks/>
+        MYR,
+        
+        /// <remarks/>
+        NGN,
+        
+        /// <remarks/>
+        NIC,
+        
+        /// <remarks/>
+        NLG,
+        
+        /// <remarks/>
+        NOK,
+        
+        /// <remarks/>
+        NPR,
+        
+        /// <remarks/>
+        NTD,
+        
+        /// <remarks/>
+        NZD,
+        
+        /// <remarks/>
+        OMR,
+        
+        /// <remarks/>
+        PAB,
+        
+        /// <remarks/>
+        PES,
+        
+        /// <remarks/>
+        PHP,
+        
+        /// <remarks/>
+        PLZ,
+        
+        /// <remarks/>
+        PRK,
+        
+        /// <remarks/>
+        PTE,
+        
+        /// <remarks/>
+        PYG,
+        
+        /// <remarks/>
+        QAR,
+        
+        /// <remarks/>
+        ROL,
+        
+        /// <remarks/>
+        RWF,
+        
+        /// <remarks/>
+        SAR,
+        
+        /// <remarks/>
+        SBD,
+        
+        /// <remarks/>
+        SCR,
+        
+        /// <remarks/>
+        SDP,
+        
+        /// <remarks/>
+        SEK,
+        
+        /// <remarks/>
+        SLL,
+        
+        /// <remarks/>
+        SOS,
+        
+        /// <remarks/>
+        SRG,
+        
+        /// <remarks/>
+        SUR,
+        
+        /// <remarks/>
+        SVC,
+        
+        /// <remarks/>
+        SYP,
+        
+        /// <remarks/>
+        THP,
+        
+        /// <remarks/>
+        TND,
+        
+        /// <remarks/>
+        TRL,
+        
+        /// <remarks/>
+        TTD,
+        
+        /// <remarks/>
+        TZS,
+        
+        /// <remarks/>
+        UGS,
+        
+        /// <remarks/>
+        UYP,
+        
+        /// <remarks/>
+        VEB,
+        
+        /// <remarks/>
+        VND,
+        
+        /// <remarks/>
+        XAF,
+        
+        /// <remarks/>
+        XOF,
+        
+        /// <remarks/>
+        YDD,
+        
+        /// <remarks/>
+        YER,
+        
+        /// <remarks/>
+        YUD,
+        
+        /// <remarks/>
+        ZAR,
+        
+        /// <remarks/>
+        ZMK,
+        
+        /// <remarks/>
+        ZRZ,
+        
+        /// <remarks/>
+        ZWD,
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
+    public partial class BookingRule : BaseBookingRule {
+        
+        private long bookingRuleIdField;
+        
+        /// <remarks/>
+        public long BookingRuleId {
+            get {
+                return this.bookingRuleIdField;
+            }
+            set {
+                this.bookingRuleIdField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(BookingRule))]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
+    public partial class BaseBookingRule : BaseRule {
+        
+        private EnumBookingRule typeCodeField;
+        
+        private string roomTypeIdsField;
+        
+        private EnumDateType dateTypeField;
+        
+        private System.DateTime startDateField;
+        
+        private System.DateTime endDateField;
+        
+        private string startHourField;
+        
+        private string endHourField;
+        
+        /// <remarks/>
+        public EnumBookingRule TypeCode {
+            get {
+                return this.typeCodeField;
+            }
+            set {
+                this.typeCodeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string RoomTypeIds {
+            get {
+                return this.roomTypeIdsField;
+            }
+            set {
+                this.roomTypeIdsField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public EnumDateType DateType {
+            get {
+                return this.dateTypeField;
+            }
+            set {
+                this.dateTypeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public System.DateTime StartDate {
+            get {
+                return this.startDateField;
+            }
+            set {
+                this.startDateField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public System.DateTime EndDate {
+            get {
+                return this.endDateField;
+            }
+            set {
+                this.endDateField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string StartHour {
+            get {
+                return this.startHourField;
+            }
+            set {
+                this.startHourField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string EndHour {
+            get {
+                return this.endHourField;
+            }
+            set {
+                this.endHourField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
+    [System.SerializableAttribute()]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=false)]
+    public enum EnumBookingRule {
+        
+        /// <remarks/>
+        NoneRule,
+        
+        /// <remarks/>
+        NeedNationality,
+        
+        /// <remarks/>
+        PerRoomPerName,
+        
+        /// <remarks/>
+        ForeignerNeedEnName,
+        
+        /// <remarks/>
+        RejectCheckinTime,
+        
+        /// <remarks/>
+        NeedPhoneNo,
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
+    [System.SerializableAttribute()]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=false)]
+    public enum EnumDateType {
+        
+        /// <remarks/>
+        CheckInDay,
+        
+        /// <remarks/>
+        StayDay,
+        
+        /// <remarks/>
+        BookDay,
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(BaseGuaranteeRule))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(GuaranteeRule))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(BasePrepayRule))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(PrepayRule))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(BaseValueAddRule))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(ValueAdd))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(BaseDrrRule))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(DrrRule))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(BaseGiftRule))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(GiftForRP))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(Gift))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(BaseBookingRule))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(BookingRule))]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
+    public partial class BaseRule {
+        
+        private string descriptionField;
+        
+        /// <remarks/>
+        public string Description {
+            get {
+                return this.descriptionField;
+            }
+            set {
+                this.descriptionField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
+    public partial class GuaranteeRule : BaseGuaranteeRule {
+        
+        private int guranteeRuleIdField;
+        
+        /// <remarks/>
+        public int GuranteeRuleId {
+            get {
+                return this.guranteeRuleIdField;
+            }
+            set {
+                this.guranteeRuleIdField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(GuaranteeRule))]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
+    public partial class BaseGuaranteeRule : BaseRule {
+        
+        private EnumDateType dateTypeField;
+        
+        private System.DateTime startDateField;
+        
+        private System.DateTime endDateField;
+        
+        private string weekSetField;
+        
+        private bool isTimeGuaranteeField;
+        
+        private string startTimeField;
+        
+        private string endTimeField;
+        
+        private bool isTomorrowField;
+        
+        private bool isAmountGuaranteeField;
+        
+        private int amountField;
+        
+        private EnumGuaranteeMoneyType guaranteeTypeField;
+        
+        private EnumGuaranteeChangeRule changeRuleField;
+        
+        private System.DateTime dayField;
+        
+        private string timeField;
+        
+        private int hourField;
+        
+        /// <remarks/>
+        public EnumDateType DateType {
+            get {
+                return this.dateTypeField;
+            }
+            set {
+                this.dateTypeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public System.DateTime StartDate {
+            get {
+                return this.startDateField;
+            }
+            set {
+                this.startDateField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public System.DateTime EndDate {
+            get {
+                return this.endDateField;
+            }
+            set {
+                this.endDateField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string WeekSet {
+            get {
+                return this.weekSetField;
+            }
+            set {
+                this.weekSetField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public bool IsTimeGuarantee {
+            get {
+                return this.isTimeGuaranteeField;
+            }
+            set {
+                this.isTimeGuaranteeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string StartTime {
+            get {
+                return this.startTimeField;
+            }
+            set {
+                this.startTimeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string EndTime {
+            get {
+                return this.endTimeField;
+            }
+            set {
+                this.endTimeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public bool IsTomorrow {
+            get {
+                return this.isTomorrowField;
+            }
+            set {
+                this.isTomorrowField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public bool IsAmountGuarantee {
+            get {
+                return this.isAmountGuaranteeField;
+            }
+            set {
+                this.isAmountGuaranteeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public int Amount {
+            get {
+                return this.amountField;
+            }
+            set {
+                this.amountField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public EnumGuaranteeMoneyType GuaranteeType {
+            get {
+                return this.guaranteeTypeField;
+            }
+            set {
+                this.guaranteeTypeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public EnumGuaranteeChangeRule ChangeRule {
+            get {
+                return this.changeRuleField;
+            }
+            set {
+                this.changeRuleField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public System.DateTime Day {
+            get {
+                return this.dayField;
+            }
+            set {
+                this.dayField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string Time {
+            get {
+                return this.timeField;
+            }
+            set {
+                this.timeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public int Hour {
+            get {
+                return this.hourField;
+            }
+            set {
+                this.hourField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
+    [System.SerializableAttribute()]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=false)]
+    public enum EnumGuaranteeMoneyType {
+        
+        /// <remarks/>
+        FirstNightCost,
+        
+        /// <remarks/>
+        FullNightCost,
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
+    [System.SerializableAttribute()]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=false)]
+    public enum EnumGuaranteeChangeRule {
+        
+        /// <remarks/>
+        NoChange,
+        
+        /// <remarks/>
+        NeedSomeDay,
+        
+        /// <remarks/>
+        NeedCheckinTime,
+        
+        /// <remarks/>
+        NeedCheckin24hour,
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
+    public partial class PrepayRule : BasePrepayRule {
+        
+        private int prepayRuleIdField;
+        
+        /// <remarks/>
+        public int PrepayRuleId {
+            get {
+                return this.prepayRuleIdField;
+            }
+            set {
+                this.prepayRuleIdField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(PrepayRule))]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
+    public partial class BasePrepayRule : BaseRule {
+        
+        private EnumDateType dateTypeField;
+        
+        private System.DateTime startDateField;
+        
+        private System.DateTime endDateField;
+        
+        private string weekSetField;
+        
+        private EnumPrepayChangeRule changeRuleField;
+        
+        private EnumPrepayCutPayment cashScaleFirstAfterField;
+        
+        private EnumPrepayCutPayment cashScaleFirstBeforeField;
+        
+        private System.DateTime dateNumField;
+        
+        private string timeField;
+        
+        private int deductFeesAfterField;
+        
+        private int deductFeesBeforeField;
+        
+        private decimal deductNumAfterField;
+        
+        private decimal deductNumBeforeField;
+        
+        private int hourField;
+        
+        private int hour2Field;
+        
+        /// <remarks/>
+        public EnumDateType DateType {
+            get {
+                return this.dateTypeField;
+            }
+            set {
+                this.dateTypeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public System.DateTime StartDate {
+            get {
+                return this.startDateField;
+            }
+            set {
+                this.startDateField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public System.DateTime EndDate {
+            get {
+                return this.endDateField;
+            }
+            set {
+                this.endDateField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string WeekSet {
+            get {
+                return this.weekSetField;
+            }
+            set {
+                this.weekSetField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public EnumPrepayChangeRule ChangeRule {
+            get {
+                return this.changeRuleField;
+            }
+            set {
+                this.changeRuleField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public EnumPrepayCutPayment CashScaleFirstAfter {
+            get {
+                return this.cashScaleFirstAfterField;
+            }
+            set {
+                this.cashScaleFirstAfterField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public EnumPrepayCutPayment CashScaleFirstBefore {
+            get {
+                return this.cashScaleFirstBeforeField;
+            }
+            set {
+                this.cashScaleFirstBeforeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public System.DateTime DateNum {
+            get {
+                return this.dateNumField;
+            }
+            set {
+                this.dateNumField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string Time {
+            get {
+                return this.timeField;
+            }
+            set {
+                this.timeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public int DeductFeesAfter {
+            get {
+                return this.deductFeesAfterField;
+            }
+            set {
+                this.deductFeesAfterField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public int DeductFeesBefore {
+            get {
+                return this.deductFeesBeforeField;
+            }
+            set {
+                this.deductFeesBeforeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public decimal DeductNumAfter {
+            get {
+                return this.deductNumAfterField;
+            }
+            set {
+                this.deductNumAfterField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public decimal DeductNumBefore {
+            get {
+                return this.deductNumBeforeField;
+            }
+            set {
+                this.deductNumBeforeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public int Hour {
+            get {
+                return this.hourField;
+            }
+            set {
+                this.hourField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public int Hour2 {
+            get {
+                return this.hour2Field;
+            }
+            set {
+                this.hour2Field = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
+    [System.SerializableAttribute()]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=false)]
+    public enum EnumPrepayChangeRule {
+        
+        /// <remarks/>
+        PrepayNoChange,
+        
+        /// <remarks/>
+        PrepayNeedSomeDay,
+        
+        /// <remarks/>
+        PrepayNeedOneTime,
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
+    [System.SerializableAttribute()]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=false)]
+    public enum EnumPrepayCutPayment {
+        
+        /// <remarks/>
+        Money,
+        
+        /// <remarks/>
+        Percent,
+        
+        /// <remarks/>
+        FristNight,
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
+    public partial class ValueAdd : BaseValueAddRule {
+        
+        private string valueAddIdField;
+        
+        /// <remarks/>
+        public string ValueAddId {
+            get {
+                return this.valueAddIdField;
+            }
+            set {
+                this.valueAddIdField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(ValueAdd))]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
+    public partial class BaseValueAddRule : BaseRule {
+        
+        private string typeCodeField;
+        
+        private bool isIncludeField;
+        
+        private int amountField;
+        
+        private string currencyCodeField;
+        
+        private EnumValueAddPriceOption priceOptionField;
+        
+        private decimal priceField;
+        
+        private bool isExtAddField;
+        
+        private EnumValueAddPriceOption extOptionField;
+        
+        private decimal extPriceField;
+        
+        private System.DateTime startDateField;
+        
+        private System.DateTime endDateField;
+        
+        private string weekSetField;
+        
+        /// <remarks/>
+        public string TypeCode {
+            get {
+                return this.typeCodeField;
+            }
+            set {
+                this.typeCodeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public bool IsInclude {
+            get {
+                return this.isIncludeField;
+            }
+            set {
+                this.isIncludeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public int Amount {
+            get {
+                return this.amountField;
+            }
+            set {
+                this.amountField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string CurrencyCode {
+            get {
+                return this.currencyCodeField;
+            }
+            set {
+                this.currencyCodeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public EnumValueAddPriceOption PriceOption {
+            get {
+                return this.priceOptionField;
+            }
+            set {
+                this.priceOptionField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public decimal Price {
+            get {
+                return this.priceField;
+            }
+            set {
+                this.priceField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public bool IsExtAdd {
+            get {
+                return this.isExtAddField;
+            }
+            set {
+                this.isExtAddField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public EnumValueAddPriceOption ExtOption {
+            get {
+                return this.extOptionField;
+            }
+            set {
+                this.extOptionField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public decimal ExtPrice {
+            get {
+                return this.extPriceField;
+            }
+            set {
+                this.extPriceField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public System.DateTime StartDate {
+            get {
+                return this.startDateField;
+            }
+            set {
+                this.startDateField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public System.DateTime EndDate {
+            get {
+                return this.endDateField;
+            }
+            set {
+                this.endDateField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string WeekSet {
+            get {
+                return this.weekSetField;
+            }
+            set {
+                this.weekSetField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
+    [System.SerializableAttribute()]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=false)]
+    public enum EnumValueAddPriceOption {
+        
+        /// <remarks/>
+        None,
+        
+        /// <remarks/>
+        Money,
+        
+        /// <remarks/>
+        Percent,
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
+    public partial class DrrRule : BaseDrrRule {
+        
+        private int drrRuleIdField;
+        
+        /// <remarks/>
+        public int DrrRuleId {
+            get {
+                return this.drrRuleIdField;
+            }
+            set {
+                this.drrRuleIdField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(DrrRule))]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
+    public partial class BaseDrrRule : BaseRule {
+        
+        private EnumDrrRuleCode typeCodeField;
+        
+        private EnumDateType dateTypeField;
+        
+        private System.DateTime startDateField;
+        
+        private System.DateTime endDateField;
+        
+        private int dayNumField;
+        
+        private int checkInNumField;
+        
+        private int everyCheckInNumField;
+        
+        private int lastDayNumField;
+        
+        private int whichDayNumField;
+        
+        private EnumDrrPreferential cashScaleField;
+        
+        private decimal deductNumField;
+        
+        private string weekSetField;
+        
+        private EnumDrrFeeType feeTypeField;
+        
+        private string roomTypeIdsField;
+        
+        /// <remarks/>
+        public EnumDrrRuleCode TypeCode {
+            get {
+                return this.typeCodeField;
+            }
+            set {
+                this.typeCodeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public EnumDateType DateType {
+            get {
+                return this.dateTypeField;
+            }
+            set {
+                this.dateTypeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public System.DateTime StartDate {
+            get {
+                return this.startDateField;
+            }
+            set {
+                this.startDateField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public System.DateTime EndDate {
+            get {
+                return this.endDateField;
+            }
+            set {
+                this.endDateField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public int DayNum {
+            get {
+                return this.dayNumField;
+            }
+            set {
+                this.dayNumField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public int CheckInNum {
+            get {
+                return this.checkInNumField;
+            }
+            set {
+                this.checkInNumField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public int EveryCheckInNum {
+            get {
+                return this.everyCheckInNumField;
+            }
+            set {
+                this.everyCheckInNumField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public int LastDayNum {
+            get {
+                return this.lastDayNumField;
+            }
+            set {
+                this.lastDayNumField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public int WhichDayNum {
+            get {
+                return this.whichDayNumField;
+            }
+            set {
+                this.whichDayNumField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public EnumDrrPreferential CashScale {
+            get {
+                return this.cashScaleField;
+            }
+            set {
+                this.cashScaleField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public decimal DeductNum {
+            get {
+                return this.deductNumField;
+            }
+            set {
+                this.deductNumField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string WeekSet {
+            get {
+                return this.weekSetField;
+            }
+            set {
+                this.weekSetField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public EnumDrrFeeType FeeType {
+            get {
+                return this.feeTypeField;
+            }
+            set {
+                this.feeTypeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string RoomTypeIds {
+            get {
+                return this.roomTypeIdsField;
+            }
+            set {
+                this.roomTypeIdsField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
+    [System.SerializableAttribute()]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=false)]
+    public enum EnumDrrRuleCode {
+        
+        /// <remarks/>
+        None,
+        
+        /// <remarks/>
+        DRRBookAhead,
+        
+        /// <remarks/>
+        DRRStayPerRoomPerNight,
+        
+        /// <remarks/>
+        DRRStayLastNight,
+        
+        /// <remarks/>
+        DRRStayTheNightAndAfter,
+        
+        /// <remarks/>
+        DRRStayPerLastNight,
+        
+        /// <remarks/>
+        DRRStayWeekDay,
+        
+        /// <remarks/>
+        DRRCheckInWeekDay,
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
+    [System.SerializableAttribute()]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=false)]
+    public enum EnumDrrPreferential {
+        
+        /// <remarks/>
+        Cash,
+        
+        /// <remarks/>
+        Scale,
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
+    [System.SerializableAttribute()]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=false)]
+    public enum EnumDrrFeeType {
+        
+        /// <remarks/>
+        WeekendFee,
+        
+        /// <remarks/>
+        WeekdayFee,
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
+    public partial class Room {
+        
+        private string roomIdField;
+        
+        private string nameField;
+        
+        private string floorField;
+        
+        private string broadnetField;
+        
+        private string bedTypeField;
+        
+        private string descriptionField;
+        
+        private string imageUrlField;
+        
+        private ListRatePlan[] ratePlansField;
+        
+        private string commentsField;
+        
+        /// <remarks/>
+        public string RoomId {
+            get {
+                return this.roomIdField;
+            }
+            set {
+                this.roomIdField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string Name {
+            get {
+                return this.nameField;
+            }
+            set {
+                this.nameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string Floor {
+            get {
+                return this.floorField;
+            }
+            set {
+                this.floorField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string Broadnet {
+            get {
+                return this.broadnetField;
+            }
+            set {
+                this.broadnetField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string BedType {
+            get {
+                return this.bedTypeField;
+            }
+            set {
+                this.bedTypeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string Description {
+            get {
+                return this.descriptionField;
+            }
+            set {
+                this.descriptionField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string ImageUrl {
+            get {
+                return this.imageUrlField;
+            }
+            set {
+                this.imageUrlField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlArrayItemAttribute("RatePlan")]
+        public ListRatePlan[] RatePlans {
+            get {
+                return this.ratePlansField;
+            }
+            set {
+                this.ratePlansField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string Comments {
+            get {
+                return this.commentsField;
+            }
+            set {
+                this.commentsField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
+    public partial class ListRatePlan : BaseRatePlan {
+        
+        private bool statusField;
+        
+        private EnumGuestTypeCode customerTypeField;
+        
+        private int currentAllomentField;
+        
+        private bool instantConfirmationField;
+        
+        private string productTypesField;
+        
+        private bool isLastMinuteSaleField;
+        
+        private string startTimeField;
+        
+        private string endTimeField;
+        
+        private decimal totalRateField;
+        
+        private decimal averageRateField;
+        
+        private System.Nullable<decimal> averageBaseRateField;
+        
+        private EnumCurrencyCode currencyCodeField;
+        
+        private decimal couponField;
+        
+        private NightlyRate[] nightlyRatesField;
+        
+        private string bookingRuleIdsField;
+        
+        private string guaranteeRuleIdsField;
+        
+        private string prepayRuleIdsField;
+        
+        private string drrRuleIdsField;
+        
+        private string valueAddIdsField;
+        
+        private string giftIdsField;
+        
+        private string hAvailPolicyIdsField;
+        
+        private string roomTypeIdField;
+        
+        private string suffixNameField;
+        
+        private string hotelCodeField;
+        
+        private System.Nullable<EnumInvoiceMode> invoiceModeField;
+        
+        /// <remarks/>
+        public bool Status {
+            get {
+                return this.statusField;
+            }
+            set {
+                this.statusField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public EnumGuestTypeCode CustomerType {
+            get {
+                return this.customerTypeField;
+            }
+            set {
+                this.customerTypeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public int CurrentAlloment {
+            get {
+                return this.currentAllomentField;
+            }
+            set {
+                this.currentAllomentField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public bool InstantConfirmation {
+            get {
+                return this.instantConfirmationField;
+            }
+            set {
+                this.instantConfirmationField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string ProductTypes {
+            get {
+                return this.productTypesField;
+            }
+            set {
+                this.productTypesField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public bool IsLastMinuteSale {
+            get {
+                return this.isLastMinuteSaleField;
+            }
+            set {
+                this.isLastMinuteSaleField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string StartTime {
+            get {
+                return this.startTimeField;
+            }
+            set {
+                this.startTimeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string EndTime {
+            get {
+                return this.endTimeField;
+            }
+            set {
+                this.endTimeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public decimal TotalRate {
+            get {
+                return this.totalRateField;
+            }
+            set {
+                this.totalRateField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public decimal AverageRate {
+            get {
+                return this.averageRateField;
+            }
+            set {
+                this.averageRateField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public System.Nullable<decimal> AverageBaseRate {
+            get {
+                return this.averageBaseRateField;
+            }
+            set {
+                this.averageBaseRateField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public EnumCurrencyCode CurrencyCode {
+            get {
+                return this.currencyCodeField;
+            }
+            set {
+                this.currencyCodeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public decimal Coupon {
+            get {
+                return this.couponField;
+            }
+            set {
+                this.couponField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public NightlyRate[] NightlyRates {
+            get {
+                return this.nightlyRatesField;
+            }
+            set {
+                this.nightlyRatesField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string BookingRuleIds {
+            get {
+                return this.bookingRuleIdsField;
+            }
+            set {
+                this.bookingRuleIdsField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string GuaranteeRuleIds {
+            get {
+                return this.guaranteeRuleIdsField;
+            }
+            set {
+                this.guaranteeRuleIdsField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string PrepayRuleIds {
+            get {
+                return this.prepayRuleIdsField;
+            }
+            set {
+                this.prepayRuleIdsField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string DrrRuleIds {
+            get {
+                return this.drrRuleIdsField;
+            }
+            set {
+                this.drrRuleIdsField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string ValueAddIds {
+            get {
+                return this.valueAddIdsField;
+            }
+            set {
+                this.valueAddIdsField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string GiftIds {
+            get {
+                return this.giftIdsField;
+            }
+            set {
+                this.giftIdsField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string HAvailPolicyIds {
+            get {
+                return this.hAvailPolicyIdsField;
+            }
+            set {
+                this.hAvailPolicyIdsField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string RoomTypeId {
+            get {
+                return this.roomTypeIdField;
+            }
+            set {
+                this.roomTypeIdField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string SuffixName {
+            get {
+                return this.suffixNameField;
+            }
+            set {
+                this.suffixNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string HotelCode {
+            get {
+                return this.hotelCodeField;
+            }
+            set {
+                this.hotelCodeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public System.Nullable<EnumInvoiceMode> InvoiceMode {
+            get {
+                return this.invoiceModeField;
+            }
+            set {
+                this.invoiceModeField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
+    [System.SerializableAttribute()]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=false)]
+    public enum EnumGuestTypeCode {
+        
+        /// <remarks/>
+        All,
+        
+        /// <remarks/>
+        Chinese,
+        
+        /// <remarks/>
+        OtherForeign,
+        
+        /// <remarks/>
+        HongKong,
+        
+        /// <remarks/>
+        Japanese,
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
+    public partial class NightlyRate {
+        
+        private decimal memberField;
+        
+        private decimal costField;
+        
+        private System.Nullable<decimal> basisField;
+        
+        private bool statusField;
+        
+        private decimal addBedField;
+        
+        private System.DateTime dateField;
+        
+        /// <remarks/>
+        public decimal Member {
+            get {
+                return this.memberField;
+            }
+            set {
+                this.memberField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public decimal Cost {
+            get {
+                return this.costField;
+            }
+            set {
+                this.costField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public System.Nullable<decimal> Basis {
+            get {
+                return this.basisField;
+            }
+            set {
+                this.basisField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public bool Status {
+            get {
+                return this.statusField;
+            }
+            set {
+                this.statusField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public decimal AddBed {
+            get {
+                return this.addBedField;
+            }
+            set {
+                this.addBedField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public System.DateTime Date {
+            get {
+                return this.dateField;
+            }
+            set {
+                this.dateField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
+    [System.SerializableAttribute()]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=false)]
+    public enum EnumInvoiceMode {
+        
+        /// <remarks/>
+        NoSense,
+        
+        /// <remarks/>
+        Elong,
+        
+        /// <remarks/>
+        Hotel,
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(RatePlan))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(ListRatePlan))]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
+    public partial class BaseRatePlan {
+        
+        private int ratePlanIdField;
+        
+        private string ratePlanNameField;
+        
+        private int minAmountField;
+        
+        private int minDaysField;
+        
+        private int maxDaysField;
+        
+        private EnumPaymentType paymentTypeField;
+        
+        /// <remarks/>
+        public int RatePlanId {
+            get {
+                return this.ratePlanIdField;
+            }
+            set {
+                this.ratePlanIdField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string RatePlanName {
+            get {
+                return this.ratePlanNameField;
+            }
+            set {
+                this.ratePlanNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public int MinAmount {
+            get {
+                return this.minAmountField;
+            }
+            set {
+                this.minAmountField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public int MinDays {
+            get {
+                return this.minDaysField;
+            }
+            set {
+                this.minDaysField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public int MaxDays {
+            get {
+                return this.maxDaysField;
+            }
+            set {
+                this.maxDaysField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public EnumPaymentType PaymentType {
+            get {
+                return this.paymentTypeField;
+            }
+            set {
+                this.paymentTypeField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
+    [System.SerializableAttribute()]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=false)]
+    public enum EnumPaymentType {
+        
+        /// <remarks/>
+        All,
+        
+        /// <remarks/>
+        SelfPay,
+        
+        /// <remarks/>
+        Prepay,
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
+    public partial class Detail {
+        
+        private string hotelNameField;
+        
+        private int starRateField;
+        
+        private int categoryField;
+        
+        private string latitudeField;
+        
+        private string longitudeField;
+        
+        private string addressField;
+        
+        private string phoneField;
+        
+        private string thumbNailUrlField;
+        
+        private string cityField;
+        
+        private string districtField;
+        
+        private string businessZoneField;
+        
+        private Review reviewField;
+        
+        private string featuresField;
+        
+        private string generalAmenitiesField;
+        
+        private string trafficField;
+        
+        /// <remarks/>
+        public string HotelName {
+            get {
+                return this.hotelNameField;
+            }
+            set {
+                this.hotelNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public int StarRate {
+            get {
+                return this.starRateField;
+            }
+            set {
+                this.starRateField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public int Category {
+            get {
+                return this.categoryField;
+            }
+            set {
+                this.categoryField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string Latitude {
+            get {
+                return this.latitudeField;
+            }
+            set {
+                this.latitudeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string Longitude {
+            get {
+                return this.longitudeField;
+            }
+            set {
+                this.longitudeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string Address {
+            get {
+                return this.addressField;
+            }
+            set {
+                this.addressField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string Phone {
+            get {
+                return this.phoneField;
+            }
+            set {
+                this.phoneField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string ThumbNailUrl {
+            get {
+                return this.thumbNailUrlField;
+            }
+            set {
+                this.thumbNailUrlField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string City {
+            get {
+                return this.cityField;
+            }
+            set {
+                this.cityField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string District {
+            get {
+                return this.districtField;
+            }
+            set {
+                this.districtField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string BusinessZone {
+            get {
+                return this.businessZoneField;
+            }
+            set {
+                this.businessZoneField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Review Review {
+            get {
+                return this.reviewField;
+            }
+            set {
+                this.reviewField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string Features {
+            get {
+                return this.featuresField;
+            }
+            set {
+                this.featuresField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string GeneralAmenities {
+            get {
+                return this.generalAmenitiesField;
+            }
+            set {
+                this.generalAmenitiesField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string Traffic {
+            get {
+                return this.trafficField;
+            }
+            set {
+                this.trafficField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
+    public partial class Review {
+        
+        private string countField;
+        
+        private string goodField;
+        
+        private string poorField;
+        
+        private string scoreField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string Count {
+            get {
+                return this.countField;
+            }
+            set {
+                this.countField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string Good {
+            get {
+                return this.goodField;
+            }
+            set {
+                this.goodField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string Poor {
+            get {
+                return this.poorField;
+            }
+            set {
+                this.poorField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string Score {
+            get {
+                return this.scoreField;
+            }
+            set {
+                this.scoreField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
+    public partial class HotelImg {
+        
+        private Location[] locationsField;
+        
+        private string roomIdField;
+        
+        private int typeField;
+        
+        /// <remarks/>
+        public Location[] Locations {
+            get {
+                return this.locationsField;
+            }
+            set {
+                this.locationsField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string RoomId {
+            get {
+                return this.roomIdField;
+            }
+            set {
+                this.roomIdField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public int Type {
+            get {
+                return this.typeField;
+            }
+            set {
+                this.typeField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
+    public partial class Location {
+        
+        private string waterMarkField;
+        
+        private int sizeField;
+        
+        private string valueField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string WaterMark {
+            get {
+                return this.waterMarkField;
+            }
+            set {
+                this.waterMarkField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public int Size {
+            get {
+                return this.sizeField;
+            }
+            set {
+                this.sizeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlTextAttribute()]
+        public string Value {
+            get {
+                return this.valueField;
+            }
+            set {
+                this.valueField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
+    public partial class Gift : BaseGiftRule {
+        
+        private int giftIdField;
+        
+        /// <remarks/>
+        public int GiftId {
+            get {
+                return this.giftIdField;
+            }
+            set {
+                this.giftIdField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(GiftForRP))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(Gift))]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
+    public partial class BaseGiftRule : BaseRule {
+        
+        private System.DateTime startDateField;
+        
+        private System.DateTime endDateField;
+        
+        private HotelGiftDateTypeEnum dateTypeField;
+        
+        private string weekSetField;
+        
+        private string giftContentField;
+        
+        private string giftTypesField;
+        
+        private int hourNumberField;
+        
+        private HotelGiftHourTypeEnum hourTypeField;
+        
+        private HotelGiftWayOfGivingEnum wayOfGivingField;
+        
+        private string wayOfGivingOtherField;
+        
+        /// <remarks/>
+        public System.DateTime StartDate {
+            get {
+                return this.startDateField;
+            }
+            set {
+                this.startDateField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public System.DateTime EndDate {
+            get {
+                return this.endDateField;
+            }
+            set {
+                this.endDateField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public HotelGiftDateTypeEnum DateType {
+            get {
+                return this.dateTypeField;
+            }
+            set {
+                this.dateTypeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string WeekSet {
+            get {
+                return this.weekSetField;
+            }
+            set {
+                this.weekSetField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string GiftContent {
+            get {
+                return this.giftContentField;
+            }
+            set {
+                this.giftContentField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string GiftTypes {
+            get {
+                return this.giftTypesField;
+            }
+            set {
+                this.giftTypesField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public int HourNumber {
+            get {
+                return this.hourNumberField;
+            }
+            set {
+                this.hourNumberField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public HotelGiftHourTypeEnum HourType {
+            get {
+                return this.hourTypeField;
+            }
+            set {
+                this.hourTypeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public HotelGiftWayOfGivingEnum WayOfGiving {
+            get {
+                return this.wayOfGivingField;
+            }
+            set {
+                this.wayOfGivingField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string WayOfGivingOther {
+            get {
+                return this.wayOfGivingOtherField;
+            }
+            set {
+                this.wayOfGivingOtherField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
+    [System.SerializableAttribute()]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=false)]
+    public enum HotelGiftDateTypeEnum {
+        
+        /// <remarks/>
+        CheckinDate,
+        
+        /// <remarks/>
+        BookingDate,
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
+    [System.SerializableAttribute()]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=false)]
+    public enum HotelGiftHourTypeEnum {
+        
+        /// <remarks/>
+        Hours24,
+        
+        /// <remarks/>
+        XHourBefore,
+        
+        /// <remarks/>
+        XHourAfter,
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
+    [System.SerializableAttribute()]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=false)]
+    public enum HotelGiftWayOfGivingEnum {
+        
+        /// <remarks/>
+        EveryRoom,
+        
+        /// <remarks/>
+        EveryRoomPerDay,
+        
+        /// <remarks/>
+        Other,
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
+    public partial class HAvailPolicy : AvailPolicy {
+        
+        private string idField;
+        
+        /// <remarks/>
+        public string Id {
+            get {
+                return this.idField;
+            }
+            set {
+                this.idField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(HAvailPolicy))]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
+    public partial class AvailPolicy {
+        
+        private string availPolicyTextField;
+        
+        private string startDateField;
+        
+        private string endDateField;
+        
+        /// <remarks/>
+        public string AvailPolicyText {
+            get {
+                return this.availPolicyTextField;
+            }
+            set {
+                this.availPolicyTextField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string StartDate {
+            get {
+                return this.startDateField;
+            }
+            set {
+                this.startDateField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string EndDate {
+            get {
+                return this.endDateField;
+            }
+            set {
+                this.endDateField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
+    public partial class OrderLogResult {
+        
+        private OrderLog[] logsField;
+        
+        /// <remarks/>
+        public OrderLog[] Logs {
+            get {
+                return this.logsField;
+            }
+            set {
+                this.logsField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
+    public partial class OrderLog {
+        
+        private long orderIdField;
+        
+        private System.DateTime timeField;
+        
+        private string operatorField;
+        
+        private string orderStatusField;
+        
+        private string noteToElongField;
+        
+        private string ipField;
+        
+        private System.DateTime arrivalDateField;
+        
+        private System.DateTime departureDateField;
+        
+        private string roomTypeIdField;
+        
+        private int ratePlanIdField;
+        
+        private decimal totalPriceField;
+        
+        /// <remarks/>
+        public long OrderId {
+            get {
+                return this.orderIdField;
+            }
+            set {
+                this.orderIdField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public System.DateTime Time {
+            get {
+                return this.timeField;
+            }
+            set {
+                this.timeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string Operator {
+            get {
+                return this.operatorField;
+            }
+            set {
+                this.operatorField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string OrderStatus {
+            get {
+                return this.orderStatusField;
+            }
+            set {
+                this.orderStatusField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string NoteToElong {
+            get {
+                return this.noteToElongField;
+            }
+            set {
+                this.noteToElongField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string IP {
+            get {
+                return this.ipField;
+            }
+            set {
+                this.ipField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public System.DateTime ArrivalDate {
+            get {
+                return this.arrivalDateField;
+            }
+            set {
+                this.arrivalDateField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public System.DateTime DepartureDate {
+            get {
+                return this.departureDateField;
+            }
+            set {
+                this.departureDateField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string RoomTypeId {
+            get {
+                return this.roomTypeIdField;
+            }
+            set {
+                this.roomTypeIdField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public int RatePlanId {
+            get {
+                return this.ratePlanIdField;
+            }
+            set {
+                this.ratePlanIdField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public decimal TotalPrice {
+            get {
+                return this.totalPriceField;
+            }
+            set {
+                this.totalPriceField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
+    public partial class OrderIdsCondition {
+        
+        private long orderIdField;
+        
+        private string affiliateConfirmationIdField;
+        
+        /// <remarks/>
+        public long OrderId {
+            get {
+                return this.orderIdField;
+            }
+            set {
+                this.orderIdField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string AffiliateConfirmationId {
+            get {
+                return this.affiliateConfirmationIdField;
+            }
+            set {
+                this.affiliateConfirmationIdField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(CreateOrderCondition))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(OrderDetailResult))]
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(OrderSummary))]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
+    public partial class OrderBase {
+        
+        private string hotelIdField;
+        
+        private string roomTypeIdField;
+        
+        private int ratePlanIdField;
+        
+        private System.DateTime arrivalDateField;
+        
+        private System.DateTime departureDateField;
+        
+        private EnumGuestTypeCode customerTypeField;
+        
+        private EnumPaymentType paymentTypeField;
+        
+        private int numberOfRoomsField;
+        
+        private int numberOfCustomersField;
+        
+        private System.DateTime earliestArrivalTimeField;
+        
+        private System.DateTime latestArrivalTimeField;
+        
+        private EnumCurrencyCode currencyCodeField;
+        
+        private decimal totalPriceField;
+        
+        private EnumConfirmationType confirmationTypeField;
+        
+        private string noteToHotelField;
+        
+        private string noteToElongField;
+        
+        /// <remarks/>
+        public string HotelId {
+            get {
+                return this.hotelIdField;
+            }
+            set {
+                this.hotelIdField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string RoomTypeId {
+            get {
+                return this.roomTypeIdField;
+            }
+            set {
+                this.roomTypeIdField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public int RatePlanId {
+            get {
+                return this.ratePlanIdField;
+            }
+            set {
+                this.ratePlanIdField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public System.DateTime ArrivalDate {
+            get {
+                return this.arrivalDateField;
+            }
+            set {
+                this.arrivalDateField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public System.DateTime DepartureDate {
+            get {
+                return this.departureDateField;
+            }
+            set {
+                this.departureDateField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public EnumGuestTypeCode CustomerType {
+            get {
+                return this.customerTypeField;
+            }
+            set {
+                this.customerTypeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public EnumPaymentType PaymentType {
+            get {
+                return this.paymentTypeField;
+            }
+            set {
+                this.paymentTypeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public int NumberOfRooms {
+            get {
+                return this.numberOfRoomsField;
+            }
+            set {
+                this.numberOfRoomsField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public int NumberOfCustomers {
+            get {
+                return this.numberOfCustomersField;
+            }
+            set {
+                this.numberOfCustomersField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public System.DateTime EarliestArrivalTime {
+            get {
+                return this.earliestArrivalTimeField;
+            }
+            set {
+                this.earliestArrivalTimeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public System.DateTime LatestArrivalTime {
+            get {
+                return this.latestArrivalTimeField;
+            }
+            set {
+                this.latestArrivalTimeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public EnumCurrencyCode CurrencyCode {
+            get {
+                return this.currencyCodeField;
+            }
+            set {
+                this.currencyCodeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public decimal TotalPrice {
+            get {
+                return this.totalPriceField;
+            }
+            set {
+                this.totalPriceField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public EnumConfirmationType ConfirmationType {
+            get {
+                return this.confirmationTypeField;
+            }
+            set {
+                this.confirmationTypeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string NoteToHotel {
+            get {
+                return this.noteToHotelField;
+            }
+            set {
+                this.noteToHotelField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string NoteToElong {
+            get {
+                return this.noteToElongField;
+            }
+            set {
+                this.noteToElongField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
+    [System.SerializableAttribute()]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=false)]
+    public enum EnumConfirmationType {
+        
+        /// <remarks/>
+        NoNeed,
+        
+        /// <remarks/>
+        SMS_cn,
+        
+        /// <remarks/>
+        SMS_en,
+        
+        /// <remarks/>
+        Email_cn,
+        
+        /// <remarks/>
+        Email_en,
+        
+        /// <remarks/>
+        Phone,
+        
+        /// <remarks/>
+        Fax,
+        
+        /// <remarks/>
+        Fax_big5,
+        
+        /// <remarks/>
+        SMS_cn_big5,
+        
+        /// <remarks/>
+        Email_cn_big5,
+        
+        /// <remarks/>
+        NotAllowedConfirm,
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
+    public partial class OrderSummary : OrderBase {
+        
+        private long orderIdField;
+        
+        private string statusField;
+        
+        private string hotelNameField;
+        
+        private string roomTypeNameField;
+        
+        private string ratePlanNameField;
+        
+        /// <remarks/>
+        public long OrderId {
+            get {
+                return this.orderIdField;
+            }
+            set {
+                this.orderIdField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string Status {
+            get {
+                return this.statusField;
+            }
+            set {
+                this.statusField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string HotelName {
+            get {
+                return this.hotelNameField;
+            }
+            set {
+                this.hotelNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string RoomTypeName {
+            get {
+                return this.roomTypeNameField;
+            }
+            set {
+                this.roomTypeNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string RatePlanName {
+            get {
+                return this.ratePlanNameField;
+            }
+            set {
+                this.ratePlanNameField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
+    public partial class HotelIdsCondition {
+        
+        private string hotelIdsField;
+        
+        /// <remarks/>
+        public string HotelIds {
+            get {
+                return this.hotelIdsField;
+            }
+            set {
+                this.hotelIdsField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(InvoiceWithStatus))]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
+    public partial class Invoice {
+        
+        private string titleField;
+        
+        private string itemNameField;
+        
+        private decimal amountField;
+        
+        private Recipient recipientField;
+        
+        /// <remarks/>
+        public string Title {
+            get {
+                return this.titleField;
+            }
+            set {
+                this.titleField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string ItemName {
+            get {
+                return this.itemNameField;
+            }
+            set {
+                this.itemNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public decimal Amount {
+            get {
+                return this.amountField;
+            }
+            set {
+                this.amountField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Recipient Recipient {
+            get {
+                return this.recipientField;
+            }
+            set {
+                this.recipientField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
+    public partial class Recipient {
+        
+        private string provinceField;
+        
+        private string cityField;
+        
+        private string districtField;
+        
+        private string streetField;
+        
+        private string postalCodeField;
+        
+        private string nameField;
+        
+        private string phoneField;
+        
+        private string emailField;
+        
+        /// <remarks/>
+        public string Province {
+            get {
+                return this.provinceField;
+            }
+            set {
+                this.provinceField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string City {
+            get {
+                return this.cityField;
+            }
+            set {
+                this.cityField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string District {
+            get {
+                return this.districtField;
+            }
+            set {
+                this.districtField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string Street {
+            get {
+                return this.streetField;
+            }
+            set {
+                this.streetField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string PostalCode {
+            get {
+                return this.postalCodeField;
+            }
+            set {
+                this.postalCodeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string Name {
+            get {
+                return this.nameField;
+            }
+            set {
+                this.nameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string Phone {
+            get {
+                return this.phoneField;
+            }
+            set {
+                this.phoneField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string Email {
+            get {
+                return this.emailField;
+            }
+            set {
+                this.emailField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
+    public partial class InvoiceWithStatus : Invoice {
+        
+        private bool statusField;
+        
+        private bool deliveryStatusField;
+        
+        /// <remarks/>
+        public bool Status {
+            get {
+                return this.statusField;
+            }
+            set {
+                this.statusField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public bool DeliveryStatus {
+            get {
+                return this.deliveryStatusField;
+            }
+            set {
+                this.deliveryStatusField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
+    public partial class Contact {
+        
+        private string nameField;
+        
+        private string emailField;
+        
+        private string mobileField;
+        
+        private string phoneField;
+        
+        private string faxField;
+        
+        private EnumGender genderField;
+        
+        /// <remarks/>
+        public string Name {
+            get {
+                return this.nameField;
+            }
+            set {
+                this.nameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string Email {
+            get {
+                return this.emailField;
+            }
+            set {
+                this.emailField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string Mobile {
+            get {
+                return this.mobileField;
+            }
+            set {
+                this.mobileField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string Phone {
+            get {
+                return this.phoneField;
+            }
+            set {
+                this.phoneField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string Fax {
+            get {
+                return this.faxField;
+            }
+            set {
+                this.faxField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public EnumGender Gender {
+            get {
+                return this.genderField;
+            }
+            set {
+                this.genderField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
+    [System.SerializableAttribute()]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=false)]
+    public enum EnumGender {
+        
+        /// <remarks/>
+        Female,
+        
+        /// <remarks/>
+        Maile,
+        
+        /// <remarks/>
+        Unknown,
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
+    public partial class CancelOrderResult {
+        
+        private bool successsField;
+        
+        /// <remarks/>
+        public bool Successs {
+            get {
+                return this.successsField;
+            }
+            set {
+                this.successsField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
+    public partial class ValidateCreditCardCondition {
+        
+        private string creditCardNoField;
+        
+        /// <remarks/>
+        public string CreditCardNo {
+            get {
+                return this.creditCardNoField;
+            }
+            set {
+                this.creditCardNoField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
+    [System.SerializableAttribute()]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=false)]
+    public enum EnumValidateResult {
+        
+        /// <remarks/>
+        OK,
+        
+        /// <remarks/>
+        Product,
+        
+        /// <remarks/>
+        Inventory,
+        
+        /// <remarks/>
+        Rate,
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
+    [System.SerializableAttribute()]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=false)]
+    public enum EnumIncrType {
+        
+        /// <remarks/>
+        Inventory,
+        
+        /// <remarks/>
+        Rate,
+        
+        /// <remarks/>
+        Order,
+        
+        /// <remarks/>
+        State,
+        
+        /// <remarks/>
+        Data,
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
+    public partial class InventoryCondition {
+        
+        private string hotelIdsField;
+        
+        private string roomTypeIdField;
+        
+        private System.DateTime startDateField;
+        
+        private System.DateTime endDateField;
+        
+        /// <remarks/>
+        public string HotelIds {
+            get {
+                return this.hotelIdsField;
+            }
+            set {
+                this.hotelIdsField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string RoomTypeId {
+            get {
+                return this.roomTypeIdField;
+            }
+            set {
+                this.roomTypeIdField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public System.DateTime StartDate {
+            get {
+                return this.startDateField;
+            }
+            set {
+                this.startDateField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public System.DateTime EndDate {
+            get {
+                return this.endDateField;
+            }
+            set {
+                this.endDateField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
+    public partial class ValidateInventoryCondition {
+        
+        private string hotelIdField;
+        
+        private string hotelCodeField;
+        
+        private string roomTypeIdField;
+        
+        private int amountField;
+        
+        private System.DateTime arrivalDateField;
+        
+        private System.DateTime departureDateField;
+        
+        /// <remarks/>
+        public string HotelId {
+            get {
+                return this.hotelIdField;
+            }
+            set {
+                this.hotelIdField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string HotelCode {
+            get {
+                return this.hotelCodeField;
+            }
+            set {
+                this.hotelCodeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string RoomTypeId {
+            get {
+                return this.roomTypeIdField;
+            }
+            set {
+                this.roomTypeIdField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public int Amount {
+            get {
+                return this.amountField;
+            }
+            set {
+                this.amountField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public System.DateTime ArrivalDate {
+            get {
+                return this.arrivalDateField;
+            }
+            set {
+                this.arrivalDateField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public System.DateTime DepartureDate {
+            get {
+                return this.departureDateField;
+            }
+            set {
+                this.departureDateField = value;
             }
         }
     }
@@ -683,54 +4658,6 @@ namespace OpenAPITest {
     }
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(HAvailPolicy))]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
-    public partial class AvailPolicy {
-        
-        private string availPolicyTextField;
-        
-        private string startDateField;
-        
-        private string endDateField;
-        
-        /// <remarks/>
-        public string AvailPolicyText {
-            get {
-                return this.availPolicyTextField;
-            }
-            set {
-                this.availPolicyTextField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute()]
-        public string StartDate {
-            get {
-                return this.startDateField;
-            }
-            set {
-                this.startDateField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute()]
-        public string EndDate {
-            get {
-                return this.endDateField;
-            }
-            set {
-                this.endDateField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -849,1494 +4776,6 @@ namespace OpenAPITest {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
-    public partial class HotelRoom {
-        
-        private string idField;
-        
-        private string nameField;
-        
-        private string areaField;
-        
-        private string floorField;
-        
-        private string broadnetAccessField;
-        
-        private string broadnetFeeField;
-        
-        private string commentsField;
-        
-        private string descriptionField;
-        
-        private string bedTypeField;
-        
-        private string roomCodesField;
-        
-        private string capacityField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute()]
-        public string Id {
-            get {
-                return this.idField;
-            }
-            set {
-                this.idField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute()]
-        public string Name {
-            get {
-                return this.nameField;
-            }
-            set {
-                this.nameField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute()]
-        public string Area {
-            get {
-                return this.areaField;
-            }
-            set {
-                this.areaField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute()]
-        public string Floor {
-            get {
-                return this.floorField;
-            }
-            set {
-                this.floorField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute()]
-        public string BroadnetAccess {
-            get {
-                return this.broadnetAccessField;
-            }
-            set {
-                this.broadnetAccessField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute()]
-        public string BroadnetFee {
-            get {
-                return this.broadnetFeeField;
-            }
-            set {
-                this.broadnetFeeField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute()]
-        public string Comments {
-            get {
-                return this.commentsField;
-            }
-            set {
-                this.commentsField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute()]
-        public string Description {
-            get {
-                return this.descriptionField;
-            }
-            set {
-                this.descriptionField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute()]
-        public string BedType {
-            get {
-                return this.bedTypeField;
-            }
-            set {
-                this.bedTypeField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute()]
-        public string RoomCodes {
-            get {
-                return this.roomCodesField;
-            }
-            set {
-                this.roomCodesField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute()]
-        public string Capacity {
-            get {
-                return this.capacityField;
-            }
-            set {
-                this.capacityField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
-    public partial class InstantOrderResult {
-        
-        private EnumInstantStatus instantStatusField;
-        
-        /// <remarks/>
-        public EnumInstantStatus InstantStatus {
-            get {
-                return this.instantStatusField;
-            }
-            set {
-                this.instantStatusField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
-    [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=false)]
-    public enum EnumInstantStatus {
-        
-        /// <remarks/>
-        NotInstant,
-        
-        /// <remarks/>
-        Instant,
-        
-        /// <remarks/>
-        Timeout,
-        
-        /// <remarks/>
-        InvalidOrderId,
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
-    public partial class ValidateCreditCardCondition {
-        
-        private string creditCardNoField;
-        
-        /// <remarks/>
-        public string CreditCardNo {
-            get {
-                return this.creditCardNoField;
-            }
-            set {
-                this.creditCardNoField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(BaseGiftRule))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(GiftForRP))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(Gift))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(BaseDrrRule))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(DrrRule))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(BaseValueAddRule))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(ValueAdd))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(BaseGuaranteeRule))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(GuaranteeRule))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(BaseBookingRule))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(BookingRule))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(BasePrepayRule))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(PrepayRule))]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
-    public partial class BaseRule {
-        
-        private string descriptionField;
-        
-        /// <remarks/>
-        public string Description {
-            get {
-                return this.descriptionField;
-            }
-            set {
-                this.descriptionField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(PrepayRule))]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
-    public partial class BasePrepayRule : BaseRule {
-        
-        private EnumDateType dateTypeField;
-        
-        private System.DateTime startDateField;
-        
-        private System.DateTime endDateField;
-        
-        private string weekSetField;
-        
-        private EnumPrepayChangeRule changeRuleField;
-        
-        private EnumPrepayCutPayment cashScaleFirstAfterField;
-        
-        private EnumPrepayCutPayment cashScaleFirstBeforeField;
-        
-        private System.DateTime dateNumField;
-        
-        private string timeField;
-        
-        private int deductFeesAfterField;
-        
-        private int deductFeesBeforeField;
-        
-        private decimal deductNumAfterField;
-        
-        private decimal deductNumBeforeField;
-        
-        private int hourField;
-        
-        private int hour2Field;
-        
-        /// <remarks/>
-        public EnumDateType DateType {
-            get {
-                return this.dateTypeField;
-            }
-            set {
-                this.dateTypeField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public System.DateTime StartDate {
-            get {
-                return this.startDateField;
-            }
-            set {
-                this.startDateField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public System.DateTime EndDate {
-            get {
-                return this.endDateField;
-            }
-            set {
-                this.endDateField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string WeekSet {
-            get {
-                return this.weekSetField;
-            }
-            set {
-                this.weekSetField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public EnumPrepayChangeRule ChangeRule {
-            get {
-                return this.changeRuleField;
-            }
-            set {
-                this.changeRuleField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public EnumPrepayCutPayment CashScaleFirstAfter {
-            get {
-                return this.cashScaleFirstAfterField;
-            }
-            set {
-                this.cashScaleFirstAfterField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public EnumPrepayCutPayment CashScaleFirstBefore {
-            get {
-                return this.cashScaleFirstBeforeField;
-            }
-            set {
-                this.cashScaleFirstBeforeField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public System.DateTime DateNum {
-            get {
-                return this.dateNumField;
-            }
-            set {
-                this.dateNumField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string Time {
-            get {
-                return this.timeField;
-            }
-            set {
-                this.timeField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public int DeductFeesAfter {
-            get {
-                return this.deductFeesAfterField;
-            }
-            set {
-                this.deductFeesAfterField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public int DeductFeesBefore {
-            get {
-                return this.deductFeesBeforeField;
-            }
-            set {
-                this.deductFeesBeforeField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public decimal DeductNumAfter {
-            get {
-                return this.deductNumAfterField;
-            }
-            set {
-                this.deductNumAfterField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public decimal DeductNumBefore {
-            get {
-                return this.deductNumBeforeField;
-            }
-            set {
-                this.deductNumBeforeField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public int Hour {
-            get {
-                return this.hourField;
-            }
-            set {
-                this.hourField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public int Hour2 {
-            get {
-                return this.hour2Field;
-            }
-            set {
-                this.hour2Field = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
-    [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=false)]
-    public enum EnumDateType {
-        
-        /// <remarks/>
-        CheckInDay,
-        
-        /// <remarks/>
-        StayDay,
-        
-        /// <remarks/>
-        BookDay,
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
-    [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=false)]
-    public enum EnumPrepayChangeRule {
-        
-        /// <remarks/>
-        PrepayNoChange,
-        
-        /// <remarks/>
-        PrepayNeedSomeDay,
-        
-        /// <remarks/>
-        PrepayNeedOneTime,
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
-    [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=false)]
-    public enum EnumPrepayCutPayment {
-        
-        /// <remarks/>
-        Money,
-        
-        /// <remarks/>
-        Percent,
-        
-        /// <remarks/>
-        FristNight,
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
-    public partial class ErrorCode {
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
-    [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=false)]
-    public enum HotelGiftHourTypeEnum {
-        
-        /// <remarks/>
-        Hours24,
-        
-        /// <remarks/>
-        XHourBefore,
-        
-        /// <remarks/>
-        XHourAfter,
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
-    public partial class GetOrderProductInfoRes {
-        
-        private int responseCodeField;
-        
-        private string errorMessageField;
-        
-        private OrderProductInfo productInfoField;
-        
-        /// <remarks/>
-        public int ResponseCode {
-            get {
-                return this.responseCodeField;
-            }
-            set {
-                this.responseCodeField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string ErrorMessage {
-            get {
-                return this.errorMessageField;
-            }
-            set {
-                this.errorMessageField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public OrderProductInfo ProductInfo {
-            get {
-                return this.productInfoField;
-            }
-            set {
-                this.productInfoField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
-    public partial class OrderProductInfo {
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(RatePlan))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(ListRatePlan))]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
-    public partial class BaseRatePlan {
-        
-        private int ratePlanIdField;
-        
-        private string ratePlanNameField;
-        
-        private int minAmountField;
-        
-        private int minDaysField;
-        
-        private int maxDaysField;
-        
-        private EnumPaymentType paymentTypeField;
-        
-        /// <remarks/>
-        public int RatePlanId {
-            get {
-                return this.ratePlanIdField;
-            }
-            set {
-                this.ratePlanIdField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string RatePlanName {
-            get {
-                return this.ratePlanNameField;
-            }
-            set {
-                this.ratePlanNameField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public int MinAmount {
-            get {
-                return this.minAmountField;
-            }
-            set {
-                this.minAmountField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public int MinDays {
-            get {
-                return this.minDaysField;
-            }
-            set {
-                this.minDaysField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public int MaxDays {
-            get {
-                return this.maxDaysField;
-            }
-            set {
-                this.maxDaysField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public EnumPaymentType PaymentType {
-            get {
-                return this.paymentTypeField;
-            }
-            set {
-                this.paymentTypeField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
-    [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=false)]
-    public enum EnumPaymentType {
-        
-        /// <remarks/>
-        All,
-        
-        /// <remarks/>
-        SelfPay,
-        
-        /// <remarks/>
-        Prepay,
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
-    public partial class ListRatePlan : BaseRatePlan {
-        
-        private bool statusField;
-        
-        private EnumGuestTypeCode customerTypeField;
-        
-        private int currentAllomentField;
-        
-        private bool instantConfirmationField;
-        
-        private string productTypesField;
-        
-        private bool isLastMinuteSaleField;
-        
-        private string startTimeField;
-        
-        private string endTimeField;
-        
-        private decimal totalRateField;
-        
-        private decimal averageRateField;
-        
-        private System.Nullable<decimal> averageBaseRateField;
-        
-        private EnumCurrencyCode currencyCodeField;
-        
-        private decimal couponField;
-        
-        private NightlyRate[] nightlyRatesField;
-        
-        private string bookingRuleIdsField;
-        
-        private string guaranteeRuleIdsField;
-        
-        private string prepayRuleIdsField;
-        
-        private string drrRuleIdsField;
-        
-        private string valueAddIdsField;
-        
-        private string giftIdsField;
-        
-        private string hAvailPolicyIdsField;
-        
-        private string roomTypeIdField;
-        
-        private string suffixNameField;
-        
-        private string hotelCodeField;
-        
-        private System.Nullable<EnumInvoiceMode> invoiceModeField;
-        
-        /// <remarks/>
-        public bool Status {
-            get {
-                return this.statusField;
-            }
-            set {
-                this.statusField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public EnumGuestTypeCode CustomerType {
-            get {
-                return this.customerTypeField;
-            }
-            set {
-                this.customerTypeField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public int CurrentAlloment {
-            get {
-                return this.currentAllomentField;
-            }
-            set {
-                this.currentAllomentField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public bool InstantConfirmation {
-            get {
-                return this.instantConfirmationField;
-            }
-            set {
-                this.instantConfirmationField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string ProductTypes {
-            get {
-                return this.productTypesField;
-            }
-            set {
-                this.productTypesField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public bool IsLastMinuteSale {
-            get {
-                return this.isLastMinuteSaleField;
-            }
-            set {
-                this.isLastMinuteSaleField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string StartTime {
-            get {
-                return this.startTimeField;
-            }
-            set {
-                this.startTimeField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string EndTime {
-            get {
-                return this.endTimeField;
-            }
-            set {
-                this.endTimeField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public decimal TotalRate {
-            get {
-                return this.totalRateField;
-            }
-            set {
-                this.totalRateField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public decimal AverageRate {
-            get {
-                return this.averageRateField;
-            }
-            set {
-                this.averageRateField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public System.Nullable<decimal> AverageBaseRate {
-            get {
-                return this.averageBaseRateField;
-            }
-            set {
-                this.averageBaseRateField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public EnumCurrencyCode CurrencyCode {
-            get {
-                return this.currencyCodeField;
-            }
-            set {
-                this.currencyCodeField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public decimal Coupon {
-            get {
-                return this.couponField;
-            }
-            set {
-                this.couponField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public NightlyRate[] NightlyRates {
-            get {
-                return this.nightlyRatesField;
-            }
-            set {
-                this.nightlyRatesField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string BookingRuleIds {
-            get {
-                return this.bookingRuleIdsField;
-            }
-            set {
-                this.bookingRuleIdsField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string GuaranteeRuleIds {
-            get {
-                return this.guaranteeRuleIdsField;
-            }
-            set {
-                this.guaranteeRuleIdsField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string PrepayRuleIds {
-            get {
-                return this.prepayRuleIdsField;
-            }
-            set {
-                this.prepayRuleIdsField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string DrrRuleIds {
-            get {
-                return this.drrRuleIdsField;
-            }
-            set {
-                this.drrRuleIdsField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string ValueAddIds {
-            get {
-                return this.valueAddIdsField;
-            }
-            set {
-                this.valueAddIdsField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string GiftIds {
-            get {
-                return this.giftIdsField;
-            }
-            set {
-                this.giftIdsField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string HAvailPolicyIds {
-            get {
-                return this.hAvailPolicyIdsField;
-            }
-            set {
-                this.hAvailPolicyIdsField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string RoomTypeId {
-            get {
-                return this.roomTypeIdField;
-            }
-            set {
-                this.roomTypeIdField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string SuffixName {
-            get {
-                return this.suffixNameField;
-            }
-            set {
-                this.suffixNameField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string HotelCode {
-            get {
-                return this.hotelCodeField;
-            }
-            set {
-                this.hotelCodeField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public System.Nullable<EnumInvoiceMode> InvoiceMode {
-            get {
-                return this.invoiceModeField;
-            }
-            set {
-                this.invoiceModeField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
-    [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=false)]
-    public enum EnumGuestTypeCode {
-        
-        /// <remarks/>
-        All,
-        
-        /// <remarks/>
-        Chinese,
-        
-        /// <remarks/>
-        OtherForeign,
-        
-        /// <remarks/>
-        HongKong,
-        
-        /// <remarks/>
-        Japanese,
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
-    [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=false)]
-    public enum EnumCurrencyCode {
-        
-        /// <remarks/>
-        RMB,
-        
-        /// <remarks/>
-        USD,
-        
-        /// <remarks/>
-        HKD,
-        
-        /// <remarks/>
-        MOP,
-        
-        /// <remarks/>
-        SGD,
-        
-        /// <remarks/>
-        TWD,
-        
-        /// <remarks/>
-        AFA,
-        
-        /// <remarks/>
-        ALL,
-        
-        /// <remarks/>
-        ARP,
-        
-        /// <remarks/>
-        ATS,
-        
-        /// <remarks/>
-        AUD,
-        
-        /// <remarks/>
-        BBD,
-        
-        /// <remarks/>
-        BEF,
-        
-        /// <remarks/>
-        BGL,
-        
-        /// <remarks/>
-        BHD,
-        
-        /// <remarks/>
-        BIF,
-        
-        /// <remarks/>
-        BOP,
-        
-        /// <remarks/>
-        BRC,
-        
-        /// <remarks/>
-        BSD,
-        
-        /// <remarks/>
-        BUK,
-        
-        /// <remarks/>
-        CAD,
-        
-        /// <remarks/>
-        CHF,
-        
-        /// <remarks/>
-        CLP,
-        
-        /// <remarks/>
-        CNY,
-        
-        /// <remarks/>
-        COP,
-        
-        /// <remarks/>
-        CRC,
-        
-        /// <remarks/>
-        CSK,
-        
-        /// <remarks/>
-        CUP,
-        
-        /// <remarks/>
-        CYP,
-        
-        /// <remarks/>
-        DEM,
-        
-        /// <remarks/>
-        DJF,
-        
-        /// <remarks/>
-        DKK,
-        
-        /// <remarks/>
-        DOP,
-        
-        /// <remarks/>
-        DZD,
-        
-        /// <remarks/>
-        ECS,
-        
-        /// <remarks/>
-        EGP,
-        
-        /// <remarks/>
-        ESP,
-        
-        /// <remarks/>
-        EUR,
-        
-        /// <remarks/>
-        FIM,
-        
-        /// <remarks/>
-        FJD,
-        
-        /// <remarks/>
-        FRF,
-        
-        /// <remarks/>
-        GBP,
-        
-        /// <remarks/>
-        GHC,
-        
-        /// <remarks/>
-        GMD,
-        
-        /// <remarks/>
-        GNS,
-        
-        /// <remarks/>
-        GQE,
-        
-        /// <remarks/>
-        GRD,
-        
-        /// <remarks/>
-        GTQ,
-        
-        /// <remarks/>
-        GWP,
-        
-        /// <remarks/>
-        GYD,
-        
-        /// <remarks/>
-        HNL,
-        
-        /// <remarks/>
-        HTG,
-        
-        /// <remarks/>
-        HUF,
-        
-        /// <remarks/>
-        IDR,
-        
-        /// <remarks/>
-        IEP,
-        
-        /// <remarks/>
-        INR,
-        
-        /// <remarks/>
-        IQD,
-        
-        /// <remarks/>
-        IRR,
-        
-        /// <remarks/>
-        ISK,
-        
-        /// <remarks/>
-        ITL,
-        
-        /// <remarks/>
-        JMD,
-        
-        /// <remarks/>
-        JOD,
-        
-        /// <remarks/>
-        JPY,
-        
-        /// <remarks/>
-        KES,
-        
-        /// <remarks/>
-        KHR,
-        
-        /// <remarks/>
-        KMF,
-        
-        /// <remarks/>
-        KPW,
-        
-        /// <remarks/>
-        KWD,
-        
-        /// <remarks/>
-        LAK,
-        
-        /// <remarks/>
-        LBP,
-        
-        /// <remarks/>
-        LKR,
-        
-        /// <remarks/>
-        LRD,
-        
-        /// <remarks/>
-        LUF,
-        
-        /// <remarks/>
-        LYD,
-        
-        /// <remarks/>
-        MAD,
-        
-        /// <remarks/>
-        MCF,
-        
-        /// <remarks/>
-        MRO,
-        
-        /// <remarks/>
-        MTP,
-        
-        /// <remarks/>
-        MUR,
-        
-        /// <remarks/>
-        MVR,
-        
-        /// <remarks/>
-        MXP,
-        
-        /// <remarks/>
-        MYR,
-        
-        /// <remarks/>
-        NGN,
-        
-        /// <remarks/>
-        NIC,
-        
-        /// <remarks/>
-        NLG,
-        
-        /// <remarks/>
-        NOK,
-        
-        /// <remarks/>
-        NPR,
-        
-        /// <remarks/>
-        NTD,
-        
-        /// <remarks/>
-        NZD,
-        
-        /// <remarks/>
-        OMR,
-        
-        /// <remarks/>
-        PAB,
-        
-        /// <remarks/>
-        PES,
-        
-        /// <remarks/>
-        PHP,
-        
-        /// <remarks/>
-        PLZ,
-        
-        /// <remarks/>
-        PRK,
-        
-        /// <remarks/>
-        PTE,
-        
-        /// <remarks/>
-        PYG,
-        
-        /// <remarks/>
-        QAR,
-        
-        /// <remarks/>
-        ROL,
-        
-        /// <remarks/>
-        RWF,
-        
-        /// <remarks/>
-        SAR,
-        
-        /// <remarks/>
-        SBD,
-        
-        /// <remarks/>
-        SCR,
-        
-        /// <remarks/>
-        SDP,
-        
-        /// <remarks/>
-        SEK,
-        
-        /// <remarks/>
-        SLL,
-        
-        /// <remarks/>
-        SOS,
-        
-        /// <remarks/>
-        SRG,
-        
-        /// <remarks/>
-        SUR,
-        
-        /// <remarks/>
-        SVC,
-        
-        /// <remarks/>
-        SYP,
-        
-        /// <remarks/>
-        THP,
-        
-        /// <remarks/>
-        TND,
-        
-        /// <remarks/>
-        TRL,
-        
-        /// <remarks/>
-        TTD,
-        
-        /// <remarks/>
-        TZS,
-        
-        /// <remarks/>
-        UGS,
-        
-        /// <remarks/>
-        UYP,
-        
-        /// <remarks/>
-        VEB,
-        
-        /// <remarks/>
-        VND,
-        
-        /// <remarks/>
-        XAF,
-        
-        /// <remarks/>
-        XOF,
-        
-        /// <remarks/>
-        YDD,
-        
-        /// <remarks/>
-        YER,
-        
-        /// <remarks/>
-        YUD,
-        
-        /// <remarks/>
-        ZAR,
-        
-        /// <remarks/>
-        ZMK,
-        
-        /// <remarks/>
-        ZRZ,
-        
-        /// <remarks/>
-        ZWD,
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
-    public partial class NightlyRate {
-        
-        private decimal memberField;
-        
-        private decimal costField;
-        
-        private System.Nullable<decimal> basisField;
-        
-        private bool statusField;
-        
-        private decimal addBedField;
-        
-        private System.DateTime dateField;
-        
-        /// <remarks/>
-        public decimal Member {
-            get {
-                return this.memberField;
-            }
-            set {
-                this.memberField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public decimal Cost {
-            get {
-                return this.costField;
-            }
-            set {
-                this.costField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public System.Nullable<decimal> Basis {
-            get {
-                return this.basisField;
-            }
-            set {
-                this.basisField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public bool Status {
-            get {
-                return this.statusField;
-            }
-            set {
-                this.statusField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public decimal AddBed {
-            get {
-                return this.addBedField;
-            }
-            set {
-                this.addBedField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public System.DateTime Date {
-            get {
-                return this.dateField;
-            }
-            set {
-                this.dateField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
-    [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=false)]
-    public enum EnumInvoiceMode {
-        
-        /// <remarks/>
-        NoSense,
-        
-        /// <remarks/>
-        Elong,
-        
-        /// <remarks/>
-        Hotel,
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
     public partial class BaseNightlyRate {
         
         private System.DateTime dateField;
@@ -2365,215 +4804,22 @@ namespace OpenAPITest {
     }
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(BookingRule))]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
-    public partial class BaseBookingRule : BaseRule {
+    public partial class IncrOrderResult {
         
-        private EnumBookingRule typeCodeField;
-        
-        private string roomTypeIdsField;
-        
-        private EnumDateType dateTypeField;
-        
-        private System.DateTime startDateField;
-        
-        private System.DateTime endDateField;
-        
-        private string startHourField;
-        
-        private string endHourField;
+        private Order[] ordersField;
         
         /// <remarks/>
-        public EnumBookingRule TypeCode {
+        public Order[] Orders {
             get {
-                return this.typeCodeField;
+                return this.ordersField;
             }
             set {
-                this.typeCodeField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string RoomTypeIds {
-            get {
-                return this.roomTypeIdsField;
-            }
-            set {
-                this.roomTypeIdsField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public EnumDateType DateType {
-            get {
-                return this.dateTypeField;
-            }
-            set {
-                this.dateTypeField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public System.DateTime StartDate {
-            get {
-                return this.startDateField;
-            }
-            set {
-                this.startDateField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public System.DateTime EndDate {
-            get {
-                return this.endDateField;
-            }
-            set {
-                this.endDateField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string StartHour {
-            get {
-                return this.startHourField;
-            }
-            set {
-                this.startHourField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string EndHour {
-            get {
-                return this.endHourField;
-            }
-            set {
-                this.endHourField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
-    [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=false)]
-    public enum EnumBookingRule {
-        
-        /// <remarks/>
-        NoneRule,
-        
-        /// <remarks/>
-        NeedNationality,
-        
-        /// <remarks/>
-        PerRoomPerName,
-        
-        /// <remarks/>
-        ForeignerNeedEnName,
-        
-        /// <remarks/>
-        RejectCheckinTime,
-        
-        /// <remarks/>
-        NeedPhoneNo,
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
-    [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=false)]
-    public enum EnumSortType {
-        
-        /// <remarks/>
-        Default,
-        
-        /// <remarks/>
-        StarRankDesc,
-        
-        /// <remarks/>
-        RateAsc,
-        
-        /// <remarks/>
-        DistanceAsc,
-        
-        /// <remarks/>
-        RateDesc,
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
-    [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=false)]
-    public enum EnumConfirmationType {
-        
-        /// <remarks/>
-        NoNeed,
-        
-        /// <remarks/>
-        SMS_cn,
-        
-        /// <remarks/>
-        SMS_en,
-        
-        /// <remarks/>
-        Email_cn,
-        
-        /// <remarks/>
-        Email_en,
-        
-        /// <remarks/>
-        Phone,
-        
-        /// <remarks/>
-        Fax,
-        
-        /// <remarks/>
-        Fax_big5,
-        
-        /// <remarks/>
-        SMS_cn_big5,
-        
-        /// <remarks/>
-        Email_cn_big5,
-        
-        /// <remarks/>
-        NotAllowedConfirm,
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
-    public partial class DetailHotel {
-        
-        private int countField;
-        
-        private Hotel[] hotelsField;
-        
-        /// <remarks/>
-        public int Count {
-            get {
-                return this.countField;
-            }
-            set {
-                this.countField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public Hotel[] Hotels {
-            get {
-                return this.hotelsField;
-            }
-            set {
-                this.hotelsField = value;
+                this.ordersField = value;
             }
         }
     }
@@ -2584,37 +4830,147 @@ namespace OpenAPITest {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
-    public partial class Hotel {
+    public partial class Order : IncrRecordBase {
+        
+        private long orderIdField;
+        
+        private string statusField;
+        
+        private System.DateTime arrivalDateField;
+        
+        private System.DateTime departureDateField;
+        
+        private decimal totalPriceField;
+        
+        private int numberOfRoomsField;
+        
+        /// <remarks/>
+        public long OrderId {
+            get {
+                return this.orderIdField;
+            }
+            set {
+                this.orderIdField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string Status {
+            get {
+                return this.statusField;
+            }
+            set {
+                this.statusField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public System.DateTime ArrivalDate {
+            get {
+                return this.arrivalDateField;
+            }
+            set {
+                this.arrivalDateField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public System.DateTime DepartureDate {
+            get {
+                return this.departureDateField;
+            }
+            set {
+                this.departureDateField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public decimal TotalPrice {
+            get {
+                return this.totalPriceField;
+            }
+            set {
+                this.totalPriceField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public int NumberOfRooms {
+            get {
+                return this.numberOfRoomsField;
+            }
+            set {
+                this.numberOfRoomsField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(Order))]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
+    public abstract partial class IncrRecordBase {
+        
+        private long lastIdField;
+        
+        private System.DateTime timeField;
+        
+        /// <remarks/>
+        public long LastId {
+            get {
+                return this.lastIdField;
+            }
+            set {
+                this.lastIdField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public System.DateTime Time {
+            get {
+                return this.timeField;
+            }
+            set {
+                this.timeField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
+    [System.SerializableAttribute()]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=false)]
+    public enum EnumProductProperty {
+        
+        /// <remarks/>
+        All,
+        
+        /// <remarks/>
+        LastMinuteSale,
+        
+        /// <remarks/>
+        LimitedTimeSale,
+        
+        /// <remarks/>
+        WithoutGuarantee,
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
+    public partial class HotelCity {
         
         private string hotelIdField;
         
-        private decimal lowRateField;
+        private string cityIdField;
         
-        private EnumCurrencyCode currencyCodeField;
-        
-        private string facilitiesField;
-        
-        private decimal distanceField;
-        
-        private BookingRule[] bookingRulesField;
-        
-        private GuaranteeRule[] guaranteeRulesField;
-        
-        private PrepayRule[] prepayRulesField;
-        
-        private ValueAdd[] valueAddsField;
-        
-        private DrrRule[] drrRulesField;
-        
-        private Room[] roomsField;
-        
-        private Detail detailField;
-        
-        private HotelImg[] imagesField;
-        
-        private Gift[] giftsField;
-        
-        private HAvailPolicy[] hAvailPolicysField;
+        private string subCityIdField;
         
         /// <remarks/>
         public string HotelId {
@@ -2627,12 +4983,181 @@ namespace OpenAPITest {
         }
         
         /// <remarks/>
-        public decimal LowRate {
+        public string CityId {
             get {
-                return this.lowRateField;
+                return this.cityIdField;
             }
             set {
-                this.lowRateField = value;
+                this.cityIdField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string SubCityId {
+            get {
+                return this.subCityIdField;
+            }
+            set {
+                this.subCityIdField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
+    public partial class CreditCards {
+        
+        private PaymentCardCategory[] creditCardListField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlArrayItemAttribute("CreditCard")]
+        public PaymentCardCategory[] CreditCardList {
+            get {
+                return this.creditCardListField;
+            }
+            set {
+                this.creditCardListField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
+    public partial class PaymentCardCategory {
+        
+        private string categoryIdField;
+        
+        private string categoryNameField;
+        
+        private string categoryNameEnField;
+        
+        /// <remarks/>
+        public string CategoryId {
+            get {
+                return this.categoryIdField;
+            }
+            set {
+                this.categoryIdField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string CategoryName {
+            get {
+                return this.categoryNameField;
+            }
+            set {
+                this.categoryNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string CategoryNameEn {
+            get {
+                return this.categoryNameEnField;
+            }
+            set {
+                this.categoryNameEnField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
+    public partial class CheckInFeedbackResult {
+        
+        private string errorMessageField;
+        
+        /// <remarks/>
+        public string ErrorMessage {
+            get {
+                return this.errorMessageField;
+            }
+            set {
+                this.errorMessageField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
+    public partial class UpdateOrderResult {
+        
+        private long orderIdField;
+        
+        private System.DateTime cancelTimeField;
+        
+        private decimal guaranteeAmountField;
+        
+        private EnumCurrencyCode guaranteeCurrencyCodeField;
+        
+        private decimal totalPriceField;
+        
+        private EnumCurrencyCode currencyCodeField;
+        
+        /// <remarks/>
+        public long OrderId {
+            get {
+                return this.orderIdField;
+            }
+            set {
+                this.orderIdField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public System.DateTime CancelTime {
+            get {
+                return this.cancelTimeField;
+            }
+            set {
+                this.cancelTimeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public decimal GuaranteeAmount {
+            get {
+                return this.guaranteeAmountField;
+            }
+            set {
+                this.guaranteeAmountField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public EnumCurrencyCode GuaranteeCurrencyCode {
+            get {
+                return this.guaranteeCurrencyCodeField;
+            }
+            set {
+                this.guaranteeCurrencyCodeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public decimal TotalPrice {
+            get {
+                return this.totalPriceField;
+            }
+            set {
+                this.totalPriceField = value;
             }
         }
         
@@ -2645,59 +5170,249 @@ namespace OpenAPITest {
                 this.currencyCodeField = value;
             }
         }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
+    public partial class OrderDetailResult : OrderBase {
+        
+        private string elongCardNoField;
+        
+        private Contact contactField;
+        
+        private ExtendInfo extendInfoField;
+        
+        private NightlyRate[] nightlyRatesField;
+        
+        private OrderRoom[] orderRoomsField;
+        
+        private long orderIdField;
+        
+        private string statusField;
+        
+        private System.Nullable<long> showStatusField;
+        
+        private System.Nullable<System.DateTime> confirmPointField;
+        
+        private decimal penaltyToCustomerField;
+        
+        private EnumCurrencyCode penaltyCurrencyCodeField;
+        
+        private System.DateTime cancelTimeField;
+        
+        private bool hasInvoiceField;
+        
+        private System.Nullable<EnumInvoiceMode> invoiceModeField;
+        
+        private InvoiceWithStatus invoiceField;
+        
+        private CreditCardWithStatus creditCardField;
+        
+        private GuaranteeRule guaranteeRuleField;
+        
+        private PrepayRule prepayRuleField;
+        
+        private string[] valueAddsField;
+        
+        private string hotelNameField;
+        
+        private string roomTypeNameField;
+        
+        private string ratePlanNameField;
+        
+        private System.Nullable<bool> isCancelableField;
+        
+        private System.Nullable<System.DateTime> creationDateField;
         
         /// <remarks/>
-        public string Facilities {
+        public string ElongCardNo {
             get {
-                return this.facilitiesField;
+                return this.elongCardNoField;
             }
             set {
-                this.facilitiesField = value;
+                this.elongCardNoField = value;
             }
         }
         
         /// <remarks/>
-        public decimal Distance {
+        public Contact Contact {
             get {
-                return this.distanceField;
+                return this.contactField;
             }
             set {
-                this.distanceField = value;
+                this.contactField = value;
             }
         }
         
         /// <remarks/>
-        public BookingRule[] BookingRules {
+        public ExtendInfo ExtendInfo {
             get {
-                return this.bookingRulesField;
+                return this.extendInfoField;
             }
             set {
-                this.bookingRulesField = value;
+                this.extendInfoField = value;
             }
         }
         
         /// <remarks/>
-        public GuaranteeRule[] GuaranteeRules {
+        public NightlyRate[] NightlyRates {
             get {
-                return this.guaranteeRulesField;
+                return this.nightlyRatesField;
             }
             set {
-                this.guaranteeRulesField = value;
+                this.nightlyRatesField = value;
             }
         }
         
         /// <remarks/>
-        public PrepayRule[] PrepayRules {
+        public OrderRoom[] OrderRooms {
             get {
-                return this.prepayRulesField;
+                return this.orderRoomsField;
             }
             set {
-                this.prepayRulesField = value;
+                this.orderRoomsField = value;
             }
         }
         
         /// <remarks/>
-        public ValueAdd[] ValueAdds {
+        public long OrderId {
+            get {
+                return this.orderIdField;
+            }
+            set {
+                this.orderIdField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string Status {
+            get {
+                return this.statusField;
+            }
+            set {
+                this.statusField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public System.Nullable<long> ShowStatus {
+            get {
+                return this.showStatusField;
+            }
+            set {
+                this.showStatusField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public System.Nullable<System.DateTime> ConfirmPoint {
+            get {
+                return this.confirmPointField;
+            }
+            set {
+                this.confirmPointField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public decimal PenaltyToCustomer {
+            get {
+                return this.penaltyToCustomerField;
+            }
+            set {
+                this.penaltyToCustomerField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public EnumCurrencyCode PenaltyCurrencyCode {
+            get {
+                return this.penaltyCurrencyCodeField;
+            }
+            set {
+                this.penaltyCurrencyCodeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public System.DateTime CancelTime {
+            get {
+                return this.cancelTimeField;
+            }
+            set {
+                this.cancelTimeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public bool HasInvoice {
+            get {
+                return this.hasInvoiceField;
+            }
+            set {
+                this.hasInvoiceField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public System.Nullable<EnumInvoiceMode> InvoiceMode {
+            get {
+                return this.invoiceModeField;
+            }
+            set {
+                this.invoiceModeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public InvoiceWithStatus Invoice {
+            get {
+                return this.invoiceField;
+            }
+            set {
+                this.invoiceField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public CreditCardWithStatus CreditCard {
+            get {
+                return this.creditCardField;
+            }
+            set {
+                this.creditCardField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public GuaranteeRule GuaranteeRule {
+            get {
+                return this.guaranteeRuleField;
+            }
+            set {
+                this.guaranteeRuleField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public PrepayRule PrepayRule {
+            get {
+                return this.prepayRuleField;
+            }
+            set {
+                this.prepayRuleField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string[] ValueAdds {
             get {
                 return this.valueAddsField;
             }
@@ -2707,63 +5422,54 @@ namespace OpenAPITest {
         }
         
         /// <remarks/>
-        public DrrRule[] DrrRules {
+        public string HotelName {
             get {
-                return this.drrRulesField;
+                return this.hotelNameField;
             }
             set {
-                this.drrRulesField = value;
+                this.hotelNameField = value;
             }
         }
         
         /// <remarks/>
-        public Room[] Rooms {
+        public string RoomTypeName {
             get {
-                return this.roomsField;
+                return this.roomTypeNameField;
             }
             set {
-                this.roomsField = value;
+                this.roomTypeNameField = value;
             }
         }
         
         /// <remarks/>
-        public Detail Detail {
+        public string RatePlanName {
             get {
-                return this.detailField;
+                return this.ratePlanNameField;
             }
             set {
-                this.detailField = value;
+                this.ratePlanNameField = value;
             }
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlArrayItemAttribute("Image")]
-        public HotelImg[] Images {
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public System.Nullable<bool> IsCancelable {
             get {
-                return this.imagesField;
+                return this.isCancelableField;
             }
             set {
-                this.imagesField = value;
+                this.isCancelableField = value;
             }
         }
         
         /// <remarks/>
-        public Gift[] Gifts {
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public System.Nullable<System.DateTime> CreationDate {
             get {
-                return this.giftsField;
+                return this.creationDateField;
             }
             set {
-                this.giftsField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public HAvailPolicy[] HAvailPolicys {
-            get {
-                return this.hAvailPolicysField;
-            }
-            set {
-                this.hAvailPolicysField = value;
+                this.creationDateField = value;
             }
         }
     }
@@ -2774,17 +5480,77 @@ namespace OpenAPITest {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
-    public partial class BookingRule : BaseBookingRule {
+    public partial class ExtendInfo {
         
-        private long bookingRuleIdField;
+        private string string1Field;
+        
+        private string string2Field;
+        
+        private string string3Field;
+        
+        private int int1Field;
+        
+        private int int2Field;
+        
+        private int int3Field;
         
         /// <remarks/>
-        public long BookingRuleId {
+        public string String1 {
             get {
-                return this.bookingRuleIdField;
+                return this.string1Field;
             }
             set {
-                this.bookingRuleIdField = value;
+                this.string1Field = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string String2 {
+            get {
+                return this.string2Field;
+            }
+            set {
+                this.string2Field = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string String3 {
+            get {
+                return this.string3Field;
+            }
+            set {
+                this.string3Field = value;
+            }
+        }
+        
+        /// <remarks/>
+        public int Int1 {
+            get {
+                return this.int1Field;
+            }
+            set {
+                this.int1Field = value;
+            }
+        }
+        
+        /// <remarks/>
+        public int Int2 {
+            get {
+                return this.int2Field;
+            }
+            set {
+                this.int2Field = value;
+            }
+        }
+        
+        /// <remarks/>
+        public int Int3 {
+            get {
+                return this.int3Field;
+            }
+            set {
+                this.int3Field = value;
             }
         }
     }
@@ -2795,67 +5561,897 @@ namespace OpenAPITest {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
-    public partial class GuaranteeRule : BaseGuaranteeRule {
+    public partial class OrderRoom {
         
-        private int guranteeRuleIdField;
+        private CustomerForOrder[] customersField;
         
         /// <remarks/>
-        public int GuranteeRuleId {
+        public CustomerForOrder[] Customers {
             get {
-                return this.guranteeRuleIdField;
+                return this.customersField;
             }
             set {
-                this.guranteeRuleIdField = value;
+                this.customersField = value;
             }
         }
     }
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(GuaranteeRule))]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
-    public partial class BaseGuaranteeRule : BaseRule {
+    public partial class CustomerForOrder : Customer {
         
-        private EnumDateType dateTypeField;
+        private string confirmationNumberField;
+        
+        /// <remarks/>
+        public string ConfirmationNumber {
+            get {
+                return this.confirmationNumberField;
+            }
+            set {
+                this.confirmationNumberField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(CustomerForOrder))]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
+    public partial class Customer {
+        
+        private string nameField;
+        
+        private string emailField;
+        
+        private string mobileField;
+        
+        private string phoneField;
+        
+        private string faxField;
+        
+        private EnumGender genderField;
+        
+        private string nationalityField;
+        
+        /// <remarks/>
+        public string Name {
+            get {
+                return this.nameField;
+            }
+            set {
+                this.nameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string Email {
+            get {
+                return this.emailField;
+            }
+            set {
+                this.emailField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string Mobile {
+            get {
+                return this.mobileField;
+            }
+            set {
+                this.mobileField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string Phone {
+            get {
+                return this.phoneField;
+            }
+            set {
+                this.phoneField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string Fax {
+            get {
+                return this.faxField;
+            }
+            set {
+                this.faxField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public EnumGender Gender {
+            get {
+                return this.genderField;
+            }
+            set {
+                this.genderField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string Nationality {
+            get {
+                return this.nationalityField;
+            }
+            set {
+                this.nationalityField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
+    public partial class CreditCardWithStatus : CreditCard {
+        
+        private EnumCreditCardProcessType processTypeField;
+        
+        private EnumCreditCardStatus statusField;
+        
+        private System.Nullable<decimal> amountField;
+        
+        /// <remarks/>
+        public EnumCreditCardProcessType ProcessType {
+            get {
+                return this.processTypeField;
+            }
+            set {
+                this.processTypeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public EnumCreditCardStatus Status {
+            get {
+                return this.statusField;
+            }
+            set {
+                this.statusField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public System.Nullable<decimal> Amount {
+            get {
+                return this.amountField;
+            }
+            set {
+                this.amountField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
+    [System.SerializableAttribute()]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=false)]
+    public enum EnumCreditCardProcessType {
+        
+        /// <remarks/>
+        Auth,
+        
+        /// <remarks/>
+        CancelAuth,
+        
+        /// <remarks/>
+        Charge,
+        
+        /// <remarks/>
+        Refund,
+        
+        /// <remarks/>
+        DirectCharge,
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
+    [System.SerializableAttribute()]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=false)]
+    public enum EnumCreditCardStatus {
+        
+        /// <remarks/>
+        UnProcess,
+        
+        /// <remarks/>
+        Succeed,
+        
+        /// <remarks/>
+        Processing,
+        
+        /// <remarks/>
+        Fail,
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(CreditCardWithStatus))]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
+    public partial class CreditCard {
+        
+        private string numberField;
+        
+        private string cVVField;
+        
+        private int expirationYearField;
+        
+        private int expirationMonthField;
+        
+        private string holderNameField;
+        
+        private EnumIdType idTypeField;
+        
+        private string idNoField;
+        
+        /// <remarks/>
+        public string Number {
+            get {
+                return this.numberField;
+            }
+            set {
+                this.numberField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string CVV {
+            get {
+                return this.cVVField;
+            }
+            set {
+                this.cVVField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public int ExpirationYear {
+            get {
+                return this.expirationYearField;
+            }
+            set {
+                this.expirationYearField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public int ExpirationMonth {
+            get {
+                return this.expirationMonthField;
+            }
+            set {
+                this.expirationMonthField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string HolderName {
+            get {
+                return this.holderNameField;
+            }
+            set {
+                this.holderNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public EnumIdType IdType {
+            get {
+                return this.idTypeField;
+            }
+            set {
+                this.idTypeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string IdNo {
+            get {
+                return this.idNoField;
+            }
+            set {
+                this.idNoField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
+    [System.SerializableAttribute()]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=false)]
+    public enum EnumIdType {
+        
+        /// <remarks/>
+        IdentityCard,
+        
+        /// <remarks/>
+        Passport,
+        
+        /// <remarks/>
+        Other,
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
+    public partial class CreateOrderCondition : OrderBase {
+        
+        private string affiliateConfirmationIdField;
+        
+        private string customerIPAddressField;
+        
+        private bool isGuaranteeOrChargedField;
+        
+        private string supplierCardNoField;
+        
+        private bool isNeedInvoiceField;
+        
+        private Contact contactField;
+        
+        private ExtendInfo extendInfoField;
+        
+        private BaseNightlyRate[] nightlyRatesField;
+        
+        private CreateOrderRoom[] orderRoomsField;
+        
+        private Invoice invoiceField;
+        
+        private CreditCard creditCardField;
+        
+        private System.Nullable<bool> isForceGuaranteeField;
+        
+        /// <remarks/>
+        public string AffiliateConfirmationId {
+            get {
+                return this.affiliateConfirmationIdField;
+            }
+            set {
+                this.affiliateConfirmationIdField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string CustomerIPAddress {
+            get {
+                return this.customerIPAddressField;
+            }
+            set {
+                this.customerIPAddressField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public bool IsGuaranteeOrCharged {
+            get {
+                return this.isGuaranteeOrChargedField;
+            }
+            set {
+                this.isGuaranteeOrChargedField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string SupplierCardNo {
+            get {
+                return this.supplierCardNoField;
+            }
+            set {
+                this.supplierCardNoField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public bool IsNeedInvoice {
+            get {
+                return this.isNeedInvoiceField;
+            }
+            set {
+                this.isNeedInvoiceField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Contact Contact {
+            get {
+                return this.contactField;
+            }
+            set {
+                this.contactField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public ExtendInfo ExtendInfo {
+            get {
+                return this.extendInfoField;
+            }
+            set {
+                this.extendInfoField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public BaseNightlyRate[] NightlyRates {
+            get {
+                return this.nightlyRatesField;
+            }
+            set {
+                this.nightlyRatesField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public CreateOrderRoom[] OrderRooms {
+            get {
+                return this.orderRoomsField;
+            }
+            set {
+                this.orderRoomsField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Invoice Invoice {
+            get {
+                return this.invoiceField;
+            }
+            set {
+                this.invoiceField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public CreditCard CreditCard {
+            get {
+                return this.creditCardField;
+            }
+            set {
+                this.creditCardField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public System.Nullable<bool> IsForceGuarantee {
+            get {
+                return this.isForceGuaranteeField;
+            }
+            set {
+                this.isForceGuaranteeField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
+    public partial class CreateOrderRoom {
+        
+        private Customer[] customersField;
+        
+        /// <remarks/>
+        public Customer[] Customers {
+            get {
+                return this.customersField;
+            }
+            set {
+                this.customersField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
+    [System.SerializableAttribute()]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=false)]
+    public enum EnumInstantStatus {
+        
+        /// <remarks/>
+        NotInstant,
+        
+        /// <remarks/>
+        Instant,
+        
+        /// <remarks/>
+        Timeout,
+        
+        /// <remarks/>
+        InvalidOrderId,
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
+    [System.SerializableAttribute()]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=false)]
+    public enum EnumGuaranteeType {
+        
+        /// <remarks/>
+        NoneInRule,
+        
+        /// <remarks/>
+        NoneInManual,
+        
+        /// <remarks/>
+        VouchInRule,
+        
+        /// <remarks/>
+        VouchInManual,
+        
+        /// <remarks/>
+        VouchByElong,
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
+    public partial class PoiInfo {
+        
+        private string google_latField;
+        
+        private string google_lngField;
+        
+        private string baidu_latField;
+        
+        private string baidu_lngField;
+        
+        /// <remarks/>
+        public string Google_lat {
+            get {
+                return this.google_latField;
+            }
+            set {
+                this.google_latField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string Google_lng {
+            get {
+                return this.google_lngField;
+            }
+            set {
+                this.google_lngField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string Baidu_lat {
+            get {
+                return this.baidu_latField;
+            }
+            set {
+                this.baidu_latField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string Baidu_lng {
+            get {
+                return this.baidu_lngField;
+            }
+            set {
+                this.baidu_lngField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
+    public partial class Position {
+        
+        private decimal longitudeField;
+        
+        private decimal latitudeField;
+        
+        private int radiusField;
+        
+        /// <remarks/>
+        public decimal Longitude {
+            get {
+                return this.longitudeField;
+            }
+            set {
+                this.longitudeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public decimal Latitude {
+            get {
+                return this.latitudeField;
+            }
+            set {
+                this.latitudeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public int Radius {
+            get {
+                return this.radiusField;
+            }
+            set {
+                this.radiusField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
+    public partial class RecentOrderedHotel {
+        
+        private string hotelIdField;
+        
+        private System.DateTime recentBookingTimeField;
+        
+        /// <remarks/>
+        public string HotelId {
+            get {
+                return this.hotelIdField;
+            }
+            set {
+                this.hotelIdField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public System.DateTime RecentBookingTime {
+            get {
+                return this.recentBookingTimeField;
+            }
+            set {
+                this.recentBookingTimeField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
+    public partial class State {
+        
+        private string hotelIdField;
+        
+        private string hotelCodeField;
+        
+        private string roomIdField;
+        
+        private string roomTypeIdField;
+        
+        private string ratePlanIdField;
+        
+        private System.Nullable<bool> statusField;
+        
+        private EnumStateType stateTypeField;
+        
+        private long lastIdField;
+        
+        private System.DateTime timeField;
+        
+        /// <remarks/>
+        public string HotelId {
+            get {
+                return this.hotelIdField;
+            }
+            set {
+                this.hotelIdField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string HotelCode {
+            get {
+                return this.hotelCodeField;
+            }
+            set {
+                this.hotelCodeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string RoomId {
+            get {
+                return this.roomIdField;
+            }
+            set {
+                this.roomIdField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string RoomTypeId {
+            get {
+                return this.roomTypeIdField;
+            }
+            set {
+                this.roomTypeIdField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string RatePlanId {
+            get {
+                return this.ratePlanIdField;
+            }
+            set {
+                this.ratePlanIdField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public System.Nullable<bool> Status {
+            get {
+                return this.statusField;
+            }
+            set {
+                this.statusField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public EnumStateType StateType {
+            get {
+                return this.stateTypeField;
+            }
+            set {
+                this.stateTypeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public long LastId {
+            get {
+                return this.lastIdField;
+            }
+            set {
+                this.lastIdField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public System.DateTime Time {
+            get {
+                return this.timeField;
+            }
+            set {
+                this.timeField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
+    [System.SerializableAttribute()]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=false)]
+    public enum EnumStateType {
+        
+        /// <remarks/>
+        HotelId,
+        
+        /// <remarks/>
+        HotelCode,
+        
+        /// <remarks/>
+        RoomId,
+        
+        /// <remarks/>
+        RoomTypeId,
+        
+        /// <remarks/>
+        RatePlanId,
+        
+        /// <remarks/>
+        RatePlanPolicy,
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(IncrInventory))]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
+    public partial class Inventory {
+        
+        private string hotelIDField;
+        
+        private string hotelCodeField;
+        
+        private bool statusField;
+        
+        private int overBookingField;
         
         private System.DateTime startDateField;
         
         private System.DateTime endDateField;
         
-        private string weekSetField;
-        
-        private bool isTimeGuaranteeField;
-        
         private string startTimeField;
         
         private string endTimeField;
         
-        private bool isTomorrowField;
+        private string roomTypeIdField;
         
-        private bool isAmountGuaranteeField;
+        private System.DateTime dateField;
         
         private int amountField;
         
-        private EnumGuaranteeMoneyType guaranteeTypeField;
-        
-        private EnumGuaranteeChangeRule changeRuleField;
-        
-        private System.DateTime dayField;
-        
-        private string timeField;
-        
-        private int hourField;
-        
         /// <remarks/>
-        public EnumDateType DateType {
+        public string HotelID {
             get {
-                return this.dateTypeField;
+                return this.hotelIDField;
             }
             set {
-                this.dateTypeField = value;
+                this.hotelIDField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string HotelCode {
+            get {
+                return this.hotelCodeField;
+            }
+            set {
+                this.hotelCodeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public bool Status {
+            get {
+                return this.statusField;
+            }
+            set {
+                this.statusField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public int OverBooking {
+            get {
+                return this.overBookingField;
+            }
+            set {
+                this.overBookingField = value;
             }
         }
         
@@ -2876,26 +6472,6 @@ namespace OpenAPITest {
             }
             set {
                 this.endDateField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string WeekSet {
-            get {
-                return this.weekSetField;
-            }
-            set {
-                this.weekSetField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public bool IsTimeGuarantee {
-            get {
-                return this.isTimeGuaranteeField;
-            }
-            set {
-                this.isTimeGuaranteeField = value;
             }
         }
         
@@ -2920,26 +6496,29 @@ namespace OpenAPITest {
         }
         
         /// <remarks/>
-        public bool IsTomorrow {
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string RoomTypeId {
             get {
-                return this.isTomorrowField;
+                return this.roomTypeIdField;
             }
             set {
-                this.isTomorrowField = value;
+                this.roomTypeIdField = value;
             }
         }
         
         /// <remarks/>
-        public bool IsAmountGuarantee {
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public System.DateTime Date {
             get {
-                return this.isAmountGuaranteeField;
+                return this.dateField;
             }
             set {
-                this.isAmountGuaranteeField = value;
+                this.dateField = value;
             }
         }
         
         /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
         public int Amount {
             get {
                 return this.amountField;
@@ -2948,54 +6527,70 @@ namespace OpenAPITest {
                 this.amountField = value;
             }
         }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
+    public partial class Validate {
+        
+        private EnumValidateResult resultCodeField;
+        
+        private decimal guaranteeRateField;
         
         /// <remarks/>
-        public EnumGuaranteeMoneyType GuaranteeType {
+        public EnumValidateResult ResultCode {
             get {
-                return this.guaranteeTypeField;
+                return this.resultCodeField;
             }
             set {
-                this.guaranteeTypeField = value;
+                this.resultCodeField = value;
             }
         }
         
         /// <remarks/>
-        public EnumGuaranteeChangeRule ChangeRule {
+        public decimal GuaranteeRate {
             get {
-                return this.changeRuleField;
+                return this.guaranteeRateField;
             }
             set {
-                this.changeRuleField = value;
+                this.guaranteeRateField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
+    public partial class RelatedOrderCondition {
+        
+        private string orderIdsField;
+        
+        private EnumOrderRelationType relationTypeField;
+        
+        /// <remarks/>
+        public string OrderIds {
+            get {
+                return this.orderIdsField;
+            }
+            set {
+                this.orderIdsField = value;
             }
         }
         
         /// <remarks/>
-        public System.DateTime Day {
+        public EnumOrderRelationType RelationType {
             get {
-                return this.dayField;
+                return this.relationTypeField;
             }
             set {
-                this.dayField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string Time {
-            get {
-                return this.timeField;
-            }
-            set {
-                this.timeField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public int Hour {
-            get {
-                return this.hourField;
-            }
-            set {
-                this.hourField = value;
+                this.relationTypeField = value;
             }
         }
     }
@@ -3004,32 +6599,13 @@ namespace OpenAPITest {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
     [System.SerializableAttribute()]
     [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=false)]
-    public enum EnumGuaranteeMoneyType {
+    public enum EnumOrderRelationType {
         
         /// <remarks/>
-        FirstNightCost,
+        Child,
         
         /// <remarks/>
-        FullNightCost,
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
-    [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=false)]
-    public enum EnumGuaranteeChangeRule {
-        
-        /// <remarks/>
-        NoChange,
-        
-        /// <remarks/>
-        NeedSomeDay,
-        
-        /// <remarks/>
-        NeedCheckinTime,
-        
-        /// <remarks/>
-        NeedCheckin24hour,
+        Parent,
     }
     
     /// <remarks/>
@@ -3038,17 +6614,17 @@ namespace OpenAPITest {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
-    public partial class PrepayRule : BasePrepayRule {
+    public partial class InstantOrderResult {
         
-        private int prepayRuleIdField;
+        private EnumInstantStatus instantStatusField;
         
         /// <remarks/>
-        public int PrepayRuleId {
+        public EnumInstantStatus InstantStatus {
             get {
-                return this.prepayRuleIdField;
+                return this.instantStatusField;
             }
             set {
-                this.prepayRuleIdField = value;
+                this.instantStatusField = value;
             }
         }
     }
@@ -3059,81 +6635,112 @@ namespace OpenAPITest {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
-    public partial class ValueAdd : BaseValueAddRule {
+    public partial class RackRateHotel {
         
-        private string valueAddIdField;
+        private string hotelCodeField;
+        
+        private RackRateRoomType[] roomTypesField;
         
         /// <remarks/>
-        public string ValueAddId {
+        public string HotelCode {
             get {
-                return this.valueAddIdField;
+                return this.hotelCodeField;
             }
             set {
-                this.valueAddIdField = value;
+                this.hotelCodeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public RackRateRoomType[] RoomTypes {
+            get {
+                return this.roomTypesField;
+            }
+            set {
+                this.roomTypesField = value;
             }
         }
     }
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(ValueAdd))]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
-    public partial class BaseValueAddRule : BaseRule {
+    public partial class RackRateRoomType {
         
-        private string typeCodeField;
+        private long priceIdField;
         
-        private bool isIncludeField;
+        private string hotelCodeField;
         
-        private int amountField;
+        private string roomTypeIDField;
         
-        private string currencyCodeField;
-        
-        private EnumValueAddPriceOption priceOptionField;
-        
-        private decimal priceField;
-        
-        private bool isExtAddField;
-        
-        private EnumValueAddPriceOption extOptionField;
-        
-        private decimal extPriceField;
-        
-        private System.DateTime startDateField;
+        private System.DateTime beginDateField;
         
         private System.DateTime endDateField;
         
-        private string weekSetField;
+        private decimal rackRateField;
+        
+        private string currencyCodeField;
         
         /// <remarks/>
-        public string TypeCode {
+        public long PriceId {
             get {
-                return this.typeCodeField;
+                return this.priceIdField;
             }
             set {
-                this.typeCodeField = value;
+                this.priceIdField = value;
             }
         }
         
         /// <remarks/>
-        public bool IsInclude {
+        public string HotelCode {
             get {
-                return this.isIncludeField;
+                return this.hotelCodeField;
             }
             set {
-                this.isIncludeField = value;
+                this.hotelCodeField = value;
             }
         }
         
         /// <remarks/>
-        public int Amount {
+        public string RoomTypeID {
             get {
-                return this.amountField;
+                return this.roomTypeIDField;
             }
             set {
-                this.amountField = value;
+                this.roomTypeIDField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public System.DateTime BeginDate {
+            get {
+                return this.beginDateField;
+            }
+            set {
+                this.beginDateField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public System.DateTime EndDate {
+            get {
+                return this.endDateField;
+            }
+            set {
+                this.endDateField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public decimal RackRate {
+            get {
+                return this.rackRateField;
+            }
+            set {
+                this.rackRateField = value;
             }
         }
         
@@ -3146,102 +6753,6 @@ namespace OpenAPITest {
                 this.currencyCodeField = value;
             }
         }
-        
-        /// <remarks/>
-        public EnumValueAddPriceOption PriceOption {
-            get {
-                return this.priceOptionField;
-            }
-            set {
-                this.priceOptionField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public decimal Price {
-            get {
-                return this.priceField;
-            }
-            set {
-                this.priceField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public bool IsExtAdd {
-            get {
-                return this.isExtAddField;
-            }
-            set {
-                this.isExtAddField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public EnumValueAddPriceOption ExtOption {
-            get {
-                return this.extOptionField;
-            }
-            set {
-                this.extOptionField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public decimal ExtPrice {
-            get {
-                return this.extPriceField;
-            }
-            set {
-                this.extPriceField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public System.DateTime StartDate {
-            get {
-                return this.startDateField;
-            }
-            set {
-                this.startDateField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public System.DateTime EndDate {
-            get {
-                return this.endDateField;
-            }
-            set {
-                this.endDateField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string WeekSet {
-            get {
-                return this.weekSetField;
-            }
-            set {
-                this.weekSetField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
-    [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=false)]
-    public enum EnumValueAddPriceOption {
-        
-        /// <remarks/>
-        None,
-        
-        /// <remarks/>
-        Money,
-        
-        /// <remarks/>
-        Percent,
     }
     
     /// <remarks/>
@@ -3250,1003 +6761,11 @@ namespace OpenAPITest {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
-    public partial class DrrRule : BaseDrrRule {
-        
-        private int drrRuleIdField;
-        
-        /// <remarks/>
-        public int DrrRuleId {
-            get {
-                return this.drrRuleIdField;
-            }
-            set {
-                this.drrRuleIdField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(DrrRule))]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
-    public partial class BaseDrrRule : BaseRule {
-        
-        private EnumDrrRuleCode typeCodeField;
-        
-        private EnumDateType dateTypeField;
-        
-        private System.DateTime startDateField;
-        
-        private System.DateTime endDateField;
-        
-        private int dayNumField;
-        
-        private int checkInNumField;
-        
-        private int everyCheckInNumField;
-        
-        private int lastDayNumField;
-        
-        private int whichDayNumField;
-        
-        private EnumDrrPreferential cashScaleField;
-        
-        private decimal deductNumField;
-        
-        private string weekSetField;
-        
-        private EnumDrrFeeType feeTypeField;
-        
-        private string roomTypeIdsField;
-        
-        /// <remarks/>
-        public EnumDrrRuleCode TypeCode {
-            get {
-                return this.typeCodeField;
-            }
-            set {
-                this.typeCodeField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public EnumDateType DateType {
-            get {
-                return this.dateTypeField;
-            }
-            set {
-                this.dateTypeField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public System.DateTime StartDate {
-            get {
-                return this.startDateField;
-            }
-            set {
-                this.startDateField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public System.DateTime EndDate {
-            get {
-                return this.endDateField;
-            }
-            set {
-                this.endDateField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public int DayNum {
-            get {
-                return this.dayNumField;
-            }
-            set {
-                this.dayNumField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public int CheckInNum {
-            get {
-                return this.checkInNumField;
-            }
-            set {
-                this.checkInNumField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public int EveryCheckInNum {
-            get {
-                return this.everyCheckInNumField;
-            }
-            set {
-                this.everyCheckInNumField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public int LastDayNum {
-            get {
-                return this.lastDayNumField;
-            }
-            set {
-                this.lastDayNumField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public int WhichDayNum {
-            get {
-                return this.whichDayNumField;
-            }
-            set {
-                this.whichDayNumField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public EnumDrrPreferential CashScale {
-            get {
-                return this.cashScaleField;
-            }
-            set {
-                this.cashScaleField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public decimal DeductNum {
-            get {
-                return this.deductNumField;
-            }
-            set {
-                this.deductNumField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string WeekSet {
-            get {
-                return this.weekSetField;
-            }
-            set {
-                this.weekSetField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public EnumDrrFeeType FeeType {
-            get {
-                return this.feeTypeField;
-            }
-            set {
-                this.feeTypeField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string RoomTypeIds {
-            get {
-                return this.roomTypeIdsField;
-            }
-            set {
-                this.roomTypeIdsField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
-    [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=false)]
-    public enum EnumDrrRuleCode {
-        
-        /// <remarks/>
-        None,
-        
-        /// <remarks/>
-        DRRBookAhead,
-        
-        /// <remarks/>
-        DRRStayPerRoomPerNight,
-        
-        /// <remarks/>
-        DRRStayLastNight,
-        
-        /// <remarks/>
-        DRRStayTheNightAndAfter,
-        
-        /// <remarks/>
-        DRRStayPerLastNight,
-        
-        /// <remarks/>
-        DRRStayWeekDay,
-        
-        /// <remarks/>
-        DRRCheckInWeekDay,
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
-    [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=false)]
-    public enum EnumDrrPreferential {
-        
-        /// <remarks/>
-        Cash,
-        
-        /// <remarks/>
-        Scale,
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
-    [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=false)]
-    public enum EnumDrrFeeType {
-        
-        /// <remarks/>
-        WeekendFee,
-        
-        /// <remarks/>
-        WeekdayFee,
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
-    public partial class Room {
-        
-        private string roomIdField;
-        
-        private string nameField;
-        
-        private string floorField;
-        
-        private string broadnetField;
-        
-        private string bedTypeField;
-        
-        private string descriptionField;
-        
-        private string imageUrlField;
-        
-        private ListRatePlan[] ratePlansField;
-        
-        private string commentsField;
-        
-        /// <remarks/>
-        public string RoomId {
-            get {
-                return this.roomIdField;
-            }
-            set {
-                this.roomIdField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string Name {
-            get {
-                return this.nameField;
-            }
-            set {
-                this.nameField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string Floor {
-            get {
-                return this.floorField;
-            }
-            set {
-                this.floorField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string Broadnet {
-            get {
-                return this.broadnetField;
-            }
-            set {
-                this.broadnetField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string BedType {
-            get {
-                return this.bedTypeField;
-            }
-            set {
-                this.bedTypeField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string Description {
-            get {
-                return this.descriptionField;
-            }
-            set {
-                this.descriptionField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string ImageUrl {
-            get {
-                return this.imageUrlField;
-            }
-            set {
-                this.imageUrlField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlArrayItemAttribute("RatePlan")]
-        public ListRatePlan[] RatePlans {
-            get {
-                return this.ratePlansField;
-            }
-            set {
-                this.ratePlansField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string Comments {
-            get {
-                return this.commentsField;
-            }
-            set {
-                this.commentsField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
-    public partial class Detail {
-        
-        private string hotelNameField;
-        
-        private int starRateField;
-        
-        private int categoryField;
-        
-        private string latitudeField;
-        
-        private string longitudeField;
-        
-        private string addressField;
-        
-        private string phoneField;
-        
-        private string thumbNailUrlField;
-        
-        private string cityField;
-        
-        private string districtField;
-        
-        private string businessZoneField;
-        
-        private Review reviewField;
-        
-        private string featuresField;
-        
-        private string generalAmenitiesField;
-        
-        private string trafficField;
-        
-        /// <remarks/>
-        public string HotelName {
-            get {
-                return this.hotelNameField;
-            }
-            set {
-                this.hotelNameField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public int StarRate {
-            get {
-                return this.starRateField;
-            }
-            set {
-                this.starRateField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public int Category {
-            get {
-                return this.categoryField;
-            }
-            set {
-                this.categoryField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string Latitude {
-            get {
-                return this.latitudeField;
-            }
-            set {
-                this.latitudeField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string Longitude {
-            get {
-                return this.longitudeField;
-            }
-            set {
-                this.longitudeField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string Address {
-            get {
-                return this.addressField;
-            }
-            set {
-                this.addressField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string Phone {
-            get {
-                return this.phoneField;
-            }
-            set {
-                this.phoneField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string ThumbNailUrl {
-            get {
-                return this.thumbNailUrlField;
-            }
-            set {
-                this.thumbNailUrlField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string City {
-            get {
-                return this.cityField;
-            }
-            set {
-                this.cityField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string District {
-            get {
-                return this.districtField;
-            }
-            set {
-                this.districtField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string BusinessZone {
-            get {
-                return this.businessZoneField;
-            }
-            set {
-                this.businessZoneField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public Review Review {
-            get {
-                return this.reviewField;
-            }
-            set {
-                this.reviewField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string Features {
-            get {
-                return this.featuresField;
-            }
-            set {
-                this.featuresField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string GeneralAmenities {
-            get {
-                return this.generalAmenitiesField;
-            }
-            set {
-                this.generalAmenitiesField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string Traffic {
-            get {
-                return this.trafficField;
-            }
-            set {
-                this.trafficField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
-    public partial class Review {
-        
-        private string countField;
-        
-        private string goodField;
-        
-        private string poorField;
-        
-        private string scoreField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute()]
-        public string Count {
-            get {
-                return this.countField;
-            }
-            set {
-                this.countField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute()]
-        public string Good {
-            get {
-                return this.goodField;
-            }
-            set {
-                this.goodField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute()]
-        public string Poor {
-            get {
-                return this.poorField;
-            }
-            set {
-                this.poorField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute()]
-        public string Score {
-            get {
-                return this.scoreField;
-            }
-            set {
-                this.scoreField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
-    public partial class HotelImg {
-        
-        private Location[] locationsField;
-        
-        private string roomIdField;
-        
-        private int typeField;
-        
-        /// <remarks/>
-        public Location[] Locations {
-            get {
-                return this.locationsField;
-            }
-            set {
-                this.locationsField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string RoomId {
-            get {
-                return this.roomIdField;
-            }
-            set {
-                this.roomIdField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute()]
-        public int Type {
-            get {
-                return this.typeField;
-            }
-            set {
-                this.typeField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
-    public partial class Location {
-        
-        private string waterMarkField;
-        
-        private int sizeField;
-        
-        private string valueField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute()]
-        public string WaterMark {
-            get {
-                return this.waterMarkField;
-            }
-            set {
-                this.waterMarkField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute()]
-        public int Size {
-            get {
-                return this.sizeField;
-            }
-            set {
-                this.sizeField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlTextAttribute()]
-        public string Value {
-            get {
-                return this.valueField;
-            }
-            set {
-                this.valueField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
-    public partial class Gift : BaseGiftRule {
-        
-        private int giftIdField;
-        
-        /// <remarks/>
-        public int GiftId {
-            get {
-                return this.giftIdField;
-            }
-            set {
-                this.giftIdField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(GiftForRP))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(Gift))]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
-    public partial class BaseGiftRule : BaseRule {
-        
-        private System.DateTime startDateField;
-        
-        private System.DateTime endDateField;
-        
-        private HotelGiftDateTypeEnum dateTypeField;
-        
-        private string weekSetField;
-        
-        private string giftContentField;
-        
-        private string giftTypesField;
-        
-        private int hourNumberField;
-        
-        private HotelGiftHourTypeEnum hourTypeField;
-        
-        private HotelGiftWayOfGivingEnum wayOfGivingField;
-        
-        private string wayOfGivingOtherField;
-        
-        /// <remarks/>
-        public System.DateTime StartDate {
-            get {
-                return this.startDateField;
-            }
-            set {
-                this.startDateField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public System.DateTime EndDate {
-            get {
-                return this.endDateField;
-            }
-            set {
-                this.endDateField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public HotelGiftDateTypeEnum DateType {
-            get {
-                return this.dateTypeField;
-            }
-            set {
-                this.dateTypeField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string WeekSet {
-            get {
-                return this.weekSetField;
-            }
-            set {
-                this.weekSetField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string GiftContent {
-            get {
-                return this.giftContentField;
-            }
-            set {
-                this.giftContentField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string GiftTypes {
-            get {
-                return this.giftTypesField;
-            }
-            set {
-                this.giftTypesField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public int HourNumber {
-            get {
-                return this.hourNumberField;
-            }
-            set {
-                this.hourNumberField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public HotelGiftHourTypeEnum HourType {
-            get {
-                return this.hourTypeField;
-            }
-            set {
-                this.hourTypeField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public HotelGiftWayOfGivingEnum WayOfGiving {
-            get {
-                return this.wayOfGivingField;
-            }
-            set {
-                this.wayOfGivingField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string WayOfGivingOther {
-            get {
-                return this.wayOfGivingOtherField;
-            }
-            set {
-                this.wayOfGivingOtherField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
-    [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=false)]
-    public enum HotelGiftDateTypeEnum {
-        
-        /// <remarks/>
-        CheckinDate,
-        
-        /// <remarks/>
-        BookingDate,
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
-    [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=false)]
-    public enum HotelGiftWayOfGivingEnum {
-        
-        /// <remarks/>
-        EveryRoom,
-        
-        /// <remarks/>
-        EveryRoomPerDay,
-        
-        /// <remarks/>
-        Other,
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
-    public partial class HAvailPolicy : AvailPolicy {
-        
-        private string idField;
-        
-        /// <remarks/>
-        public string Id {
-            get {
-                return this.idField;
-            }
-            set {
-                this.idField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
-    public partial class SingleHotel {
-        
-        private HotelBaseInfo detailField;
-        
-        private HotelRoom[] roomsField;
-        
-        private HotelImg[] imagesField;
-        
-        private Review reviewField;
-        
-        private string idField;
-        
-        /// <remarks/>
-        public HotelBaseInfo Detail {
-            get {
-                return this.detailField;
-            }
-            set {
-                this.detailField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlArrayItemAttribute("Room")]
-        public HotelRoom[] Rooms {
-            get {
-                return this.roomsField;
-            }
-            set {
-                this.roomsField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlArrayItemAttribute("Image")]
-        public HotelImg[] Images {
-            get {
-                return this.imagesField;
-            }
-            set {
-                this.imagesField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public Review Review {
-            get {
-                return this.reviewField;
-            }
-            set {
-                this.reviewField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute()]
-        public string Id {
-            get {
-                return this.idField;
-            }
-            set {
-                this.idField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
-    public partial class HotelList {
+    public partial class OrderListResult {
         
         private int countField;
         
-        private Hotel[] hotelsField;
+        private OrderSummary[] ordersField;
         
         /// <remarks/>
         public int Count {
@@ -4259,423 +6778,12 @@ namespace OpenAPITest {
         }
         
         /// <remarks/>
-        public Hotel[] Hotels {
+        public OrderSummary[] Orders {
             get {
-                return this.hotelsField;
+                return this.ordersField;
             }
             set {
-                this.hotelsField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
-    public partial class HotelSimpleList {
-        
-        private string hotelIdsField;
-        
-        /// <remarks/>
-        public string HotelIds {
-            get {
-                return this.hotelIdsField;
-            }
-            set {
-                this.hotelIdsField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
-    public partial class OrderLog {
-        
-        private long orderIdField;
-        
-        private System.DateTime timeField;
-        
-        private string operatorField;
-        
-        private string orderStatusField;
-        
-        private string noteToElongField;
-        
-        private string ipField;
-        
-        private System.DateTime arrivalDateField;
-        
-        private System.DateTime departureDateField;
-        
-        private string roomTypeIdField;
-        
-        private int ratePlanIdField;
-        
-        private decimal totalPriceField;
-        
-        /// <remarks/>
-        public long OrderId {
-            get {
-                return this.orderIdField;
-            }
-            set {
-                this.orderIdField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public System.DateTime Time {
-            get {
-                return this.timeField;
-            }
-            set {
-                this.timeField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string Operator {
-            get {
-                return this.operatorField;
-            }
-            set {
-                this.operatorField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string OrderStatus {
-            get {
-                return this.orderStatusField;
-            }
-            set {
-                this.orderStatusField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string NoteToElong {
-            get {
-                return this.noteToElongField;
-            }
-            set {
-                this.noteToElongField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string IP {
-            get {
-                return this.ipField;
-            }
-            set {
-                this.ipField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public System.DateTime ArrivalDate {
-            get {
-                return this.arrivalDateField;
-            }
-            set {
-                this.arrivalDateField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public System.DateTime DepartureDate {
-            get {
-                return this.departureDateField;
-            }
-            set {
-                this.departureDateField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string RoomTypeId {
-            get {
-                return this.roomTypeIdField;
-            }
-            set {
-                this.roomTypeIdField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public int RatePlanId {
-            get {
-                return this.ratePlanIdField;
-            }
-            set {
-                this.ratePlanIdField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public decimal TotalPrice {
-            get {
-                return this.totalPriceField;
-            }
-            set {
-                this.totalPriceField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(CreateOrderCondition))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(OrderDetailResult))]
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(OrderSummary))]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
-    public partial class OrderBase {
-        
-        private string hotelIdField;
-        
-        private string roomTypeIdField;
-        
-        private int ratePlanIdField;
-        
-        private System.DateTime arrivalDateField;
-        
-        private System.DateTime departureDateField;
-        
-        private EnumGuestTypeCode customerTypeField;
-        
-        private EnumPaymentType paymentTypeField;
-        
-        private int numberOfRoomsField;
-        
-        private int numberOfCustomersField;
-        
-        private System.DateTime earliestArrivalTimeField;
-        
-        private System.DateTime latestArrivalTimeField;
-        
-        private EnumCurrencyCode currencyCodeField;
-        
-        private decimal totalPriceField;
-        
-        private EnumConfirmationType confirmationTypeField;
-        
-        private string noteToHotelField;
-        
-        private string noteToElongField;
-        
-        /// <remarks/>
-        public string HotelId {
-            get {
-                return this.hotelIdField;
-            }
-            set {
-                this.hotelIdField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string RoomTypeId {
-            get {
-                return this.roomTypeIdField;
-            }
-            set {
-                this.roomTypeIdField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public int RatePlanId {
-            get {
-                return this.ratePlanIdField;
-            }
-            set {
-                this.ratePlanIdField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public System.DateTime ArrivalDate {
-            get {
-                return this.arrivalDateField;
-            }
-            set {
-                this.arrivalDateField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public System.DateTime DepartureDate {
-            get {
-                return this.departureDateField;
-            }
-            set {
-                this.departureDateField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public EnumGuestTypeCode CustomerType {
-            get {
-                return this.customerTypeField;
-            }
-            set {
-                this.customerTypeField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public EnumPaymentType PaymentType {
-            get {
-                return this.paymentTypeField;
-            }
-            set {
-                this.paymentTypeField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public int NumberOfRooms {
-            get {
-                return this.numberOfRoomsField;
-            }
-            set {
-                this.numberOfRoomsField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public int NumberOfCustomers {
-            get {
-                return this.numberOfCustomersField;
-            }
-            set {
-                this.numberOfCustomersField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public System.DateTime EarliestArrivalTime {
-            get {
-                return this.earliestArrivalTimeField;
-            }
-            set {
-                this.earliestArrivalTimeField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public System.DateTime LatestArrivalTime {
-            get {
-                return this.latestArrivalTimeField;
-            }
-            set {
-                this.latestArrivalTimeField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public EnumCurrencyCode CurrencyCode {
-            get {
-                return this.currencyCodeField;
-            }
-            set {
-                this.currencyCodeField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public decimal TotalPrice {
-            get {
-                return this.totalPriceField;
-            }
-            set {
-                this.totalPriceField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public EnumConfirmationType ConfirmationType {
-            get {
-                return this.confirmationTypeField;
-            }
-            set {
-                this.confirmationTypeField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string NoteToHotel {
-            get {
-                return this.noteToHotelField;
-            }
-            set {
-                this.noteToHotelField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string NoteToElong {
-            get {
-                return this.noteToElongField;
-            }
-            set {
-                this.noteToElongField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
-    public partial class CancelOrderCondition {
-        
-        private long orderIdField;
-        
-        private string cancelCodeField;
-        
-        private string reasonField;
-        
-        /// <remarks/>
-        public long OrderId {
-            get {
-                return this.orderIdField;
-            }
-            set {
-                this.orderIdField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string CancelCode {
-            get {
-                return this.cancelCodeField;
-            }
-            set {
-                this.cancelCodeField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string Reason {
-            get {
-                return this.reasonField;
-            }
-            set {
-                this.reasonField = value;
+                this.ordersField = value;
             }
         }
     }
@@ -4737,35 +6845,22 @@ namespace OpenAPITest {
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=false)]
-    public enum EnumPromotionType {
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
+    public partial class IncrCondition {
+        
+        private long lastIdField;
         
         /// <remarks/>
-        Coupon,
-        
-        /// <remarks/>
-        Point,
-        
-        /// <remarks/>
-        Discount,
-        
-        /// <remarks/>
-        Gift,
-        
-        /// <remarks/>
-        ReturnMoney,
-        
-        /// <remarks/>
-        S1,
-        
-        /// <remarks/>
-        S2,
-        
-        /// <remarks/>
-        ImmediateDiscount,
-        
-        /// <remarks/>
-        CashAccount,
+        public long LastId {
+            get {
+                return this.lastIdField;
+            }
+            set {
+                this.lastIdField = value;
+            }
+        }
     }
     
     /// <remarks/>
@@ -4774,52 +6869,408 @@ namespace OpenAPITest {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
-    public partial class HotelXMLIndex {
+    public partial class RateCondition {
         
-        private string hotelIdField;
+        private string hotelIdsField;
         
-        private string updatedTimeField;
+        private System.DateTime startDateField;
         
-        private string productsField;
+        private System.DateTime endDateField;
         
-        private string statusField;
+        private EnumPaymentType paymentTypeField;
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute()]
-        public string HotelId {
+        public string HotelIds {
             get {
-                return this.hotelIdField;
+                return this.hotelIdsField;
             }
             set {
-                this.hotelIdField = value;
+                this.hotelIdsField = value;
             }
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute()]
-        public string UpdatedTime {
+        public System.DateTime StartDate {
             get {
-                return this.updatedTimeField;
+                return this.startDateField;
             }
             set {
-                this.updatedTimeField = value;
+                this.startDateField = value;
             }
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute()]
-        public string Products {
+        public System.DateTime EndDate {
             get {
-                return this.productsField;
+                return this.endDateField;
             }
             set {
-                this.productsField = value;
+                this.endDateField = value;
             }
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute()]
-        public string Status {
+        public EnumPaymentType PaymentType {
+            get {
+                return this.paymentTypeField;
+            }
+            set {
+                this.paymentTypeField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
+    public partial class GiftForRP : BaseGiftRule {
+        
+        private string roomTypeIdsField;
+        
+        /// <remarks/>
+        public string RoomTypeIds {
+            get {
+                return this.roomTypeIdsField;
+            }
+            set {
+                this.roomTypeIdsField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
+    public partial class HotelGift {
+        
+        private int hotelGiftIdField;
+        
+        private string hotelCodeField;
+        
+        private HotelGiftProductRelation[] relatedProductsField;
+        
+        private HotelGiftDate[] effectiveDatesField;
+        
+        private HotelGiftDateTypeEnum dateTypeField;
+        
+        private string weekSetField;
+        
+        private string giftContentField;
+        
+        private string giftContentEnField;
+        
+        private string giftTypesField;
+        
+        private int hourNumberField;
+        
+        private HotelGiftHourTypeEnum hourTypeField;
+        
+        private HotelGiftWayOfGivingEnum wayOfGivingField;
+        
+        private string wayOfGivingOtherField;
+        
+        private string wayOfGivingOtherEnField;
+        
+        /// <remarks/>
+        public int HotelGiftId {
+            get {
+                return this.hotelGiftIdField;
+            }
+            set {
+                this.hotelGiftIdField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string HotelCode {
+            get {
+                return this.hotelCodeField;
+            }
+            set {
+                this.hotelCodeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public HotelGiftProductRelation[] RelatedProducts {
+            get {
+                return this.relatedProductsField;
+            }
+            set {
+                this.relatedProductsField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public HotelGiftDate[] EffectiveDates {
+            get {
+                return this.effectiveDatesField;
+            }
+            set {
+                this.effectiveDatesField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public HotelGiftDateTypeEnum DateType {
+            get {
+                return this.dateTypeField;
+            }
+            set {
+                this.dateTypeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string WeekSet {
+            get {
+                return this.weekSetField;
+            }
+            set {
+                this.weekSetField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string GiftContent {
+            get {
+                return this.giftContentField;
+            }
+            set {
+                this.giftContentField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string GiftContentEn {
+            get {
+                return this.giftContentEnField;
+            }
+            set {
+                this.giftContentEnField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string GiftTypes {
+            get {
+                return this.giftTypesField;
+            }
+            set {
+                this.giftTypesField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public int HourNumber {
+            get {
+                return this.hourNumberField;
+            }
+            set {
+                this.hourNumberField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public HotelGiftHourTypeEnum HourType {
+            get {
+                return this.hourTypeField;
+            }
+            set {
+                this.hourTypeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public HotelGiftWayOfGivingEnum WayOfGiving {
+            get {
+                return this.wayOfGivingField;
+            }
+            set {
+                this.wayOfGivingField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string WayOfGivingOther {
+            get {
+                return this.wayOfGivingOtherField;
+            }
+            set {
+                this.wayOfGivingOtherField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string WayOfGivingOtherEn {
+            get {
+                return this.wayOfGivingOtherEnField;
+            }
+            set {
+                this.wayOfGivingOtherEnField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
+    public partial class HotelGiftProductRelation {
+        
+        private string roomTypeIdsField;
+        
+        private int ratePlanIdField;
+        
+        /// <remarks/>
+        public string RoomTypeIds {
+            get {
+                return this.roomTypeIdsField;
+            }
+            set {
+                this.roomTypeIdsField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public int RatePlanId {
+            get {
+                return this.ratePlanIdField;
+            }
+            set {
+                this.ratePlanIdField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
+    public partial class HotelGiftDate {
+        
+        private System.DateTime startDateField;
+        
+        private System.DateTime endDateField;
+        
+        /// <remarks/>
+        public System.DateTime StartDate {
+            get {
+                return this.startDateField;
+            }
+            set {
+                this.startDateField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public System.DateTime EndDate {
+            get {
+                return this.endDateField;
+            }
+            set {
+                this.endDateField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(IncrRate))]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
+    public partial class Rate {
+        
+        private string hotelIDField;
+        
+        private string roomTypeIdField;
+        
+        private int rateplanIdField;
+        
+        private System.DateTime startDateField;
+        
+        private System.DateTime endDateField;
+        
+        private bool statusField;
+        
+        private decimal memberField;
+        
+        private decimal weekendField;
+        
+        private decimal memberCostField;
+        
+        private decimal weekendCostField;
+        
+        private System.Nullable<decimal> addBedField;
+        
+        private System.Nullable<int> priceIDField;
+        
+        private string currencyCodeField;
+        
+        /// <remarks/>
+        public string HotelID {
+            get {
+                return this.hotelIDField;
+            }
+            set {
+                this.hotelIDField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string RoomTypeId {
+            get {
+                return this.roomTypeIdField;
+            }
+            set {
+                this.roomTypeIdField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public int RateplanId {
+            get {
+                return this.rateplanIdField;
+            }
+            set {
+                this.rateplanIdField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public System.DateTime StartDate {
+            get {
+                return this.startDateField;
+            }
+            set {
+                this.startDateField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public System.DateTime EndDate {
+            get {
+                return this.endDateField;
+            }
+            set {
+                this.endDateField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public bool Status {
             get {
                 return this.statusField;
             }
@@ -4827,26 +7278,76 @@ namespace OpenAPITest {
                 this.statusField = value;
             }
         }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
-    public partial class HotelIndex {
-        
-        private HotelXMLIndex[] hotelsField;
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlArrayItemAttribute("Hotel")]
-        public HotelXMLIndex[] Hotels {
+        public decimal Member {
             get {
-                return this.hotelsField;
+                return this.memberField;
             }
             set {
-                this.hotelsField = value;
+                this.memberField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public decimal Weekend {
+            get {
+                return this.weekendField;
+            }
+            set {
+                this.weekendField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public decimal MemberCost {
+            get {
+                return this.memberCostField;
+            }
+            set {
+                this.memberCostField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public decimal WeekendCost {
+            get {
+                return this.weekendCostField;
+            }
+            set {
+                this.weekendCostField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public System.Nullable<decimal> AddBed {
+            get {
+                return this.addBedField;
+            }
+            set {
+                this.addBedField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public System.Nullable<int> PriceID {
+            get {
+                return this.priceIDField;
+            }
+            set {
+                this.priceIDField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string CurrencyCode {
+            get {
+                return this.currencyCodeField;
+            }
+            set {
+                this.currencyCodeField = value;
             }
         }
     }
@@ -4857,77 +7358,17 @@ namespace OpenAPITest {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
-    public partial class Coupon {
+    public partial class OrderIdCondition {
         
-        private System.DateTime effectiveDateFromField;
-        
-        private System.DateTime effectiveDateToField;
-        
-        private decimal couponRedemptionUpperLimitField;
-        
-        private int promotionTypeField;
-        
-        private string roomTypeIDField;
-        
-        private int ratePlanIDField;
+        private long orderIdField;
         
         /// <remarks/>
-        public System.DateTime EffectiveDateFrom {
+        public long OrderId {
             get {
-                return this.effectiveDateFromField;
+                return this.orderIdField;
             }
             set {
-                this.effectiveDateFromField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public System.DateTime EffectiveDateTo {
-            get {
-                return this.effectiveDateToField;
-            }
-            set {
-                this.effectiveDateToField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public decimal CouponRedemptionUpperLimit {
-            get {
-                return this.couponRedemptionUpperLimitField;
-            }
-            set {
-                this.couponRedemptionUpperLimitField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public int PromotionType {
-            get {
-                return this.promotionTypeField;
-            }
-            set {
-                this.promotionTypeField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string RoomTypeID {
-            get {
-                return this.roomTypeIDField;
-            }
-            set {
-                this.roomTypeIDField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public int RatePlanID {
-            get {
-                return this.ratePlanIDField;
-            }
-            set {
-                this.ratePlanIDField = value;
+                this.orderIdField = value;
             }
         }
     }
@@ -4938,29 +7379,110 @@ namespace OpenAPITest {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
-    public partial class NameValue {
+    public partial class CreateOrderResult {
         
-        private string nameField;
+        private long orderIdField;
         
-        private string valueField;
+        private System.DateTime cancelTimeField;
+        
+        private decimal guaranteeAmountField;
+        
+        private EnumCurrencyCode currencyCodeField;
         
         /// <remarks/>
-        public string Name {
+        public long OrderId {
             get {
-                return this.nameField;
+                return this.orderIdField;
             }
             set {
-                this.nameField = value;
+                this.orderIdField = value;
             }
         }
         
         /// <remarks/>
-        public string Value {
+        public System.DateTime CancelTime {
             get {
-                return this.valueField;
+                return this.cancelTimeField;
             }
             set {
-                this.valueField = value;
+                this.cancelTimeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public decimal GuaranteeAmount {
+            get {
+                return this.guaranteeAmountField;
+            }
+            set {
+                this.guaranteeAmountField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public EnumCurrencyCode CurrencyCode {
+            get {
+                return this.currencyCodeField;
+            }
+            set {
+                this.currencyCodeField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
+    public partial class HotelRatePlan {
+        
+        private string hotelIDField;
+        
+        private SupplierRatePlan[] suppliersField;
+        
+        private RatePlan[] ratePlansField;
+        
+        private HotelGift[] giftsField;
+        
+        /// <remarks/>
+        public string HotelID {
+            get {
+                return this.hotelIDField;
+            }
+            set {
+                this.hotelIDField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public SupplierRatePlan[] Suppliers {
+            get {
+                return this.suppliersField;
+            }
+            set {
+                this.suppliersField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public RatePlan[] RatePlans {
+            get {
+                return this.ratePlansField;
+            }
+            set {
+                this.ratePlansField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public HotelGift[] Gifts {
+            get {
+                return this.giftsField;
+            }
+            set {
+                this.giftsField = value;
             }
         }
     }
@@ -5089,6 +7611,1703 @@ namespace OpenAPITest {
             }
             set {
                 this.statusField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
+    public partial class RatePlan : BaseRatePlan {
+        
+        private string hotelCodeField;
+        
+        private string roomTypeIdsField;
+        
+        private System.Nullable<EnumGuestTypeCode> customerTypeField;
+        
+        private string productTypesField;
+        
+        private System.Nullable<bool> isLimitTimeSaleField;
+        
+        private string startTimeField;
+        
+        private string endTimeField;
+        
+        private int minAdvHoursField;
+        
+        private int maxAdvHoursField;
+        
+        private BaseGuaranteeRule[] guaranteeRulesField;
+        
+        private BasePrepayRule[] prepayRulesField;
+        
+        private BaseValueAddRule[] valueAddsField;
+        
+        private BaseDrrRule[] drrRulesField;
+        
+        private Coupon couponField;
+        
+        private GiftForRP[] giftsField;
+        
+        /// <remarks/>
+        public string HotelCode {
+            get {
+                return this.hotelCodeField;
+            }
+            set {
+                this.hotelCodeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string RoomTypeIds {
+            get {
+                return this.roomTypeIdsField;
+            }
+            set {
+                this.roomTypeIdsField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public System.Nullable<EnumGuestTypeCode> CustomerType {
+            get {
+                return this.customerTypeField;
+            }
+            set {
+                this.customerTypeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string ProductTypes {
+            get {
+                return this.productTypesField;
+            }
+            set {
+                this.productTypesField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public System.Nullable<bool> IsLimitTimeSale {
+            get {
+                return this.isLimitTimeSaleField;
+            }
+            set {
+                this.isLimitTimeSaleField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string StartTime {
+            get {
+                return this.startTimeField;
+            }
+            set {
+                this.startTimeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string EndTime {
+            get {
+                return this.endTimeField;
+            }
+            set {
+                this.endTimeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public int MinAdvHours {
+            get {
+                return this.minAdvHoursField;
+            }
+            set {
+                this.minAdvHoursField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public int MaxAdvHours {
+            get {
+                return this.maxAdvHoursField;
+            }
+            set {
+                this.maxAdvHoursField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public BaseGuaranteeRule[] GuaranteeRules {
+            get {
+                return this.guaranteeRulesField;
+            }
+            set {
+                this.guaranteeRulesField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public BasePrepayRule[] PrepayRules {
+            get {
+                return this.prepayRulesField;
+            }
+            set {
+                this.prepayRulesField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public BaseValueAddRule[] ValueAdds {
+            get {
+                return this.valueAddsField;
+            }
+            set {
+                this.valueAddsField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public BaseDrrRule[] DrrRules {
+            get {
+                return this.drrRulesField;
+            }
+            set {
+                this.drrRulesField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Coupon Coupon {
+            get {
+                return this.couponField;
+            }
+            set {
+                this.couponField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public GiftForRP[] Gifts {
+            get {
+                return this.giftsField;
+            }
+            set {
+                this.giftsField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
+    public partial class Coupon {
+        
+        private System.DateTime effectiveDateFromField;
+        
+        private System.DateTime effectiveDateToField;
+        
+        private decimal couponRedemptionUpperLimitField;
+        
+        private int promotionTypeField;
+        
+        private string roomTypeIDField;
+        
+        private int ratePlanIDField;
+        
+        /// <remarks/>
+        public System.DateTime EffectiveDateFrom {
+            get {
+                return this.effectiveDateFromField;
+            }
+            set {
+                this.effectiveDateFromField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public System.DateTime EffectiveDateTo {
+            get {
+                return this.effectiveDateToField;
+            }
+            set {
+                this.effectiveDateToField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public decimal CouponRedemptionUpperLimit {
+            get {
+                return this.couponRedemptionUpperLimitField;
+            }
+            set {
+                this.couponRedemptionUpperLimitField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public int PromotionType {
+            get {
+                return this.promotionTypeField;
+            }
+            set {
+                this.promotionTypeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string RoomTypeID {
+            get {
+                return this.roomTypeIDField;
+            }
+            set {
+                this.roomTypeIDField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public int RatePlanID {
+            get {
+                return this.ratePlanIDField;
+            }
+            set {
+                this.ratePlanIDField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
+    public partial class MSHotelRelation {
+        
+        private string mHotelIdField;
+        
+        private string sHotelIdField;
+        
+        private int supplierIdField;
+        
+        /// <remarks/>
+        public string MHotelId {
+            get {
+                return this.mHotelIdField;
+            }
+            set {
+                this.mHotelIdField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string SHotelId {
+            get {
+                return this.sHotelIdField;
+            }
+            set {
+                this.sHotelIdField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public int SupplierId {
+            get {
+                return this.supplierIdField;
+            }
+            set {
+                this.supplierIdField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
+    public partial class IncrRate : Rate {
+        
+        private long changeIDField;
+        
+        private long lastIdField;
+        
+        private System.DateTime timeField;
+        
+        /// <remarks/>
+        public long ChangeID {
+            get {
+                return this.changeIDField;
+            }
+            set {
+                this.changeIDField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public long LastId {
+            get {
+                return this.lastIdField;
+            }
+            set {
+                this.lastIdField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public System.DateTime Time {
+            get {
+                return this.timeField;
+            }
+            set {
+                this.timeField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
+    public partial class IncrInventory : Inventory {
+        
+        private long lastIdField;
+        
+        private System.DateTime timeField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public long LastId {
+            get {
+                return this.lastIdField;
+            }
+            set {
+                this.lastIdField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public System.DateTime Time {
+            get {
+                return this.timeField;
+            }
+            set {
+                this.timeField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
+    public partial class IncrStateResult {
+        
+        private State[] statesField;
+        
+        /// <remarks/>
+        public State[] States {
+            get {
+                return this.statesField;
+            }
+            set {
+                this.statesField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
+    public partial class IncrRateResult {
+        
+        private IncrRate[] ratesField;
+        
+        /// <remarks/>
+        public IncrRate[] Rates {
+            get {
+                return this.ratesField;
+            }
+            set {
+                this.ratesField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
+    public partial class IncrLastIdCondition {
+        
+        private System.DateTime lastTimeField;
+        
+        private EnumIncrType incrTypeField;
+        
+        /// <remarks/>
+        public System.DateTime LastTime {
+            get {
+                return this.lastTimeField;
+            }
+            set {
+                this.lastTimeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public EnumIncrType IncrType {
+            get {
+                return this.incrTypeField;
+            }
+            set {
+                this.incrTypeField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
+    public partial class HotelXMLIndex {
+        
+        private string hotelIdField;
+        
+        private string updatedTimeField;
+        
+        private string productsField;
+        
+        private string statusField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string HotelId {
+            get {
+                return this.hotelIdField;
+            }
+            set {
+                this.hotelIdField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string UpdatedTime {
+            get {
+                return this.updatedTimeField;
+            }
+            set {
+                this.updatedTimeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string Products {
+            get {
+                return this.productsField;
+            }
+            set {
+                this.productsField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string Status {
+            get {
+                return this.statusField;
+            }
+            set {
+                this.statusField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
+    public partial class HotelIndex {
+        
+        private HotelXMLIndex[] hotelsField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlArrayItemAttribute("Hotel")]
+        public HotelXMLIndex[] Hotels {
+            get {
+                return this.hotelsField;
+            }
+            set {
+                this.hotelsField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
+    public partial class OrderListCondition {
+        
+        private System.DateTime creationTimeFromField;
+        
+        private System.DateTime creationTimeToField;
+        
+        private string hotelIdField;
+        
+        private string roomTypeIdField;
+        
+        private int ratePlanIdField;
+        
+        private System.DateTime arrivalDateFromField;
+        
+        private System.DateTime arrivalDateToField;
+        
+        private System.DateTime departureDateFromField;
+        
+        private System.DateTime departureDateToField;
+        
+        private string mobileField;
+        
+        private string customerNameField;
+        
+        private string statusField;
+        
+        private int pageIndexField;
+        
+        private System.DateTime maxUpdateTimeField;
+        
+        private System.DateTime minUpdateTimeField;
+        
+        /// <remarks/>
+        public System.DateTime CreationTimeFrom {
+            get {
+                return this.creationTimeFromField;
+            }
+            set {
+                this.creationTimeFromField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public System.DateTime CreationTimeTo {
+            get {
+                return this.creationTimeToField;
+            }
+            set {
+                this.creationTimeToField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string HotelId {
+            get {
+                return this.hotelIdField;
+            }
+            set {
+                this.hotelIdField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string RoomTypeId {
+            get {
+                return this.roomTypeIdField;
+            }
+            set {
+                this.roomTypeIdField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public int RatePlanId {
+            get {
+                return this.ratePlanIdField;
+            }
+            set {
+                this.ratePlanIdField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public System.DateTime ArrivalDateFrom {
+            get {
+                return this.arrivalDateFromField;
+            }
+            set {
+                this.arrivalDateFromField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public System.DateTime ArrivalDateTo {
+            get {
+                return this.arrivalDateToField;
+            }
+            set {
+                this.arrivalDateToField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public System.DateTime DepartureDateFrom {
+            get {
+                return this.departureDateFromField;
+            }
+            set {
+                this.departureDateFromField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public System.DateTime DepartureDateTo {
+            get {
+                return this.departureDateToField;
+            }
+            set {
+                this.departureDateToField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string Mobile {
+            get {
+                return this.mobileField;
+            }
+            set {
+                this.mobileField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string CustomerName {
+            get {
+                return this.customerNameField;
+            }
+            set {
+                this.customerNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string Status {
+            get {
+                return this.statusField;
+            }
+            set {
+                this.statusField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public int PageIndex {
+            get {
+                return this.pageIndexField;
+            }
+            set {
+                this.pageIndexField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public System.DateTime MaxUpdateTime {
+            get {
+                return this.maxUpdateTimeField;
+            }
+            set {
+                this.maxUpdateTimeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public System.DateTime MinUpdateTime {
+            get {
+                return this.minUpdateTimeField;
+            }
+            set {
+                this.minUpdateTimeField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
+    public partial class CancelOrderCondition {
+        
+        private long orderIdField;
+        
+        private string cancelCodeField;
+        
+        private string reasonField;
+        
+        /// <remarks/>
+        public long OrderId {
+            get {
+                return this.orderIdField;
+            }
+            set {
+                this.orderIdField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string CancelCode {
+            get {
+                return this.cancelCodeField;
+            }
+            set {
+                this.cancelCodeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string Reason {
+            get {
+                return this.reasonField;
+            }
+            set {
+                this.reasonField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
+    public partial class LastIdResult {
+        
+        private long lastIdField;
+        
+        /// <remarks/>
+        public long LastId {
+            get {
+                return this.lastIdField;
+            }
+            set {
+                this.lastIdField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
+    [System.SerializableAttribute()]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=false)]
+    public enum EnumQueryType {
+        
+        /// <remarks/>
+        Intelligent,
+        
+        /// <remarks/>
+        HotelName,
+        
+        /// <remarks/>
+        LocationName,
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
+    public partial class ValidateCondition {
+        
+        private System.DateTime arrivalDateField;
+        
+        private System.DateTime departureDateField;
+        
+        private System.DateTime earliestArrivalTimeField;
+        
+        private System.DateTime latestArrivalTimeField;
+        
+        private string hotelIdField;
+        
+        private string roomTypeIdField;
+        
+        private int ratePlanIdField;
+        
+        private decimal totalPriceField;
+        
+        private int numberOfRoomsField;
+        
+        /// <remarks/>
+        public System.DateTime ArrivalDate {
+            get {
+                return this.arrivalDateField;
+            }
+            set {
+                this.arrivalDateField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public System.DateTime DepartureDate {
+            get {
+                return this.departureDateField;
+            }
+            set {
+                this.departureDateField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public System.DateTime EarliestArrivalTime {
+            get {
+                return this.earliestArrivalTimeField;
+            }
+            set {
+                this.earliestArrivalTimeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public System.DateTime LatestArrivalTime {
+            get {
+                return this.latestArrivalTimeField;
+            }
+            set {
+                this.latestArrivalTimeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string HotelId {
+            get {
+                return this.hotelIdField;
+            }
+            set {
+                this.hotelIdField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string RoomTypeId {
+            get {
+                return this.roomTypeIdField;
+            }
+            set {
+                this.roomTypeIdField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public int RatePlanId {
+            get {
+                return this.ratePlanIdField;
+            }
+            set {
+                this.ratePlanIdField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public decimal TotalPrice {
+            get {
+                return this.totalPriceField;
+            }
+            set {
+                this.totalPriceField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public int NumberOfRooms {
+            get {
+                return this.numberOfRoomsField;
+            }
+            set {
+                this.numberOfRoomsField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
+    public partial class IsOntimeConfirmRoom {
+        
+        private string sHotelIDField;
+        
+        private string sRoomTypeIDField;
+        
+        private string sSuffixNameField;
+        
+        private System.DateTime op_DateField;
+        
+        private bool isOntimeConfirmField;
+        
+        /// <remarks/>
+        public string SHotelID {
+            get {
+                return this.sHotelIDField;
+            }
+            set {
+                this.sHotelIDField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string SRoomTypeID {
+            get {
+                return this.sRoomTypeIDField;
+            }
+            set {
+                this.sRoomTypeIDField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string SSuffixName {
+            get {
+                return this.sSuffixNameField;
+            }
+            set {
+                this.sSuffixNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public System.DateTime Op_Date {
+            get {
+                return this.op_DateField;
+            }
+            set {
+                this.op_DateField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public bool IsOntimeConfirm {
+            get {
+                return this.isOntimeConfirmField;
+            }
+            set {
+                this.isOntimeConfirmField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
+    public partial class IncrHotelResult {
+        
+        private IncrHotel[] hotelsField;
+        
+        /// <remarks/>
+        public IncrHotel[] Hotels {
+            get {
+                return this.hotelsField;
+            }
+            set {
+                this.hotelsField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
+    public partial class IncrHotel {
+        
+        private string hotelIDField;
+        
+        private System.DateTime startDateField;
+        
+        private System.DateTime endDateField;
+        
+        private string triggerField;
+        
+        private long triggerIDField;
+        
+        private System.DateTime insertTimeField;
+        
+        private long lastIdField;
+        
+        private System.DateTime timeField;
+        
+        /// <remarks/>
+        public string HotelID {
+            get {
+                return this.hotelIDField;
+            }
+            set {
+                this.hotelIDField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public System.DateTime StartDate {
+            get {
+                return this.startDateField;
+            }
+            set {
+                this.startDateField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public System.DateTime EndDate {
+            get {
+                return this.endDateField;
+            }
+            set {
+                this.endDateField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string Trigger {
+            get {
+                return this.triggerField;
+            }
+            set {
+                this.triggerField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public long TriggerID {
+            get {
+                return this.triggerIDField;
+            }
+            set {
+                this.triggerIDField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public System.DateTime InsertTime {
+            get {
+                return this.insertTimeField;
+            }
+            set {
+                this.insertTimeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public long LastId {
+            get {
+                return this.lastIdField;
+            }
+            set {
+                this.lastIdField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public System.DateTime Time {
+            get {
+                return this.timeField;
+            }
+            set {
+                this.timeField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
+    public partial class RackRateResponse {
+        
+        private RackRateHotel[] rackRatesField;
+        
+        /// <remarks/>
+        public RackRateHotel[] RackRates {
+            get {
+                return this.rackRatesField;
+            }
+            set {
+                this.rackRatesField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
+    public partial class HotelGeos {
+        
+        private HotelGeoXML[] hotelGeoListField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlArrayItemAttribute("HotelGeo")]
+        public HotelGeoXML[] HotelGeoList {
+            get {
+                return this.hotelGeoListField;
+            }
+            set {
+                this.hotelGeoListField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
+    public partial class HotelGeoXML {
+        
+        private PubObj[] districtsField;
+        
+        private PubObj[] commericalLocationsField;
+        
+        private PubObj[] landmarkLocationsField;
+        
+        private string countryField;
+        
+        private string provinceNameField;
+        
+        private string provinceIdField;
+        
+        private string cityNameField;
+        
+        private string cityCodeField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlArrayItemAttribute("Location")]
+        public PubObj[] Districts {
+            get {
+                return this.districtsField;
+            }
+            set {
+                this.districtsField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlArrayItemAttribute("Location")]
+        public PubObj[] CommericalLocations {
+            get {
+                return this.commericalLocationsField;
+            }
+            set {
+                this.commericalLocationsField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlArrayItemAttribute("Location")]
+        public PubObj[] LandmarkLocations {
+            get {
+                return this.landmarkLocationsField;
+            }
+            set {
+                this.landmarkLocationsField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string Country {
+            get {
+                return this.countryField;
+            }
+            set {
+                this.countryField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string ProvinceName {
+            get {
+                return this.provinceNameField;
+            }
+            set {
+                this.provinceNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string ProvinceId {
+            get {
+                return this.provinceIdField;
+            }
+            set {
+                this.provinceIdField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string CityName {
+            get {
+                return this.cityNameField;
+            }
+            set {
+                this.cityNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string CityCode {
+            get {
+                return this.cityCodeField;
+            }
+            set {
+                this.cityCodeField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
+    public partial class PubObj {
+        
+        private string idField;
+        
+        private string nameField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string Id {
+            get {
+                return this.idField;
+            }
+            set {
+                this.idField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string Name {
+            get {
+                return this.nameField;
+            }
+            set {
+                this.nameField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
+    [System.SerializableAttribute()]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=false)]
+    public enum EnumChangeDataTypeNo {
+        
+        /// <remarks/>
+        Inventory2010,
+        
+        /// <remarks/>
+        Price3010,
+        
+        /// <remarks/>
+        RackRate3011,
+        
+        /// <remarks/>
+        Reservation4010,
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
+    public partial class RatePlanResult {
+        
+        private HotelRatePlan[] hotelsField;
+        
+        /// <remarks/>
+        public HotelRatePlan[] Hotels {
+            get {
+                return this.hotelsField;
+            }
+            set {
+                this.hotelsField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
+    public partial class IncrInventoryResult {
+        
+        private IncrInventory[] inventoriesField;
+        
+        /// <remarks/>
+        public IncrInventory[] Inventories {
+            get {
+                return this.inventoriesField;
+            }
+            set {
+                this.inventoriesField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
+    public partial class HotelRules {
+        
+        private BookingRule[] bookingRulesField;
+        
+        private GuaranteeRule[] guaranteeRulesField;
+        
+        private PrepayRule[] prepayRulesField;
+        
+        private ValueAdd[] valueAddsField;
+        
+        private DrrRule[] drrRulesField;
+        
+        private Gift[] giftsField;
+        
+        private EnumCurrencyCode currencyCodeField;
+        
+        private int minPriceRPIDField;
+        
+        private HAvailPolicy[] hAvailPolicysField;
+        
+        /// <remarks/>
+        public BookingRule[] BookingRules {
+            get {
+                return this.bookingRulesField;
+            }
+            set {
+                this.bookingRulesField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public GuaranteeRule[] GuaranteeRules {
+            get {
+                return this.guaranteeRulesField;
+            }
+            set {
+                this.guaranteeRulesField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public PrepayRule[] PrepayRules {
+            get {
+                return this.prepayRulesField;
+            }
+            set {
+                this.prepayRulesField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public ValueAdd[] ValueAdds {
+            get {
+                return this.valueAddsField;
+            }
+            set {
+                this.valueAddsField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public DrrRule[] DrrRules {
+            get {
+                return this.drrRulesField;
+            }
+            set {
+                this.drrRulesField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Gift[] Gifts {
+            get {
+                return this.giftsField;
+            }
+            set {
+                this.giftsField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public EnumCurrencyCode CurrencyCode {
+            get {
+                return this.currencyCodeField;
+            }
+            set {
+                this.currencyCodeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public int MinPriceRPID {
+            get {
+                return this.minPriceRPIDField;
+            }
+            set {
+                this.minPriceRPIDField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public HAvailPolicy[] HAvailPolicys {
+            get {
+                return this.hAvailPolicysField;
+            }
+            set {
+                this.hAvailPolicysField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
+    public partial class ExchangeRateCondition {
+        
+        private EnumCurrencyCode currencyIdField;
+        
+        /// <remarks/>
+        public EnumCurrencyCode CurrencyId {
+            get {
+                return this.currencyIdField;
+            }
+            set {
+                this.currencyIdField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
+    public partial class ErrorCode {
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
+    public partial class ValidateResult {
+        
+        private EnumValidateResult resultCodeField;
+        
+        private decimal guaranteeRateField;
+        
+        private System.DateTime cancelTimeField;
+        
+        private EnumCurrencyCode currencyCodeField;
+        
+        private string errorMessageField;
+        
+        /// <remarks/>
+        public EnumValidateResult ResultCode {
+            get {
+                return this.resultCodeField;
+            }
+            set {
+                this.resultCodeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public decimal GuaranteeRate {
+            get {
+                return this.guaranteeRateField;
+            }
+            set {
+                this.guaranteeRateField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public System.DateTime CancelTime {
+            get {
+                return this.cancelTimeField;
+            }
+            set {
+                this.cancelTimeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public EnumCurrencyCode CurrencyCode {
+            get {
+                return this.currencyCodeField;
+            }
+            set {
+                this.currencyCodeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string ErrorMessage {
+            get {
+                return this.errorMessageField;
+            }
+            set {
+                this.errorMessageField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
+    public partial class RelatedOrderResult {
+        
+        private OrderRelation[] relationsField;
+        
+        /// <remarks/>
+        public OrderRelation[] Relations {
+            get {
+                return this.relationsField;
+            }
+            set {
+                this.relationsField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
+    public partial class OrderRelation {
+        
+        private long parentIdField;
+        
+        private long childIdField;
+        
+        /// <remarks/>
+        public long ParentId {
+            get {
+                return this.parentIdField;
+            }
+            set {
+                this.parentIdField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public long ChildId {
+            get {
+                return this.childIdField;
+            }
+            set {
+                this.childIdField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
+    public partial class OrderHistoryResult {
+        
+        private int orderIDField;
+        
+        private OrderHistory[] orderHistoriesField;
+        
+        /// <remarks/>
+        public int OrderID {
+            get {
+                return this.orderIDField;
+            }
+            set {
+                this.orderIDField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public OrderHistory[] OrderHistories {
+            get {
+                return this.orderHistoriesField;
+            }
+            set {
+                this.orderHistoriesField = value;
             }
         }
     }
@@ -5497,965 +9716,34 @@ namespace OpenAPITest {
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
     [System.SerializableAttribute()]
     [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=false)]
-    public enum EnumChangeDataTypeNo {
+    public enum EnumPromotionType {
         
         /// <remarks/>
-        Inventory2010,
+        Coupon,
         
         /// <remarks/>
-        Price3010,
+        Point,
         
         /// <remarks/>
-        RackRate3011,
+        Discount,
         
         /// <remarks/>
-        Reservation4010,
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
-    public partial class IncrLastIdCondition {
+        Gift,
         
-        private System.DateTime lastTimeField;
-        
-        private EnumIncrType incrTypeField;
-        
-        /// <remarks/>
-        public System.DateTime LastTime {
-            get {
-                return this.lastTimeField;
-            }
-            set {
-                this.lastTimeField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public EnumIncrType IncrType {
-            get {
-                return this.incrTypeField;
-            }
-            set {
-                this.incrTypeField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
-    [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=false)]
-    public enum EnumIncrType {
-        
-        /// <remarks/>
-        Inventory,
-        
-        /// <remarks/>
-        Rate,
-        
-        /// <remarks/>
-        Order,
-        
-        /// <remarks/>
-        State,
-        
-        /// <remarks/>
-        Data,
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
-    public partial class RackRateRequest {
-        
-        private string hotelIdsField;
-        
-        /// <remarks/>
-        public string HotelIds {
-            get {
-                return this.hotelIdsField;
-            }
-            set {
-                this.hotelIdsField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
-    public partial class Recipient {
-        
-        private string provinceField;
-        
-        private string cityField;
-        
-        private string districtField;
-        
-        private string streetField;
-        
-        private string postalCodeField;
-        
-        private string nameField;
-        
-        private string phoneField;
-        
-        private string emailField;
-        
-        /// <remarks/>
-        public string Province {
-            get {
-                return this.provinceField;
-            }
-            set {
-                this.provinceField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string City {
-            get {
-                return this.cityField;
-            }
-            set {
-                this.cityField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string District {
-            get {
-                return this.districtField;
-            }
-            set {
-                this.districtField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string Street {
-            get {
-                return this.streetField;
-            }
-            set {
-                this.streetField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string PostalCode {
-            get {
-                return this.postalCodeField;
-            }
-            set {
-                this.postalCodeField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string Name {
-            get {
-                return this.nameField;
-            }
-            set {
-                this.nameField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string Phone {
-            get {
-                return this.phoneField;
-            }
-            set {
-                this.phoneField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string Email {
-            get {
-                return this.emailField;
-            }
-            set {
-                this.emailField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
-    public partial class OrderRoom {
-        
-        private CustomerForOrder[] customersField;
-        
-        /// <remarks/>
-        public CustomerForOrder[] Customers {
-            get {
-                return this.customersField;
-            }
-            set {
-                this.customersField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
-    public partial class CustomerForOrder : Customer {
-        
-        private string confirmationNumberField;
-        
-        /// <remarks/>
-        public string ConfirmationNumber {
-            get {
-                return this.confirmationNumberField;
-            }
-            set {
-                this.confirmationNumberField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(CustomerForOrder))]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
-    public partial class Customer {
-        
-        private string nameField;
-        
-        private string emailField;
-        
-        private string mobileField;
-        
-        private string phoneField;
-        
-        private string faxField;
-        
-        private EnumGender genderField;
-        
-        private string nationalityField;
-        
-        /// <remarks/>
-        public string Name {
-            get {
-                return this.nameField;
-            }
-            set {
-                this.nameField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string Email {
-            get {
-                return this.emailField;
-            }
-            set {
-                this.emailField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string Mobile {
-            get {
-                return this.mobileField;
-            }
-            set {
-                this.mobileField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string Phone {
-            get {
-                return this.phoneField;
-            }
-            set {
-                this.phoneField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string Fax {
-            get {
-                return this.faxField;
-            }
-            set {
-                this.faxField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public EnumGender Gender {
-            get {
-                return this.genderField;
-            }
-            set {
-                this.genderField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string Nationality {
-            get {
-                return this.nationalityField;
-            }
-            set {
-                this.nationalityField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
-    [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=false)]
-    public enum EnumGender {
-        
-        /// <remarks/>
-        Female,
-        
-        /// <remarks/>
-        Maile,
-        
-        /// <remarks/>
-        Unknown,
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
-    public partial class CreateOrderRoom {
-        
-        private Customer[] customersField;
-        
-        /// <remarks/>
-        public Customer[] Customers {
-            get {
-                return this.customersField;
-            }
-            set {
-                this.customersField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
-    public partial class OrderListResult {
-        
-        private int countField;
-        
-        private OrderSummary[] ordersField;
-        
-        /// <remarks/>
-        public int Count {
-            get {
-                return this.countField;
-            }
-            set {
-                this.countField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public OrderSummary[] Orders {
-            get {
-                return this.ordersField;
-            }
-            set {
-                this.ordersField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
-    public partial class OrderSummary : OrderBase {
-        
-        private long orderIdField;
-        
-        private string statusField;
-        
-        private string hotelNameField;
-        
-        private string roomTypeNameField;
-        
-        private string ratePlanNameField;
-        
-        /// <remarks/>
-        public long OrderId {
-            get {
-                return this.orderIdField;
-            }
-            set {
-                this.orderIdField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string Status {
-            get {
-                return this.statusField;
-            }
-            set {
-                this.statusField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string HotelName {
-            get {
-                return this.hotelNameField;
-            }
-            set {
-                this.hotelNameField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string RoomTypeName {
-            get {
-                return this.roomTypeNameField;
-            }
-            set {
-                this.roomTypeNameField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string RatePlanName {
-            get {
-                return this.ratePlanNameField;
-            }
-            set {
-                this.ratePlanNameField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
-    public partial class OrderListCondition {
-        
-        private System.DateTime creationTimeFromField;
-        
-        private System.DateTime creationTimeToField;
-        
-        private string hotelIdField;
-        
-        private string roomTypeIdField;
-        
-        private int ratePlanIdField;
-        
-        private System.DateTime arrivalDateFromField;
-        
-        private System.DateTime arrivalDateToField;
-        
-        private System.DateTime departureDateFromField;
-        
-        private System.DateTime departureDateToField;
-        
-        private string mobileField;
-        
-        private string customerNameField;
-        
-        private string statusField;
-        
-        private int pageIndexField;
-        
-        /// <remarks/>
-        public System.DateTime CreationTimeFrom {
-            get {
-                return this.creationTimeFromField;
-            }
-            set {
-                this.creationTimeFromField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public System.DateTime CreationTimeTo {
-            get {
-                return this.creationTimeToField;
-            }
-            set {
-                this.creationTimeToField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string HotelId {
-            get {
-                return this.hotelIdField;
-            }
-            set {
-                this.hotelIdField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string RoomTypeId {
-            get {
-                return this.roomTypeIdField;
-            }
-            set {
-                this.roomTypeIdField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public int RatePlanId {
-            get {
-                return this.ratePlanIdField;
-            }
-            set {
-                this.ratePlanIdField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public System.DateTime ArrivalDateFrom {
-            get {
-                return this.arrivalDateFromField;
-            }
-            set {
-                this.arrivalDateFromField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public System.DateTime ArrivalDateTo {
-            get {
-                return this.arrivalDateToField;
-            }
-            set {
-                this.arrivalDateToField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public System.DateTime DepartureDateFrom {
-            get {
-                return this.departureDateFromField;
-            }
-            set {
-                this.departureDateFromField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public System.DateTime DepartureDateTo {
-            get {
-                return this.departureDateToField;
-            }
-            set {
-                this.departureDateToField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string Mobile {
-            get {
-                return this.mobileField;
-            }
-            set {
-                this.mobileField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string CustomerName {
-            get {
-                return this.customerNameField;
-            }
-            set {
-                this.customerNameField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string Status {
-            get {
-                return this.statusField;
-            }
-            set {
-                this.statusField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public int PageIndex {
-            get {
-                return this.pageIndexField;
-            }
-            set {
-                this.pageIndexField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(CreditCardWithStatus))]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
-    public partial class CreditCard {
-        
-        private string numberField;
-        
-        private string cVVField;
-        
-        private int expirationYearField;
-        
-        private int expirationMonthField;
-        
-        private string holderNameField;
-        
-        private EnumIdType idTypeField;
-        
-        private string idNoField;
-        
-        /// <remarks/>
-        public string Number {
-            get {
-                return this.numberField;
-            }
-            set {
-                this.numberField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string CVV {
-            get {
-                return this.cVVField;
-            }
-            set {
-                this.cVVField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public int ExpirationYear {
-            get {
-                return this.expirationYearField;
-            }
-            set {
-                this.expirationYearField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public int ExpirationMonth {
-            get {
-                return this.expirationMonthField;
-            }
-            set {
-                this.expirationMonthField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string HolderName {
-            get {
-                return this.holderNameField;
-            }
-            set {
-                this.holderNameField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public EnumIdType IdType {
-            get {
-                return this.idTypeField;
-            }
-            set {
-                this.idTypeField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string IdNo {
-            get {
-                return this.idNoField;
-            }
-            set {
-                this.idNoField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
-    [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=false)]
-    public enum EnumIdType {
-        
-        /// <remarks/>
-        IdentityCard,
-        
-        /// <remarks/>
-        Passport,
-        
-        /// <remarks/>
-        Other,
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
-    public partial class CreditCardWithStatus : CreditCard {
-        
-        private EnumCreditCardProcessType processTypeField;
-        
-        private EnumCreditCardStatus statusField;
-        
-        private System.Nullable<decimal> amountField;
-        
-        /// <remarks/>
-        public EnumCreditCardProcessType ProcessType {
-            get {
-                return this.processTypeField;
-            }
-            set {
-                this.processTypeField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public EnumCreditCardStatus Status {
-            get {
-                return this.statusField;
-            }
-            set {
-                this.statusField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public System.Nullable<decimal> Amount {
-            get {
-                return this.amountField;
-            }
-            set {
-                this.amountField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
-    [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=false)]
-    public enum EnumCreditCardProcessType {
-        
-        /// <remarks/>
-        Auth,
-        
-        /// <remarks/>
-        CancelAuth,
-        
-        /// <remarks/>
-        Charge,
-        
-        /// <remarks/>
-        Refund,
-        
         /// <remarks/>
-        DirectCharge,
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
-    [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=false)]
-    public enum EnumCreditCardStatus {
+        ReturnMoney,
         
         /// <remarks/>
-        UnProcess,
+        S1,
         
         /// <remarks/>
-        Succeed,
+        S2,
         
         /// <remarks/>
-        Processing,
-        
-        /// <remarks/>
-        Fail,
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
-    public partial class IncrHotel {
-        
-        private string hotelIDField;
-        
-        private System.DateTime startDateField;
-        
-        private System.DateTime endDateField;
-        
-        private string triggerField;
-        
-        private long triggerIDField;
-        
-        private System.DateTime insertTimeField;
-        
-        private long lastIdField;
-        
-        private System.DateTime timeField;
-        
-        /// <remarks/>
-        public string HotelID {
-            get {
-                return this.hotelIDField;
-            }
-            set {
-                this.hotelIDField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public System.DateTime StartDate {
-            get {
-                return this.startDateField;
-            }
-            set {
-                this.startDateField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public System.DateTime EndDate {
-            get {
-                return this.endDateField;
-            }
-            set {
-                this.endDateField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string Trigger {
-            get {
-                return this.triggerField;
-            }
-            set {
-                this.triggerField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public long TriggerID {
-            get {
-                return this.triggerIDField;
-            }
-            set {
-                this.triggerIDField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public System.DateTime InsertTime {
-            get {
-                return this.insertTimeField;
-            }
-            set {
-                this.insertTimeField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute()]
-        public long LastId {
-            get {
-                return this.lastIdField;
-            }
-            set {
-                this.lastIdField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute()]
-        public System.DateTime Time {
-            get {
-                return this.timeField;
-            }
-            set {
-                this.timeField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
-    public partial class ExchangeRateResult {
-        
-        private decimal exchangeRateField;
+        ImmediateDiscount,
         
         /// <remarks/>
-        public decimal ExchangeRate {
-            get {
-                return this.exchangeRateField;
-            }
-            set {
-                this.exchangeRateField = value;
-            }
-        }
+        CashAccount,
     }
     
     /// <remarks/>
@@ -6497,187 +9785,29 @@ namespace OpenAPITest {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
-    public partial class RatePlan : BaseRatePlan {
+    public partial class DetailHotel {
         
-        private string hotelCodeField;
+        private int countField;
         
-        private string roomTypeIdsField;
-        
-        private System.Nullable<EnumGuestTypeCode> customerTypeField;
-        
-        private string productTypesField;
-        
-        private System.Nullable<bool> isLimitTimeSaleField;
-        
-        private string startTimeField;
-        
-        private string endTimeField;
-        
-        private int minAdvHoursField;
-        
-        private int maxAdvHoursField;
-        
-        private BaseGuaranteeRule[] guaranteeRulesField;
-        
-        private BasePrepayRule[] prepayRulesField;
-        
-        private BaseValueAddRule[] valueAddsField;
-        
-        private BaseDrrRule[] drrRulesField;
-        
-        private Coupon couponField;
-        
-        private GiftForRP[] giftsField;
+        private Hotel[] hotelsField;
         
         /// <remarks/>
-        public string HotelCode {
+        public int Count {
             get {
-                return this.hotelCodeField;
+                return this.countField;
             }
             set {
-                this.hotelCodeField = value;
+                this.countField = value;
             }
         }
         
         /// <remarks/>
-        public string RoomTypeIds {
+        public Hotel[] Hotels {
             get {
-                return this.roomTypeIdsField;
+                return this.hotelsField;
             }
             set {
-                this.roomTypeIdsField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public System.Nullable<EnumGuestTypeCode> CustomerType {
-            get {
-                return this.customerTypeField;
-            }
-            set {
-                this.customerTypeField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string ProductTypes {
-            get {
-                return this.productTypesField;
-            }
-            set {
-                this.productTypesField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public System.Nullable<bool> IsLimitTimeSale {
-            get {
-                return this.isLimitTimeSaleField;
-            }
-            set {
-                this.isLimitTimeSaleField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string StartTime {
-            get {
-                return this.startTimeField;
-            }
-            set {
-                this.startTimeField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string EndTime {
-            get {
-                return this.endTimeField;
-            }
-            set {
-                this.endTimeField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public int MinAdvHours {
-            get {
-                return this.minAdvHoursField;
-            }
-            set {
-                this.minAdvHoursField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public int MaxAdvHours {
-            get {
-                return this.maxAdvHoursField;
-            }
-            set {
-                this.maxAdvHoursField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public BaseGuaranteeRule[] GuaranteeRules {
-            get {
-                return this.guaranteeRulesField;
-            }
-            set {
-                this.guaranteeRulesField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public BasePrepayRule[] PrepayRules {
-            get {
-                return this.prepayRulesField;
-            }
-            set {
-                this.prepayRulesField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public BaseValueAddRule[] ValueAdds {
-            get {
-                return this.valueAddsField;
-            }
-            set {
-                this.valueAddsField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public BaseDrrRule[] DrrRules {
-            get {
-                return this.drrRulesField;
-            }
-            set {
-                this.drrRulesField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public Coupon Coupon {
-            get {
-                return this.couponField;
-            }
-            set {
-                this.couponField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public GiftForRP[] Gifts {
-            get {
-                return this.giftsField;
-            }
-            set {
-                this.giftsField = value;
+                this.hotelsField = value;
             }
         }
     }
@@ -6688,17 +9818,17 @@ namespace OpenAPITest {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
-    public partial class GiftForRP : BaseGiftRule {
+    public partial class InventoryResult {
         
-        private string roomTypeIdsField;
+        private Inventory[] inventoriesField;
         
         /// <remarks/>
-        public string RoomTypeIds {
+        public Inventory[] Inventories {
             get {
-                return this.roomTypeIdsField;
+                return this.inventoriesField;
             }
             set {
-                this.roomTypeIdsField = value;
+                this.inventoriesField = value;
             }
         }
     }
@@ -6709,225 +9839,17 @@ namespace OpenAPITest {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
-    public partial class OrderLogResult {
+    public partial class ValidateInventoryResult {
         
-        private OrderLog[] logsField;
+        private bool isOKField;
         
         /// <remarks/>
-        public OrderLog[] Logs {
+        public bool IsOK {
             get {
-                return this.logsField;
+                return this.isOKField;
             }
             set {
-                this.logsField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
-    public partial class HotelDetailCondition {
-        
-        private System.DateTime arrivalDateField;
-        
-        private System.DateTime departureDateField;
-        
-        private string hotelIdsField;
-        
-        private string roomTypeIdField;
-        
-        private int ratePlanIdField;
-        
-        private EnumPaymentType paymentTypeField;
-        
-        private string optionsField;
-        
-        /// <remarks/>
-        public System.DateTime ArrivalDate {
-            get {
-                return this.arrivalDateField;
-            }
-            set {
-                this.arrivalDateField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public System.DateTime DepartureDate {
-            get {
-                return this.departureDateField;
-            }
-            set {
-                this.departureDateField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string HotelIds {
-            get {
-                return this.hotelIdsField;
-            }
-            set {
-                this.hotelIdsField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string RoomTypeId {
-            get {
-                return this.roomTypeIdField;
-            }
-            set {
-                this.roomTypeIdField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public int RatePlanId {
-            get {
-                return this.ratePlanIdField;
-            }
-            set {
-                this.ratePlanIdField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public EnumPaymentType PaymentType {
-            get {
-                return this.paymentTypeField;
-            }
-            set {
-                this.paymentTypeField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string Options {
-            get {
-                return this.optionsField;
-            }
-            set {
-                this.optionsField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
-    [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=false)]
-    public enum EnumOrderRelationType {
-        
-        /// <remarks/>
-        Child,
-        
-        /// <remarks/>
-        Parent,
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
-    public partial class PoiInfo {
-        
-        private string google_latField;
-        
-        private string google_lngField;
-        
-        private string baidu_latField;
-        
-        private string baidu_lngField;
-        
-        /// <remarks/>
-        public string Google_lat {
-            get {
-                return this.google_latField;
-            }
-            set {
-                this.google_latField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string Google_lng {
-            get {
-                return this.google_lngField;
-            }
-            set {
-                this.google_lngField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string Baidu_lat {
-            get {
-                return this.baidu_latField;
-            }
-            set {
-                this.baidu_latField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string Baidu_lng {
-            get {
-                return this.baidu_lngField;
-            }
-            set {
-                this.baidu_lngField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
-    public partial class HotelCity {
-        
-        private string hotelIdField;
-        
-        private string cityIdField;
-        
-        private string subCityIdField;
-        
-        /// <remarks/>
-        public string HotelId {
-            get {
-                return this.hotelIdField;
-            }
-            set {
-                this.hotelIdField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string CityId {
-            get {
-                return this.cityIdField;
-            }
-            set {
-                this.cityIdField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string SubCityId {
-            get {
-                return this.subCityIdField;
-            }
-            set {
-                this.subCityIdField = value;
+                this.isOKField = value;
             }
         }
     }
@@ -7051,17 +9973,17 @@ namespace OpenAPITest {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
-    public partial class IncrRateResult {
+    public partial class RecentOrderTimeResult {
         
-        private IncrRate[] ratesField;
+        private RecentOrderedHotel[] hotelsField;
         
         /// <remarks/>
-        public IncrRate[] Rates {
+        public RecentOrderedHotel[] Hotels {
             get {
-                return this.ratesField;
+                return this.hotelsField;
             }
             set {
-                this.ratesField = value;
+                this.hotelsField = value;
             }
         }
     }
@@ -7072,89 +9994,141 @@ namespace OpenAPITest {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
-    public partial class IncrRate : Rate {
+    public partial class ValidateCreditCardResult {
         
-        private long changeIDField;
+        private bool isValidField;
         
-        private long lastIdField;
-        
-        private System.DateTime timeField;
+        private bool isNeedVerifyCodeField;
         
         /// <remarks/>
-        public long ChangeID {
+        public bool IsValid {
             get {
-                return this.changeIDField;
+                return this.isValidField;
             }
             set {
-                this.changeIDField = value;
+                this.isValidField = value;
             }
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute()]
-        public long LastId {
+        public bool IsNeedVerifyCode {
             get {
-                return this.lastIdField;
+                return this.isNeedVerifyCodeField;
             }
             set {
-                this.lastIdField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute()]
-        public System.DateTime Time {
-            get {
-                return this.timeField;
-            }
-            set {
-                this.timeField = value;
+                this.isNeedVerifyCodeField = value;
             }
         }
     }
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(IncrRate))]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
-    public partial class Rate {
+    public partial class ValidateCreditCardResponse {
         
-        private string hotelIDField;
+        private string isValidField;
+        
+        private string hasVerifyCodeField;
+        
+        /// <remarks/>
+        public string IsValid {
+            get {
+                return this.isValidField;
+            }
+            set {
+                this.isValidField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string HasVerifyCode {
+            get {
+                return this.hasVerifyCodeField;
+            }
+            set {
+                this.hasVerifyCodeField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
+    public partial class PaymentCardCategoryList {
+        
+        private PaymentCardCategory[] cardCategoryListField;
+        
+        /// <remarks/>
+        public PaymentCardCategory[] CardCategoryList {
+            get {
+                return this.cardCategoryListField;
+            }
+            set {
+                this.cardCategoryListField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
+    public partial class CreditCardInfo {
+        
+        private bool isValidField;
+        
+        private bool isNeedVerifyCodeField;
+        
+        /// <remarks/>
+        public bool IsValid {
+            get {
+                return this.isValidField;
+            }
+            set {
+                this.isValidField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public bool IsNeedVerifyCode {
+            get {
+                return this.isNeedVerifyCodeField;
+            }
+            set {
+                this.isNeedVerifyCodeField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
+    public partial class GiftBelongTo {
+        
+        private string sHotelIdField;
         
         private string roomTypeIdField;
         
         private int rateplanIdField;
         
-        private System.DateTime startDateField;
-        
-        private System.DateTime endDateField;
-        
-        private bool statusField;
-        
-        private decimal memberField;
-        
-        private decimal weekendField;
-        
-        private decimal memberCostField;
-        
-        private decimal weekendCostField;
-        
-        private System.Nullable<decimal> addBedField;
-        
-        private System.Nullable<int> priceIDField;
-        
-        private string currencyCodeField;
-        
         /// <remarks/>
-        public string HotelID {
+        public string SHotelId {
             get {
-                return this.hotelIDField;
+                return this.sHotelIdField;
             }
             set {
-                this.hotelIDField = value;
+                this.sHotelIdField = value;
             }
         }
         
@@ -7177,106 +10151,178 @@ namespace OpenAPITest {
                 this.rateplanIdField = value;
             }
         }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
+    [System.SerializableAttribute()]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=false)]
+    public enum EnumSortType {
         
         /// <remarks/>
-        public System.DateTime StartDate {
+        Default,
+        
+        /// <remarks/>
+        StarRankDesc,
+        
+        /// <remarks/>
+        RateAsc,
+        
+        /// <remarks/>
+        DistanceAsc,
+        
+        /// <remarks/>
+        RateDesc,
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
+    public partial class HotelRoom {
+        
+        private string idField;
+        
+        private string nameField;
+        
+        private string areaField;
+        
+        private string floorField;
+        
+        private string broadnetAccessField;
+        
+        private string broadnetFeeField;
+        
+        private string commentsField;
+        
+        private string descriptionField;
+        
+        private string bedTypeField;
+        
+        private string roomCodesField;
+        
+        private string capacityField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string Id {
             get {
-                return this.startDateField;
+                return this.idField;
             }
             set {
-                this.startDateField = value;
+                this.idField = value;
             }
         }
         
         /// <remarks/>
-        public System.DateTime EndDate {
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string Name {
             get {
-                return this.endDateField;
+                return this.nameField;
             }
             set {
-                this.endDateField = value;
+                this.nameField = value;
             }
         }
         
         /// <remarks/>
-        public bool Status {
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string Area {
             get {
-                return this.statusField;
+                return this.areaField;
             }
             set {
-                this.statusField = value;
+                this.areaField = value;
             }
         }
         
         /// <remarks/>
-        public decimal Member {
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string Floor {
             get {
-                return this.memberField;
+                return this.floorField;
             }
             set {
-                this.memberField = value;
+                this.floorField = value;
             }
         }
         
         /// <remarks/>
-        public decimal Weekend {
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string BroadnetAccess {
             get {
-                return this.weekendField;
+                return this.broadnetAccessField;
             }
             set {
-                this.weekendField = value;
+                this.broadnetAccessField = value;
             }
         }
         
         /// <remarks/>
-        public decimal MemberCost {
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string BroadnetFee {
             get {
-                return this.memberCostField;
+                return this.broadnetFeeField;
             }
             set {
-                this.memberCostField = value;
+                this.broadnetFeeField = value;
             }
         }
         
         /// <remarks/>
-        public decimal WeekendCost {
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string Comments {
             get {
-                return this.weekendCostField;
+                return this.commentsField;
             }
             set {
-                this.weekendCostField = value;
+                this.commentsField = value;
             }
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public System.Nullable<decimal> AddBed {
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string Description {
             get {
-                return this.addBedField;
+                return this.descriptionField;
             }
             set {
-                this.addBedField = value;
+                this.descriptionField = value;
             }
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public System.Nullable<int> PriceID {
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string BedType {
             get {
-                return this.priceIDField;
+                return this.bedTypeField;
             }
             set {
-                this.priceIDField = value;
+                this.bedTypeField = value;
             }
         }
         
         /// <remarks/>
-        public string CurrencyCode {
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string RoomCodes {
             get {
-                return this.currencyCodeField;
+                return this.roomCodesField;
             }
             set {
-                this.currencyCodeField = value;
+                this.roomCodesField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string Capacity {
+            get {
+                return this.capacityField;
+            }
+            set {
+                this.capacityField = value;
             }
         }
     }
@@ -7287,347 +10333,29 @@ namespace OpenAPITest {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
-    public partial class IncrInventoryResult {
+    public partial class NameValue {
         
-        private IncrInventory[] inventoriesField;
+        private string nameField;
         
-        /// <remarks/>
-        public IncrInventory[] Inventories {
-            get {
-                return this.inventoriesField;
-            }
-            set {
-                this.inventoriesField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
-    public partial class IncrInventory : Inventory {
-        
-        private long lastIdField;
-        
-        private System.DateTime timeField;
+        private string valueField;
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute()]
-        public long LastId {
+        public string Name {
             get {
-                return this.lastIdField;
+                return this.nameField;
             }
             set {
-                this.lastIdField = value;
+                this.nameField = value;
             }
         }
         
         /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute()]
-        public System.DateTime Time {
+        public string Value {
             get {
-                return this.timeField;
+                return this.valueField;
             }
             set {
-                this.timeField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(IncrInventory))]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
-    public partial class Inventory {
-        
-        private string hotelIDField;
-        
-        private string hotelCodeField;
-        
-        private bool statusField;
-        
-        private int overBookingField;
-        
-        private System.DateTime startDateField;
-        
-        private System.DateTime endDateField;
-        
-        private string startTimeField;
-        
-        private string endTimeField;
-        
-        private string roomTypeIdField;
-        
-        private System.DateTime dateField;
-        
-        private int amountField;
-        
-        /// <remarks/>
-        public string HotelID {
-            get {
-                return this.hotelIDField;
-            }
-            set {
-                this.hotelIDField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string HotelCode {
-            get {
-                return this.hotelCodeField;
-            }
-            set {
-                this.hotelCodeField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public bool Status {
-            get {
-                return this.statusField;
-            }
-            set {
-                this.statusField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public int OverBooking {
-            get {
-                return this.overBookingField;
-            }
-            set {
-                this.overBookingField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public System.DateTime StartDate {
-            get {
-                return this.startDateField;
-            }
-            set {
-                this.startDateField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public System.DateTime EndDate {
-            get {
-                return this.endDateField;
-            }
-            set {
-                this.endDateField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string StartTime {
-            get {
-                return this.startTimeField;
-            }
-            set {
-                this.startTimeField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string EndTime {
-            get {
-                return this.endTimeField;
-            }
-            set {
-                this.endTimeField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute()]
-        public string RoomTypeId {
-            get {
-                return this.roomTypeIdField;
-            }
-            set {
-                this.roomTypeIdField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute()]
-        public System.DateTime Date {
-            get {
-                return this.dateField;
-            }
-            set {
-                this.dateField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute()]
-        public int Amount {
-            get {
-                return this.amountField;
-            }
-            set {
-                this.amountField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
-    public partial class RatePlanCondition {
-        
-        private string hotelIdsField;
-        
-        private EnumPaymentType paymentTypeField;
-        
-        /// <remarks/>
-        public string HotelIds {
-            get {
-                return this.hotelIdsField;
-            }
-            set {
-                this.hotelIdsField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public EnumPaymentType PaymentType {
-            get {
-                return this.paymentTypeField;
-            }
-            set {
-                this.paymentTypeField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
-    public partial class HotelRules {
-        
-        private BookingRule[] bookingRulesField;
-        
-        private GuaranteeRule[] guaranteeRulesField;
-        
-        private PrepayRule[] prepayRulesField;
-        
-        private ValueAdd[] valueAddsField;
-        
-        private DrrRule[] drrRulesField;
-        
-        private Gift[] giftsField;
-        
-        private EnumCurrencyCode currencyCodeField;
-        
-        private int minPriceRPIDField;
-        
-        private HAvailPolicy[] hAvailPolicysField;
-        
-        /// <remarks/>
-        public BookingRule[] BookingRules {
-            get {
-                return this.bookingRulesField;
-            }
-            set {
-                this.bookingRulesField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public GuaranteeRule[] GuaranteeRules {
-            get {
-                return this.guaranteeRulesField;
-            }
-            set {
-                this.guaranteeRulesField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public PrepayRule[] PrepayRules {
-            get {
-                return this.prepayRulesField;
-            }
-            set {
-                this.prepayRulesField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public ValueAdd[] ValueAdds {
-            get {
-                return this.valueAddsField;
-            }
-            set {
-                this.valueAddsField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public DrrRule[] DrrRules {
-            get {
-                return this.drrRulesField;
-            }
-            set {
-                this.drrRulesField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public Gift[] Gifts {
-            get {
-                return this.giftsField;
-            }
-            set {
-                this.giftsField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public EnumCurrencyCode CurrencyCode {
-            get {
-                return this.currencyCodeField;
-            }
-            set {
-                this.currencyCodeField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public int MinPriceRPID {
-            get {
-                return this.minPriceRPIDField;
-            }
-            set {
-                this.minPriceRPIDField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public HAvailPolicy[] HAvailPolicys {
-            get {
-                return this.hAvailPolicysField;
-            }
-            set {
-                this.hAvailPolicysField = value;
+                this.valueField = value;
             }
         }
     }
@@ -7908,100 +10636,82 @@ namespace OpenAPITest {
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
     [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=false)]
-    public enum EnumQueryType {
-        
-        /// <remarks/>
-        Intelligent,
-        
-        /// <remarks/>
-        HotelName,
-        
-        /// <remarks/>
-        LocationName,
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
-    [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=false)]
-    public enum EnumProductProperty {
-        
-        /// <remarks/>
-        All,
-        
-        /// <remarks/>
-        LastMinuteSale,
-        
-        /// <remarks/>
-        LimitedTimeSale,
-        
-        /// <remarks/>
-        WithoutGuarantee,
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
-    [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
-    public partial class Position {
+    public partial class CheckInFeedbackCondition {
         
-        private decimal longitudeField;
+        private int orderIdField;
         
-        private decimal latitudeField;
+        private string customerNameField;
         
-        private int radiusField;
+        private string roomNumberField;
+        
+        private System.Nullable<System.DateTime> arrivalDateField;
+        
+        private System.Nullable<System.DateTime> departureDateField;
+        
+        private string notesField;
         
         /// <remarks/>
-        public decimal Longitude {
+        public int OrderId {
             get {
-                return this.longitudeField;
+                return this.orderIdField;
             }
             set {
-                this.longitudeField = value;
+                this.orderIdField = value;
             }
         }
         
         /// <remarks/>
-        public decimal Latitude {
+        public string CustomerName {
             get {
-                return this.latitudeField;
+                return this.customerNameField;
             }
             set {
-                this.latitudeField = value;
+                this.customerNameField = value;
             }
         }
         
         /// <remarks/>
-        public int Radius {
+        public string RoomNumber {
             get {
-                return this.radiusField;
+                return this.roomNumberField;
             }
             set {
-                this.radiusField = value;
+                this.roomNumberField = value;
             }
         }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
-    public partial class RelatedOrderResult {
-        
-        private OrderRelation[] relationsField;
         
         /// <remarks/>
-        public OrderRelation[] Relations {
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public System.Nullable<System.DateTime> ArrivalDate {
             get {
-                return this.relationsField;
+                return this.arrivalDateField;
             }
             set {
-                this.relationsField = value;
+                this.arrivalDateField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public System.Nullable<System.DateTime> DepartureDate {
+            get {
+                return this.departureDateField;
+            }
+            set {
+                this.departureDateField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string Notes {
+            get {
+                return this.notesField;
+            }
+            set {
+                this.notesField = value;
             }
         }
     }
@@ -8012,29 +10722,29 @@ namespace OpenAPITest {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
-    public partial class OrderRelation {
+    public partial class CheckGuestNameRequest {
         
-        private long parentIdField;
+        private string[] namesField;
         
-        private long childIdField;
+        private bool isGangAoField;
         
         /// <remarks/>
-        public long ParentId {
+        public string[] Names {
             get {
-                return this.parentIdField;
+                return this.namesField;
             }
             set {
-                this.parentIdField = value;
+                this.namesField = value;
             }
         }
         
         /// <remarks/>
-        public long ChildId {
+        public bool IsGangAo {
             get {
-                return this.childIdField;
+                return this.isGangAoField;
             }
             set {
-                this.childIdField = value;
+                this.isGangAoField = value;
             }
         }
     }
@@ -8045,12 +10755,57 @@ namespace OpenAPITest {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
-    public partial class RecentOrderTimeResult {
+    public partial class HotelStaticInfo {
         
-        private RecentOrderedHotel[] hotelsField;
+        private HotelBaseInfo hbiField;
+        
+        private HotelRoom[] hrlistField;
         
         /// <remarks/>
-        public RecentOrderedHotel[] Hotels {
+        public HotelBaseInfo Hbi {
+            get {
+                return this.hbiField;
+            }
+            set {
+                this.hbiField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public HotelRoom[] Hrlist {
+            get {
+                return this.hrlistField;
+            }
+            set {
+                this.hrlistField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
+    public partial class HotelList {
+        
+        private int countField;
+        
+        private Hotel[] hotelsField;
+        
+        /// <remarks/>
+        public int Count {
+            get {
+                return this.countField;
+            }
+            set {
+                this.countField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Hotel[] Hotels {
             get {
                 return this.hotelsField;
             }
@@ -8066,29 +10821,17 @@ namespace OpenAPITest {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
-    public partial class RecentOrderedHotel {
+    public partial class HotelSimpleList {
         
-        private string hotelIdField;
-        
-        private System.DateTime recentBookingTimeField;
+        private string hotelIdsField;
         
         /// <remarks/>
-        public string HotelId {
+        public string HotelIds {
             get {
-                return this.hotelIdField;
+                return this.hotelIdsField;
             }
             set {
-                this.hotelIdField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public System.DateTime RecentBookingTime {
-            get {
-                return this.recentBookingTimeField;
-            }
-            set {
-                this.recentBookingTimeField = value;
+                this.hotelIdsField = value;
             }
         }
     }
@@ -8099,77 +10842,17 @@ namespace OpenAPITest {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
-    public partial class ExtendInfo {
+    public partial class ExchangeRateResult {
         
-        private string string1Field;
-        
-        private string string2Field;
-        
-        private string string3Field;
-        
-        private int int1Field;
-        
-        private int int2Field;
-        
-        private int int3Field;
+        private decimal exchangeRateField;
         
         /// <remarks/>
-        public string String1 {
+        public decimal ExchangeRate {
             get {
-                return this.string1Field;
+                return this.exchangeRateField;
             }
             set {
-                this.string1Field = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string String2 {
-            get {
-                return this.string2Field;
-            }
-            set {
-                this.string2Field = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string String3 {
-            get {
-                return this.string3Field;
-            }
-            set {
-                this.string3Field = value;
-            }
-        }
-        
-        /// <remarks/>
-        public int Int1 {
-            get {
-                return this.int1Field;
-            }
-            set {
-                this.int1Field = value;
-            }
-        }
-        
-        /// <remarks/>
-        public int Int2 {
-            get {
-                return this.int2Field;
-            }
-            set {
-                this.int2Field = value;
-            }
-        }
-        
-        /// <remarks/>
-        public int Int3 {
-            get {
-                return this.int3Field;
-            }
-            set {
-                this.int3Field = value;
+                this.exchangeRateField = value;
             }
         }
     }
@@ -8180,313 +10863,68 @@ namespace OpenAPITest {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
-    public partial class Contact {
+    public partial class SingleHotel {
         
-        private string nameField;
+        private HotelBaseInfo detailField;
         
-        private string emailField;
+        private HotelRoom[] roomsField;
         
-        private string mobileField;
+        private HotelImg[] imagesField;
         
-        private string phoneField;
+        private Review reviewField;
         
-        private string faxField;
-        
-        private EnumGender genderField;
+        private string idField;
         
         /// <remarks/>
-        public string Name {
+        public HotelBaseInfo Detail {
             get {
-                return this.nameField;
+                return this.detailField;
             }
             set {
-                this.nameField = value;
+                this.detailField = value;
             }
         }
         
         /// <remarks/>
-        public string Email {
+        [System.Xml.Serialization.XmlArrayItemAttribute("Room")]
+        public HotelRoom[] Rooms {
             get {
-                return this.emailField;
+                return this.roomsField;
             }
             set {
-                this.emailField = value;
+                this.roomsField = value;
             }
         }
         
         /// <remarks/>
-        public string Mobile {
+        [System.Xml.Serialization.XmlArrayItemAttribute("Image")]
+        public HotelImg[] Images {
             get {
-                return this.mobileField;
+                return this.imagesField;
             }
             set {
-                this.mobileField = value;
+                this.imagesField = value;
             }
         }
         
         /// <remarks/>
-        public string Phone {
+        public Review Review {
             get {
-                return this.phoneField;
+                return this.reviewField;
             }
             set {
-                this.phoneField = value;
+                this.reviewField = value;
             }
         }
         
         /// <remarks/>
-        public string Fax {
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string Id {
             get {
-                return this.faxField;
+                return this.idField;
             }
             set {
-                this.faxField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public EnumGender Gender {
-            get {
-                return this.genderField;
-            }
-            set {
-                this.genderField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
-    public partial class OrderHistoryResult {
-        
-        private int orderIDField;
-        
-        private OrderHistory[] orderHistoriesField;
-        
-        /// <remarks/>
-        public int OrderID {
-            get {
-                return this.orderIDField;
-            }
-            set {
-                this.orderIDField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public OrderHistory[] OrderHistories {
-            get {
-                return this.orderHistoriesField;
-            }
-            set {
-                this.orderHistoriesField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(Order))]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
-    public abstract partial class IncrRecordBase {
-        
-        private long lastIdField;
-        
-        private System.DateTime timeField;
-        
-        /// <remarks/>
-        public long LastId {
-            get {
-                return this.lastIdField;
-            }
-            set {
-                this.lastIdField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public System.DateTime Time {
-            get {
-                return this.timeField;
-            }
-            set {
-                this.timeField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
-    public partial class IncrOrderResult {
-        
-        private Order[] ordersField;
-        
-        /// <remarks/>
-        public Order[] Orders {
-            get {
-                return this.ordersField;
-            }
-            set {
-                this.ordersField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
-    public partial class Order : IncrRecordBase {
-        
-        private long orderIdField;
-        
-        private string statusField;
-        
-        private System.DateTime arrivalDateField;
-        
-        private System.DateTime departureDateField;
-        
-        private decimal totalPriceField;
-        
-        private int numberOfRoomsField;
-        
-        /// <remarks/>
-        public long OrderId {
-            get {
-                return this.orderIdField;
-            }
-            set {
-                this.orderIdField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string Status {
-            get {
-                return this.statusField;
-            }
-            set {
-                this.statusField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public System.DateTime ArrivalDate {
-            get {
-                return this.arrivalDateField;
-            }
-            set {
-                this.arrivalDateField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public System.DateTime DepartureDate {
-            get {
-                return this.departureDateField;
-            }
-            set {
-                this.departureDateField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public decimal TotalPrice {
-            get {
-                return this.totalPriceField;
-            }
-            set {
-                this.totalPriceField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public int NumberOfRooms {
-            get {
-                return this.numberOfRoomsField;
-            }
-            set {
-                this.numberOfRoomsField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
-    public partial class CreditCards {
-        
-        private PaymentCardCategory[] creditCardListField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlArrayItemAttribute("CreditCard")]
-        public PaymentCardCategory[] CreditCardList {
-            get {
-                return this.creditCardListField;
-            }
-            set {
-                this.creditCardListField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
-    public partial class PaymentCardCategory {
-        
-        private string categoryIdField;
-        
-        private string categoryNameField;
-        
-        private string categoryNameEnField;
-        
-        /// <remarks/>
-        public string CategoryId {
-            get {
-                return this.categoryIdField;
-            }
-            set {
-                this.categoryIdField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string CategoryName {
-            get {
-                return this.categoryNameField;
-            }
-            set {
-                this.categoryNameField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string CategoryNameEn {
-            get {
-                return this.categoryNameEnField;
-            }
-            set {
-                this.categoryNameEnField = value;
+                this.idField = value;
             }
         }
     }
@@ -8688,474 +11126,17 @@ namespace OpenAPITest {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
-    public partial class OrderIdsCondition {
+    public partial class RackRateRequest {
         
-        private long orderIdField;
-        
-        private string affiliateConfirmationIdField;
+        private string hotelCodesField;
         
         /// <remarks/>
-        public long OrderId {
+        public string HotelCodes {
             get {
-                return this.orderIdField;
+                return this.hotelCodesField;
             }
             set {
-                this.orderIdField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string AffiliateConfirmationId {
-            get {
-                return this.affiliateConfirmationIdField;
-            }
-            set {
-                this.affiliateConfirmationIdField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
-    public partial class HotelIdsCondition {
-        
-        private string hotelIdsField;
-        
-        /// <remarks/>
-        public string HotelIds {
-            get {
-                return this.hotelIdsField;
-            }
-            set {
-                this.hotelIdsField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(InvoiceWithStatus))]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
-    public partial class Invoice {
-        
-        private string titleField;
-        
-        private string itemNameField;
-        
-        private decimal amountField;
-        
-        private Recipient recipientField;
-        
-        /// <remarks/>
-        public string Title {
-            get {
-                return this.titleField;
-            }
-            set {
-                this.titleField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string ItemName {
-            get {
-                return this.itemNameField;
-            }
-            set {
-                this.itemNameField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public decimal Amount {
-            get {
-                return this.amountField;
-            }
-            set {
-                this.amountField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public Recipient Recipient {
-            get {
-                return this.recipientField;
-            }
-            set {
-                this.recipientField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
-    public partial class InvoiceWithStatus : Invoice {
-        
-        private bool statusField;
-        
-        private bool deliveryStatusField;
-        
-        /// <remarks/>
-        public bool Status {
-            get {
-                return this.statusField;
-            }
-            set {
-                this.statusField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public bool DeliveryStatus {
-            get {
-                return this.deliveryStatusField;
-            }
-            set {
-                this.deliveryStatusField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
-    public partial class CancelOrderResult {
-        
-        private bool successsField;
-        
-        /// <remarks/>
-        public bool Successs {
-            get {
-                return this.successsField;
-            }
-            set {
-                this.successsField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
-    public partial class ValidateCreditCardResult {
-        
-        private bool isValidField;
-        
-        private bool isNeedVerifyCodeField;
-        
-        /// <remarks/>
-        public bool IsValid {
-            get {
-                return this.isValidField;
-            }
-            set {
-                this.isValidField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public bool IsNeedVerifyCode {
-            get {
-                return this.isNeedVerifyCodeField;
-            }
-            set {
-                this.isNeedVerifyCodeField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
-    public partial class ValidateCreditCardResponse {
-        
-        private string isValidField;
-        
-        private string hasVerifyCodeField;
-        
-        /// <remarks/>
-        public string IsValid {
-            get {
-                return this.isValidField;
-            }
-            set {
-                this.isValidField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string HasVerifyCode {
-            get {
-                return this.hasVerifyCodeField;
-            }
-            set {
-                this.hasVerifyCodeField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
-    public partial class PaymentCardCategoryList {
-        
-        private PaymentCardCategory[] cardCategoryListField;
-        
-        /// <remarks/>
-        public PaymentCardCategory[] CardCategoryList {
-            get {
-                return this.cardCategoryListField;
-            }
-            set {
-                this.cardCategoryListField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
-    public partial class CreditCardInfo {
-        
-        private bool isValidField;
-        
-        private bool isNeedVerifyCodeField;
-        
-        /// <remarks/>
-        public bool IsValid {
-            get {
-                return this.isValidField;
-            }
-            set {
-                this.isValidField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public bool IsNeedVerifyCode {
-            get {
-                return this.isNeedVerifyCodeField;
-            }
-            set {
-                this.isNeedVerifyCodeField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
-    public partial class CheckGuestNameRequest {
-        
-        private string[] namesField;
-        
-        private bool isGangAoField;
-        
-        /// <remarks/>
-        public string[] Names {
-            get {
-                return this.namesField;
-            }
-            set {
-                this.namesField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public bool IsGangAo {
-            get {
-                return this.isGangAoField;
-            }
-            set {
-                this.isGangAoField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
-    public partial class RateResult {
-        
-        private Rate[] ratesField;
-        
-        /// <remarks/>
-        public Rate[] Rates {
-            get {
-                return this.ratesField;
-            }
-            set {
-                this.ratesField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
-    public partial class InventoryCondition {
-        
-        private string hotelIdsField;
-        
-        private string roomTypeIdField;
-        
-        private System.DateTime startDateField;
-        
-        private System.DateTime endDateField;
-        
-        /// <remarks/>
-        public string HotelIds {
-            get {
-                return this.hotelIdsField;
-            }
-            set {
-                this.hotelIdsField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string RoomTypeId {
-            get {
-                return this.roomTypeIdField;
-            }
-            set {
-                this.roomTypeIdField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public System.DateTime StartDate {
-            get {
-                return this.startDateField;
-            }
-            set {
-                this.startDateField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public System.DateTime EndDate {
-            get {
-                return this.endDateField;
-            }
-            set {
-                this.endDateField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
-    public partial class ValidateInventoryCondition {
-        
-        private string hotelIdField;
-        
-        private string hotelCodeField;
-        
-        private string roomTypeIdField;
-        
-        private int amountField;
-        
-        private System.DateTime arrivalDateField;
-        
-        private System.DateTime departureDateField;
-        
-        /// <remarks/>
-        public string HotelId {
-            get {
-                return this.hotelIdField;
-            }
-            set {
-                this.hotelIdField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string HotelCode {
-            get {
-                return this.hotelCodeField;
-            }
-            set {
-                this.hotelCodeField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string RoomTypeId {
-            get {
-                return this.roomTypeIdField;
-            }
-            set {
-                this.roomTypeIdField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public int Amount {
-            get {
-                return this.amountField;
-            }
-            set {
-                this.amountField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public System.DateTime ArrivalDate {
-            get {
-                return this.arrivalDateField;
-            }
-            set {
-                this.arrivalDateField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public System.DateTime DepartureDate {
-            get {
-                return this.departureDateField;
-            }
-            set {
-                this.departureDateField = value;
+                this.hotelCodesField = value;
             }
         }
     }
@@ -9211,1112 +11192,6 @@ namespace OpenAPITest {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
-    public partial class CheckInFeedbackCondition {
-        
-        private int orderIdField;
-        
-        private string customerNameField;
-        
-        private string roomNumberField;
-        
-        private System.Nullable<System.DateTime> arrivalDateField;
-        
-        private System.Nullable<System.DateTime> departureDateField;
-        
-        private string notesField;
-        
-        /// <remarks/>
-        public int OrderId {
-            get {
-                return this.orderIdField;
-            }
-            set {
-                this.orderIdField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string CustomerName {
-            get {
-                return this.customerNameField;
-            }
-            set {
-                this.customerNameField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string RoomNumber {
-            get {
-                return this.roomNumberField;
-            }
-            set {
-                this.roomNumberField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public System.Nullable<System.DateTime> ArrivalDate {
-            get {
-                return this.arrivalDateField;
-            }
-            set {
-                this.arrivalDateField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public System.Nullable<System.DateTime> DepartureDate {
-            get {
-                return this.departureDateField;
-            }
-            set {
-                this.departureDateField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string Notes {
-            get {
-                return this.notesField;
-            }
-            set {
-                this.notesField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
-    public partial class RatePlanResult {
-        
-        private HotelRatePlan[] hotelsField;
-        
-        /// <remarks/>
-        public HotelRatePlan[] Hotels {
-            get {
-                return this.hotelsField;
-            }
-            set {
-                this.hotelsField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
-    public partial class HotelRatePlan {
-        
-        private string hotelIDField;
-        
-        private SupplierRatePlan[] suppliersField;
-        
-        private RatePlan[] ratePlansField;
-        
-        private HotelGift[] giftsField;
-        
-        /// <remarks/>
-        public string HotelID {
-            get {
-                return this.hotelIDField;
-            }
-            set {
-                this.hotelIDField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public SupplierRatePlan[] Suppliers {
-            get {
-                return this.suppliersField;
-            }
-            set {
-                this.suppliersField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public RatePlan[] RatePlans {
-            get {
-                return this.ratePlansField;
-            }
-            set {
-                this.ratePlansField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public HotelGift[] Gifts {
-            get {
-                return this.giftsField;
-            }
-            set {
-                this.giftsField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
-    public partial class HotelGift {
-        
-        private int hotelGiftIdField;
-        
-        private string hotelCodeField;
-        
-        private HotelGiftProductRelation[] relatedProductsField;
-        
-        private HotelGiftDate[] effectiveDatesField;
-        
-        private HotelGiftDateTypeEnum dateTypeField;
-        
-        private string weekSetField;
-        
-        private string giftContentField;
-        
-        private string giftContentEnField;
-        
-        private string giftTypesField;
-        
-        private int hourNumberField;
-        
-        private HotelGiftHourTypeEnum hourTypeField;
-        
-        private HotelGiftWayOfGivingEnum wayOfGivingField;
-        
-        private string wayOfGivingOtherField;
-        
-        private string wayOfGivingOtherEnField;
-        
-        /// <remarks/>
-        public int HotelGiftId {
-            get {
-                return this.hotelGiftIdField;
-            }
-            set {
-                this.hotelGiftIdField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string HotelCode {
-            get {
-                return this.hotelCodeField;
-            }
-            set {
-                this.hotelCodeField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public HotelGiftProductRelation[] RelatedProducts {
-            get {
-                return this.relatedProductsField;
-            }
-            set {
-                this.relatedProductsField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public HotelGiftDate[] EffectiveDates {
-            get {
-                return this.effectiveDatesField;
-            }
-            set {
-                this.effectiveDatesField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public HotelGiftDateTypeEnum DateType {
-            get {
-                return this.dateTypeField;
-            }
-            set {
-                this.dateTypeField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string WeekSet {
-            get {
-                return this.weekSetField;
-            }
-            set {
-                this.weekSetField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string GiftContent {
-            get {
-                return this.giftContentField;
-            }
-            set {
-                this.giftContentField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string GiftContentEn {
-            get {
-                return this.giftContentEnField;
-            }
-            set {
-                this.giftContentEnField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string GiftTypes {
-            get {
-                return this.giftTypesField;
-            }
-            set {
-                this.giftTypesField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public int HourNumber {
-            get {
-                return this.hourNumberField;
-            }
-            set {
-                this.hourNumberField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public HotelGiftHourTypeEnum HourType {
-            get {
-                return this.hourTypeField;
-            }
-            set {
-                this.hourTypeField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public HotelGiftWayOfGivingEnum WayOfGiving {
-            get {
-                return this.wayOfGivingField;
-            }
-            set {
-                this.wayOfGivingField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string WayOfGivingOther {
-            get {
-                return this.wayOfGivingOtherField;
-            }
-            set {
-                this.wayOfGivingOtherField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string WayOfGivingOtherEn {
-            get {
-                return this.wayOfGivingOtherEnField;
-            }
-            set {
-                this.wayOfGivingOtherEnField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
-    public partial class HotelGiftProductRelation {
-        
-        private string roomTypeIdsField;
-        
-        private int ratePlanIdField;
-        
-        /// <remarks/>
-        public string RoomTypeIds {
-            get {
-                return this.roomTypeIdsField;
-            }
-            set {
-                this.roomTypeIdsField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public int RatePlanId {
-            get {
-                return this.ratePlanIdField;
-            }
-            set {
-                this.ratePlanIdField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
-    public partial class HotelGiftDate {
-        
-        private System.DateTime startDateField;
-        
-        private System.DateTime endDateField;
-        
-        /// <remarks/>
-        public System.DateTime StartDate {
-            get {
-                return this.startDateField;
-            }
-            set {
-                this.startDateField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public System.DateTime EndDate {
-            get {
-                return this.endDateField;
-            }
-            set {
-                this.endDateField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
-    public partial class ValidateResult {
-        
-        private EnumValidateResult resultCodeField;
-        
-        private decimal guaranteeRateField;
-        
-        private System.DateTime cancelTimeField;
-        
-        private EnumCurrencyCode currencyCodeField;
-        
-        private string errorMessageField;
-        
-        /// <remarks/>
-        public EnumValidateResult ResultCode {
-            get {
-                return this.resultCodeField;
-            }
-            set {
-                this.resultCodeField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public decimal GuaranteeRate {
-            get {
-                return this.guaranteeRateField;
-            }
-            set {
-                this.guaranteeRateField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public System.DateTime CancelTime {
-            get {
-                return this.cancelTimeField;
-            }
-            set {
-                this.cancelTimeField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public EnumCurrencyCode CurrencyCode {
-            get {
-                return this.currencyCodeField;
-            }
-            set {
-                this.currencyCodeField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string ErrorMessage {
-            get {
-                return this.errorMessageField;
-            }
-            set {
-                this.errorMessageField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
-    [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=false)]
-    public enum EnumValidateResult {
-        
-        /// <remarks/>
-        OK,
-        
-        /// <remarks/>
-        Product,
-        
-        /// <remarks/>
-        Inventory,
-        
-        /// <remarks/>
-        Rate,
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
-    public partial class RackRateResponse {
-        
-        private RackRateHotel[] rackRatesField;
-        
-        /// <remarks/>
-        public RackRateHotel[] RackRates {
-            get {
-                return this.rackRatesField;
-            }
-            set {
-                this.rackRatesField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
-    public partial class RackRateHotel {
-        
-        private string hotelIDField;
-        
-        private RackRateRoomType[] roomTypesField;
-        
-        /// <remarks/>
-        public string HotelID {
-            get {
-                return this.hotelIDField;
-            }
-            set {
-                this.hotelIDField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public RackRateRoomType[] RoomTypes {
-            get {
-                return this.roomTypesField;
-            }
-            set {
-                this.roomTypesField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
-    public partial class RackRateRoomType {
-        
-        private string hotelIDField;
-        
-        private string roomTypeIDField;
-        
-        private System.DateTime beginDateField;
-        
-        private System.DateTime endDateField;
-        
-        private decimal rackRateField;
-        
-        private string currencyCodeField;
-        
-        /// <remarks/>
-        public string HotelID {
-            get {
-                return this.hotelIDField;
-            }
-            set {
-                this.hotelIDField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string RoomTypeID {
-            get {
-                return this.roomTypeIDField;
-            }
-            set {
-                this.roomTypeIDField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public System.DateTime BeginDate {
-            get {
-                return this.beginDateField;
-            }
-            set {
-                this.beginDateField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public System.DateTime EndDate {
-            get {
-                return this.endDateField;
-            }
-            set {
-                this.endDateField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public decimal RackRate {
-            get {
-                return this.rackRateField;
-            }
-            set {
-                this.rackRateField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string CurrencyCode {
-            get {
-                return this.currencyCodeField;
-            }
-            set {
-                this.currencyCodeField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
-    public partial class UpdateOrderResult {
-        
-        private long orderIdField;
-        
-        private System.DateTime cancelTimeField;
-        
-        private decimal guaranteeAmountField;
-        
-        private EnumCurrencyCode guaranteeCurrencyCodeField;
-        
-        private decimal totalPriceField;
-        
-        private EnumCurrencyCode currencyCodeField;
-        
-        /// <remarks/>
-        public long OrderId {
-            get {
-                return this.orderIdField;
-            }
-            set {
-                this.orderIdField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public System.DateTime CancelTime {
-            get {
-                return this.cancelTimeField;
-            }
-            set {
-                this.cancelTimeField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public decimal GuaranteeAmount {
-            get {
-                return this.guaranteeAmountField;
-            }
-            set {
-                this.guaranteeAmountField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public EnumCurrencyCode GuaranteeCurrencyCode {
-            get {
-                return this.guaranteeCurrencyCodeField;
-            }
-            set {
-                this.guaranteeCurrencyCodeField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public decimal TotalPrice {
-            get {
-                return this.totalPriceField;
-            }
-            set {
-                this.totalPriceField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public EnumCurrencyCode CurrencyCode {
-            get {
-                return this.currencyCodeField;
-            }
-            set {
-                this.currencyCodeField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
-    public partial class ExchangeRateCondition {
-        
-        private EnumCurrencyCode currencyIdField;
-        
-        /// <remarks/>
-        public EnumCurrencyCode CurrencyId {
-            get {
-                return this.currencyIdField;
-            }
-            set {
-                this.currencyIdField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
-    [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=false)]
-    public enum EnumStateType {
-        
-        /// <remarks/>
-        HotelId,
-        
-        /// <remarks/>
-        HotelCode,
-        
-        /// <remarks/>
-        RoomId,
-        
-        /// <remarks/>
-        RoomTypeId,
-        
-        /// <remarks/>
-        RatePlanId,
-        
-        /// <remarks/>
-        RatePlanPolicy,
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
-    [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=false)]
-    public enum EnumGuaranteeType {
-        
-        /// <remarks/>
-        NoneInRule,
-        
-        /// <remarks/>
-        NoneInManual,
-        
-        /// <remarks/>
-        VouchInRule,
-        
-        /// <remarks/>
-        VouchInManual,
-        
-        /// <remarks/>
-        VouchByElong,
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
-    public partial class OrderDetailResult : OrderBase {
-        
-        private string elongCardNoField;
-        
-        private Contact contactField;
-        
-        private ExtendInfo extendInfoField;
-        
-        private NightlyRate[] nightlyRatesField;
-        
-        private OrderRoom[] orderRoomsField;
-        
-        private long orderIdField;
-        
-        private string statusField;
-        
-        private decimal penaltyToCustomerField;
-        
-        private EnumCurrencyCode penaltyCurrencyCodeField;
-        
-        private System.DateTime cancelTimeField;
-        
-        private bool hasInvoiceField;
-        
-        private System.Nullable<EnumInvoiceMode> invoiceModeField;
-        
-        private InvoiceWithStatus invoiceField;
-        
-        private CreditCardWithStatus creditCardField;
-        
-        private GuaranteeRule guaranteeRuleField;
-        
-        private PrepayRule prepayRuleField;
-        
-        private string[] valueAddsField;
-        
-        private string hotelNameField;
-        
-        private string roomTypeNameField;
-        
-        private string ratePlanNameField;
-        
-        private System.Nullable<bool> isCancelableField;
-        
-        private System.Nullable<System.DateTime> creationDateField;
-        
-        /// <remarks/>
-        public string ElongCardNo {
-            get {
-                return this.elongCardNoField;
-            }
-            set {
-                this.elongCardNoField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public Contact Contact {
-            get {
-                return this.contactField;
-            }
-            set {
-                this.contactField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public ExtendInfo ExtendInfo {
-            get {
-                return this.extendInfoField;
-            }
-            set {
-                this.extendInfoField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public NightlyRate[] NightlyRates {
-            get {
-                return this.nightlyRatesField;
-            }
-            set {
-                this.nightlyRatesField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public OrderRoom[] OrderRooms {
-            get {
-                return this.orderRoomsField;
-            }
-            set {
-                this.orderRoomsField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public long OrderId {
-            get {
-                return this.orderIdField;
-            }
-            set {
-                this.orderIdField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string Status {
-            get {
-                return this.statusField;
-            }
-            set {
-                this.statusField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public decimal PenaltyToCustomer {
-            get {
-                return this.penaltyToCustomerField;
-            }
-            set {
-                this.penaltyToCustomerField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public EnumCurrencyCode PenaltyCurrencyCode {
-            get {
-                return this.penaltyCurrencyCodeField;
-            }
-            set {
-                this.penaltyCurrencyCodeField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public System.DateTime CancelTime {
-            get {
-                return this.cancelTimeField;
-            }
-            set {
-                this.cancelTimeField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public bool HasInvoice {
-            get {
-                return this.hasInvoiceField;
-            }
-            set {
-                this.hasInvoiceField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public System.Nullable<EnumInvoiceMode> InvoiceMode {
-            get {
-                return this.invoiceModeField;
-            }
-            set {
-                this.invoiceModeField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public InvoiceWithStatus Invoice {
-            get {
-                return this.invoiceField;
-            }
-            set {
-                this.invoiceField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public CreditCardWithStatus CreditCard {
-            get {
-                return this.creditCardField;
-            }
-            set {
-                this.creditCardField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public GuaranteeRule GuaranteeRule {
-            get {
-                return this.guaranteeRuleField;
-            }
-            set {
-                this.guaranteeRuleField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public PrepayRule PrepayRule {
-            get {
-                return this.prepayRuleField;
-            }
-            set {
-                this.prepayRuleField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string[] ValueAdds {
-            get {
-                return this.valueAddsField;
-            }
-            set {
-                this.valueAddsField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string HotelName {
-            get {
-                return this.hotelNameField;
-            }
-            set {
-                this.hotelNameField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string RoomTypeName {
-            get {
-                return this.roomTypeNameField;
-            }
-            set {
-                this.roomTypeNameField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string RatePlanName {
-            get {
-                return this.ratePlanNameField;
-            }
-            set {
-                this.ratePlanNameField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public System.Nullable<bool> IsCancelable {
-            get {
-                return this.isCancelableField;
-            }
-            set {
-                this.isCancelableField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public System.Nullable<System.DateTime> CreationDate {
-            get {
-                return this.creationDateField;
-            }
-            set {
-                this.creationDateField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
-    public partial class IncrCondition {
-        
-        private long lastIdField;
-        
-        /// <remarks/>
-        public long LastId {
-            get {
-                return this.lastIdField;
-            }
-            set {
-                this.lastIdField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
-    public partial class Validate {
-        
-        private EnumValidateResult resultCodeField;
-        
-        private decimal guaranteeRateField;
-        
-        /// <remarks/>
-        public EnumValidateResult ResultCode {
-            get {
-                return this.resultCodeField;
-            }
-            set {
-                this.resultCodeField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public decimal GuaranteeRate {
-            get {
-                return this.guaranteeRateField;
-            }
-            set {
-                this.guaranteeRateField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
     public abstract partial class RequstData {
     }
     
@@ -10326,175 +11201,9 @@ namespace OpenAPITest {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
-    public partial class OrderIdCondition {
-        
-        private long orderIdField;
-        
-        /// <remarks/>
-        public long OrderId {
-            get {
-                return this.orderIdField;
-            }
-            set {
-                this.orderIdField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
-    public partial class IncrStateResult {
-        
-        private State[] statesField;
-        
-        /// <remarks/>
-        public State[] States {
-            get {
-                return this.statesField;
-            }
-            set {
-                this.statesField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
-    public partial class State {
-        
-        private string hotelIdField;
-        
-        private string hotelCodeField;
-        
-        private string roomIdField;
-        
-        private string roomTypeIdField;
-        
-        private string ratePlanIdField;
-        
-        private System.Nullable<bool> statusField;
-        
-        private EnumStateType stateTypeField;
-        
-        private long lastIdField;
-        
-        private System.DateTime timeField;
-        
-        /// <remarks/>
-        public string HotelId {
-            get {
-                return this.hotelIdField;
-            }
-            set {
-                this.hotelIdField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string HotelCode {
-            get {
-                return this.hotelCodeField;
-            }
-            set {
-                this.hotelCodeField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string RoomId {
-            get {
-                return this.roomIdField;
-            }
-            set {
-                this.roomIdField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string RoomTypeId {
-            get {
-                return this.roomTypeIdField;
-            }
-            set {
-                this.roomTypeIdField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string RatePlanId {
-            get {
-                return this.ratePlanIdField;
-            }
-            set {
-                this.ratePlanIdField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public System.Nullable<bool> Status {
-            get {
-                return this.statusField;
-            }
-            set {
-                this.statusField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public EnumStateType StateType {
-            get {
-                return this.stateTypeField;
-            }
-            set {
-                this.stateTypeField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute()]
-        public long LastId {
-            get {
-                return this.lastIdField;
-            }
-            set {
-                this.lastIdField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute()]
-        public System.DateTime Time {
-            get {
-                return this.timeField;
-            }
-            set {
-                this.timeField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
-    public partial class RateCondition {
+    public partial class RatePlanCondition {
         
         private string hotelIdsField;
-        
-        private System.DateTime startDateField;
-        
-        private System.DateTime endDateField;
         
         private EnumPaymentType paymentTypeField;
         
@@ -10505,26 +11214,6 @@ namespace OpenAPITest {
             }
             set {
                 this.hotelIdsField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public System.DateTime StartDate {
-            get {
-                return this.startDateField;
-            }
-            set {
-                this.startDateField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public System.DateTime EndDate {
-            get {
-                return this.endDateField;
-            }
-            set {
-                this.endDateField = value;
             }
         }
         
@@ -10545,436 +11234,21 @@ namespace OpenAPITest {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
-    public partial class CreateOrderCondition : OrderBase {
-        
-        private string affiliateConfirmationIdField;
-        
-        private string customerIPAddressField;
-        
-        private bool isGuaranteeOrChargedField;
-        
-        private string supplierCardNoField;
-        
-        private bool isNeedInvoiceField;
-        
-        private Contact contactField;
-        
-        private ExtendInfo extendInfoField;
-        
-        private BaseNightlyRate[] nightlyRatesField;
-        
-        private CreateOrderRoom[] orderRoomsField;
-        
-        private Invoice invoiceField;
-        
-        private CreditCard creditCardField;
-        
-        private System.Nullable<bool> isForceGuaranteeField;
-        
-        /// <remarks/>
-        public string AffiliateConfirmationId {
-            get {
-                return this.affiliateConfirmationIdField;
-            }
-            set {
-                this.affiliateConfirmationIdField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string CustomerIPAddress {
-            get {
-                return this.customerIPAddressField;
-            }
-            set {
-                this.customerIPAddressField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public bool IsGuaranteeOrCharged {
-            get {
-                return this.isGuaranteeOrChargedField;
-            }
-            set {
-                this.isGuaranteeOrChargedField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string SupplierCardNo {
-            get {
-                return this.supplierCardNoField;
-            }
-            set {
-                this.supplierCardNoField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public bool IsNeedInvoice {
-            get {
-                return this.isNeedInvoiceField;
-            }
-            set {
-                this.isNeedInvoiceField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public Contact Contact {
-            get {
-                return this.contactField;
-            }
-            set {
-                this.contactField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public ExtendInfo ExtendInfo {
-            get {
-                return this.extendInfoField;
-            }
-            set {
-                this.extendInfoField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public BaseNightlyRate[] NightlyRates {
-            get {
-                return this.nightlyRatesField;
-            }
-            set {
-                this.nightlyRatesField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public CreateOrderRoom[] OrderRooms {
-            get {
-                return this.orderRoomsField;
-            }
-            set {
-                this.orderRoomsField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public Invoice Invoice {
-            get {
-                return this.invoiceField;
-            }
-            set {
-                this.invoiceField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public CreditCard CreditCard {
-            get {
-                return this.creditCardField;
-            }
-            set {
-                this.creditCardField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public System.Nullable<bool> IsForceGuarantee {
-            get {
-                return this.isForceGuaranteeField;
-            }
-            set {
-                this.isForceGuaranteeField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
-    public partial class LastIdResult {
-        
-        private long lastIdField;
-        
-        /// <remarks/>
-        public long LastId {
-            get {
-                return this.lastIdField;
-            }
-            set {
-                this.lastIdField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
-    public partial class HotelGeos {
-        
-        private HotelGeoXML[] hotelGeoListField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlArrayItemAttribute("HotelGeo")]
-        public HotelGeoXML[] HotelGeoList {
-            get {
-                return this.hotelGeoListField;
-            }
-            set {
-                this.hotelGeoListField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
-    public partial class HotelGeoXML {
-        
-        private PubObj[] districtsField;
-        
-        private PubObj[] commericalLocationsField;
-        
-        private PubObj[] landmarkLocationsField;
-        
-        private string countryField;
-        
-        private string provinceNameField;
-        
-        private string provinceIdField;
-        
-        private string cityNameField;
-        
-        private string cityCodeField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlArrayItemAttribute("Location")]
-        public PubObj[] Districts {
-            get {
-                return this.districtsField;
-            }
-            set {
-                this.districtsField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlArrayItemAttribute("Location")]
-        public PubObj[] CommericalLocations {
-            get {
-                return this.commericalLocationsField;
-            }
-            set {
-                this.commericalLocationsField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlArrayItemAttribute("Location")]
-        public PubObj[] LandmarkLocations {
-            get {
-                return this.landmarkLocationsField;
-            }
-            set {
-                this.landmarkLocationsField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute()]
-        public string Country {
-            get {
-                return this.countryField;
-            }
-            set {
-                this.countryField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute()]
-        public string ProvinceName {
-            get {
-                return this.provinceNameField;
-            }
-            set {
-                this.provinceNameField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute()]
-        public string ProvinceId {
-            get {
-                return this.provinceIdField;
-            }
-            set {
-                this.provinceIdField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute()]
-        public string CityName {
-            get {
-                return this.cityNameField;
-            }
-            set {
-                this.cityNameField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute()]
-        public string CityCode {
-            get {
-                return this.cityCodeField;
-            }
-            set {
-                this.cityCodeField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
-    public partial class PubObj {
-        
-        private string idField;
-        
-        private string nameField;
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute()]
-        public string Id {
-            get {
-                return this.idField;
-            }
-            set {
-                this.idField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlAttributeAttribute()]
-        public string Name {
-            get {
-                return this.nameField;
-            }
-            set {
-                this.nameField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
-    public partial class IncrHotelResult {
-        
-        private IncrHotel[] hotelsField;
-        
-        /// <remarks/>
-        public IncrHotel[] Hotels {
-            get {
-                return this.hotelsField;
-            }
-            set {
-                this.hotelsField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
-    public partial class MSHotelRelation {
-        
-        private string mHotelIdField;
-        
-        private string sHotelIdField;
-        
-        private int supplierIdField;
-        
-        /// <remarks/>
-        public string MHotelId {
-            get {
-                return this.mHotelIdField;
-            }
-            set {
-                this.mHotelIdField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string SHotelId {
-            get {
-                return this.sHotelIdField;
-            }
-            set {
-                this.sHotelIdField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public int SupplierId {
-            get {
-                return this.supplierIdField;
-            }
-            set {
-                this.supplierIdField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
-    public partial class ValidateCondition {
+    public partial class HotelDetailCondition {
         
         private System.DateTime arrivalDateField;
         
         private System.DateTime departureDateField;
         
-        private System.DateTime earliestArrivalTimeField;
-        
-        private System.DateTime latestArrivalTimeField;
-        
-        private string hotelIdField;
+        private string hotelIdsField;
         
         private string roomTypeIdField;
         
         private int ratePlanIdField;
         
-        private decimal totalPriceField;
+        private EnumPaymentType paymentTypeField;
         
-        private int numberOfRoomsField;
+        private string optionsField;
         
         /// <remarks/>
         public System.DateTime ArrivalDate {
@@ -10997,32 +11271,12 @@ namespace OpenAPITest {
         }
         
         /// <remarks/>
-        public System.DateTime EarliestArrivalTime {
+        public string HotelIds {
             get {
-                return this.earliestArrivalTimeField;
+                return this.hotelIdsField;
             }
             set {
-                this.earliestArrivalTimeField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public System.DateTime LatestArrivalTime {
-            get {
-                return this.latestArrivalTimeField;
-            }
-            set {
-                this.latestArrivalTimeField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string HotelId {
-            get {
-                return this.hotelIdField;
-            }
-            set {
-                this.hotelIdField = value;
+                this.hotelIdsField = value;
             }
         }
         
@@ -11047,22 +11301,22 @@ namespace OpenAPITest {
         }
         
         /// <remarks/>
-        public decimal TotalPrice {
+        public EnumPaymentType PaymentType {
             get {
-                return this.totalPriceField;
+                return this.paymentTypeField;
             }
             set {
-                this.totalPriceField = value;
+                this.paymentTypeField = value;
             }
         }
         
         /// <remarks/>
-        public int NumberOfRooms {
+        public string Options {
             get {
-                return this.numberOfRoomsField;
+                return this.optionsField;
             }
             set {
-                this.numberOfRoomsField = value;
+                this.optionsField = value;
             }
         }
     }
@@ -11073,9 +11327,44 @@ namespace OpenAPITest {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
-    public partial class CheckInFeedbackResult {
+    public partial class RateResult {
+        
+        private Rate[] ratesField;
+        
+        /// <remarks/>
+        public Rate[] Rates {
+            get {
+                return this.ratesField;
+            }
+            set {
+                this.ratesField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
+    public partial class GetOrderProductInfoRes {
+        
+        private int responseCodeField;
         
         private string errorMessageField;
+        
+        private OrderProductInfo productInfoField;
+        
+        /// <remarks/>
+        public int ResponseCode {
+            get {
+                return this.responseCodeField;
+            }
+            set {
+                this.responseCodeField = value;
+            }
+        }
         
         /// <remarks/>
         public string ErrorMessage {
@@ -11086,61 +11375,14 @@ namespace OpenAPITest {
                 this.errorMessageField = value;
             }
         }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
-    public partial class CreateOrderResult {
-        
-        private long orderIdField;
-        
-        private System.DateTime cancelTimeField;
-        
-        private decimal guaranteeAmountField;
-        
-        private EnumCurrencyCode currencyCodeField;
         
         /// <remarks/>
-        public long OrderId {
+        public OrderProductInfo ProductInfo {
             get {
-                return this.orderIdField;
+                return this.productInfoField;
             }
             set {
-                this.orderIdField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public System.DateTime CancelTime {
-            get {
-                return this.cancelTimeField;
-            }
-            set {
-                this.cancelTimeField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public decimal GuaranteeAmount {
-            get {
-                return this.guaranteeAmountField;
-            }
-            set {
-                this.guaranteeAmountField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public EnumCurrencyCode CurrencyCode {
-            get {
-                return this.currencyCodeField;
-            }
-            set {
-                this.currencyCodeField = value;
+                this.productInfoField = value;
             }
         }
     }
@@ -11151,131 +11393,7 @@ namespace OpenAPITest {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
-    public partial class RelatedOrderCondition {
-        
-        private string orderIdsField;
-        
-        private EnumOrderRelationType relationTypeField;
-        
-        /// <remarks/>
-        public string OrderIds {
-            get {
-                return this.orderIdsField;
-            }
-            set {
-                this.orderIdsField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public EnumOrderRelationType RelationType {
-            get {
-                return this.relationTypeField;
-            }
-            set {
-                this.relationTypeField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
-    public partial class GiftBelongTo {
-        
-        private string sHotelIdField;
-        
-        private string roomTypeIdField;
-        
-        private int rateplanIdField;
-        
-        /// <remarks/>
-        public string SHotelId {
-            get {
-                return this.sHotelIdField;
-            }
-            set {
-                this.sHotelIdField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string RoomTypeId {
-            get {
-                return this.roomTypeIdField;
-            }
-            set {
-                this.roomTypeIdField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public int RateplanId {
-            get {
-                return this.rateplanIdField;
-            }
-            set {
-                this.rateplanIdField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
-    public partial class InventoryResult {
-        
-        private Inventory[] inventoriesField;
-        
-        /// <remarks/>
-        public Inventory[] Inventories {
-            get {
-                return this.inventoriesField;
-            }
-            set {
-                this.inventoriesField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
-    public partial class ValidateInventoryResult {
-        
-        private bool isOKField;
-        
-        /// <remarks/>
-        public bool IsOK {
-            get {
-                return this.isOKField;
-            }
-            set {
-                this.isOKField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
-    [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=false)]
-    public enum EnumLocal {
-        
-        /// <remarks/>
-        zh_CN,
-        
-        /// <remarks/>
-        en_US,
+    public partial class OrderProductInfo {
     }
     
     /// <remarks/>
@@ -11302,6 +11420,19 @@ namespace OpenAPITest {
         
         /// <remarks/>
         Normal,
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
+    [System.SerializableAttribute()]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=false)]
+    public enum EnumLocal {
+        
+        /// <remarks/>
+        zh_CN,
+        
+        /// <remarks/>
+        en_US,
     }
     
     /// <remarks/>
