@@ -545,7 +545,7 @@ namespace OpenAPITest {
         SYP,
         
         /// <remarks/>
-        THP,
+        THB,
         
         /// <remarks/>
         TND,
@@ -2634,6 +2634,8 @@ namespace OpenAPITest {
         
         private int typeField;
         
+        private string isCoverImageField;
+        
         /// <remarks/>
         public Location[] Locations {
             get {
@@ -2662,6 +2664,17 @@ namespace OpenAPITest {
             }
             set {
                 this.typeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string IsCoverImage {
+            get {
+                return this.isCoverImageField;
+            }
+            set {
+                this.isCoverImageField = value;
             }
         }
     }
@@ -4105,6 +4118,12 @@ namespace OpenAPITest {
         
         private ServiceRank serviceRankField;
         
+        private bool hasCouponField;
+        
+        private HotelFacilities facilitiesV2Field;
+        
+        private string themesField;
+        
         /// <remarks/>
         public string Name {
             get {
@@ -4474,6 +4493,36 @@ namespace OpenAPITest {
                 this.serviceRankField = value;
             }
         }
+        
+        /// <remarks/>
+        public bool HasCoupon {
+            get {
+                return this.hasCouponField;
+            }
+            set {
+                this.hasCouponField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public HotelFacilities FacilitiesV2 {
+            get {
+                return this.facilitiesV2Field;
+            }
+            set {
+                this.facilitiesV2Field = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string Themes {
+            get {
+                return this.themesField;
+            }
+            set {
+                this.themesField = value;
+            }
+        }
     }
     
     /// <remarks/>
@@ -4525,6 +4574,8 @@ namespace OpenAPITest {
         
         private string instantRoomTypesField;
         
+        private string idField;
+        
         private bool statusField;
         
         private string hotelCodeField;
@@ -4561,6 +4612,17 @@ namespace OpenAPITest {
             }
             set {
                 this.instantRoomTypesField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string ID {
+            get {
+                return this.idField;
+            }
+            set {
+                this.idField = value;
             }
         }
         
@@ -4766,6 +4828,107 @@ namespace OpenAPITest {
             }
             set {
                 this.complaintRateField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
+    public partial class HotelFacilities {
+        
+        private string generalAmenitiesField;
+        
+        private string recreationAmenitiesField;
+        
+        private string serviceAmenitiesField;
+        
+        /// <remarks/>
+        public string GeneralAmenities {
+            get {
+                return this.generalAmenitiesField;
+            }
+            set {
+                this.generalAmenitiesField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string RecreationAmenities {
+            get {
+                return this.recreationAmenitiesField;
+            }
+            set {
+                this.recreationAmenitiesField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string ServiceAmenities {
+            get {
+                return this.serviceAmenitiesField;
+            }
+            set {
+                this.serviceAmenitiesField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
+    public partial class HCredit {
+        
+        private string hotelIdField;
+        
+        private string creditField;
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string HotelId {
+            get {
+                return this.hotelIdField;
+            }
+            set {
+                this.hotelIdField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string Credit {
+            get {
+                return this.creditField;
+            }
+            set {
+                this.creditField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
+    public partial class HotelCredits {
+        
+        private HCredit[] hCreditsField;
+        
+        /// <remarks/>
+        public HCredit[] HCredits {
+            get {
+                return this.hCreditsField;
+            }
+            set {
+                this.hCreditsField = value;
             }
         }
     }
@@ -5228,6 +5391,8 @@ namespace OpenAPITest {
         
         private System.Nullable<System.DateTime> creationDateField;
         
+        private System.Nullable<decimal> couponField;
+        
         /// <remarks/>
         public string ElongCardNo {
             get {
@@ -5472,6 +5637,17 @@ namespace OpenAPITest {
                 this.creationDateField = value;
             }
         }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public System.Nullable<decimal> Coupon {
+            get {
+                return this.couponField;
+            }
+            set {
+                this.couponField = value;
+            }
+        }
     }
     
     /// <remarks/>
@@ -5493,6 +5669,8 @@ namespace OpenAPITest {
         private int int2Field;
         
         private int int3Field;
+        
+        private string partnerParameterField;
         
         /// <remarks/>
         public string String1 {
@@ -5551,6 +5729,16 @@ namespace OpenAPITest {
             }
             set {
                 this.int3Field = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string PartnerParameter {
+            get {
+                return this.partnerParameterField;
+            }
+            set {
+                this.partnerParameterField = value;
             }
         }
     }
@@ -5744,6 +5932,12 @@ namespace OpenAPITest {
     public enum EnumCreditCardProcessType {
         
         /// <remarks/>
+        DirectCharge,
+        
+        /// <remarks/>
+        Refund,
+        
+        /// <remarks/>
         Auth,
         
         /// <remarks/>
@@ -5751,12 +5945,6 @@ namespace OpenAPITest {
         
         /// <remarks/>
         Charge,
-        
-        /// <remarks/>
-        Refund,
-        
-        /// <remarks/>
-        DirectCharge,
     }
     
     /// <remarks/>
@@ -5769,10 +5957,10 @@ namespace OpenAPITest {
         UnProcess,
         
         /// <remarks/>
-        Succeed,
+        Processing,
         
         /// <remarks/>
-        Processing,
+        Succeed,
         
         /// <remarks/>
         Fail,
@@ -5920,6 +6108,8 @@ namespace OpenAPITest {
         
         private System.Nullable<bool> isForceGuaranteeField;
         
+        private System.Nullable<int> mustVouchInRuleTypeField;
+        
         /// <remarks/>
         public string AffiliateConfirmationId {
             get {
@@ -6038,6 +6228,17 @@ namespace OpenAPITest {
             }
             set {
                 this.isForceGuaranteeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public System.Nullable<int> MustVouchInRuleType {
+            get {
+                return this.mustVouchInRuleTypeField;
+            }
+            set {
+                this.mustVouchInRuleTypeField = value;
             }
         }
     }
@@ -7195,6 +7396,8 @@ namespace OpenAPITest {
         
         private string hotelIDField;
         
+        private string hotelCodeField;
+        
         private string roomTypeIdField;
         
         private int rateplanIdField;
@@ -7226,6 +7429,16 @@ namespace OpenAPITest {
             }
             set {
                 this.hotelIDField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string HotelCode {
+            get {
+                return this.hotelCodeField;
+            }
+            set {
+                this.hotelCodeField = value;
             }
         }
         
@@ -8097,6 +8310,8 @@ namespace OpenAPITest {
     [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
     public partial class HotelXMLIndex {
         
+        private string modificationField;
+        
         private string hotelIdField;
         
         private string updatedTimeField;
@@ -8104,6 +8319,16 @@ namespace OpenAPITest {
         private string productsField;
         
         private string statusField;
+        
+        /// <remarks/>
+        public string Modification {
+            get {
+                return this.modificationField;
+            }
+            set {
+                this.modificationField = value;
+            }
+        }
         
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
@@ -8209,6 +8434,8 @@ namespace OpenAPITest {
         private System.DateTime maxUpdateTimeField;
         
         private System.DateTime minUpdateTimeField;
+        
+        private System.Nullable<int> pageSizeField;
         
         /// <remarks/>
         public System.DateTime CreationTimeFrom {
@@ -8357,6 +8584,17 @@ namespace OpenAPITest {
             }
             set {
                 this.minUpdateTimeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public System.Nullable<int> PageSize {
+            get {
+                return this.pageSizeField;
+            }
+            set {
+                this.pageSizeField = value;
             }
         }
     }
@@ -8784,6 +9022,111 @@ namespace OpenAPITest {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
+    public partial class BookingDataCondition {
+        
+        private string hotelIdField;
+        
+        private string hotelCodeField;
+        
+        private string roomIdField;
+        
+        private string roomTypeIdField;
+        
+        private int ratePlanIdField;
+        
+        private System.DateTime arrivalDateField;
+        
+        private System.DateTime departureDateField;
+        
+        private EnumPaymentType paymentTypeField;
+        
+        /// <remarks/>
+        public string HotelId {
+            get {
+                return this.hotelIdField;
+            }
+            set {
+                this.hotelIdField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string HotelCode {
+            get {
+                return this.hotelCodeField;
+            }
+            set {
+                this.hotelCodeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string RoomId {
+            get {
+                return this.roomIdField;
+            }
+            set {
+                this.roomIdField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string RoomTypeId {
+            get {
+                return this.roomTypeIdField;
+            }
+            set {
+                this.roomTypeIdField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public int RatePlanId {
+            get {
+                return this.ratePlanIdField;
+            }
+            set {
+                this.ratePlanIdField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public System.DateTime ArrivalDate {
+            get {
+                return this.arrivalDateField;
+            }
+            set {
+                this.arrivalDateField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public System.DateTime DepartureDate {
+            get {
+                return this.departureDateField;
+            }
+            set {
+                this.departureDateField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public EnumPaymentType PaymentType {
+            get {
+                return this.paymentTypeField;
+            }
+            set {
+                this.paymentTypeField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
     public partial class HotelGeos {
         
         private HotelGeoXML[] hotelGeoListField;
@@ -9031,6 +9374,8 @@ namespace OpenAPITest {
         
         private EnumCurrencyCode currencyCodeField;
         
+        private decimal lowPriceField;
+        
         private int minPriceRPIDField;
         
         private HAvailPolicy[] hAvailPolicysField;
@@ -9102,6 +9447,16 @@ namespace OpenAPITest {
             }
             set {
                 this.currencyCodeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public decimal LowPrice {
+            get {
+                return this.lowPriceField;
+            }
+            set {
+                this.lowPriceField = value;
             }
         }
         
@@ -10181,6 +10536,89 @@ namespace OpenAPITest {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
+    public partial class BookingDataResult {
+        
+        private RatePlan ratePlanField;
+        
+        private System.Nullable<int> weekendStartField;
+        
+        private System.Nullable<int> weekendEndField;
+        
+        private BaseBookingRule[] bookingRulesField;
+        
+        private Inventory[] inventoriesField;
+        
+        private Rate[] ratesField;
+        
+        /// <remarks/>
+        public RatePlan RatePlan {
+            get {
+                return this.ratePlanField;
+            }
+            set {
+                this.ratePlanField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public System.Nullable<int> WeekendStart {
+            get {
+                return this.weekendStartField;
+            }
+            set {
+                this.weekendStartField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public System.Nullable<int> WeekendEnd {
+            get {
+                return this.weekendEndField;
+            }
+            set {
+                this.weekendEndField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public BaseBookingRule[] BookingRules {
+            get {
+                return this.bookingRulesField;
+            }
+            set {
+                this.bookingRulesField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Inventory[] Inventories {
+            get {
+                return this.inventoriesField;
+            }
+            set {
+                this.inventoriesField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public Rate[] Rates {
+            get {
+                return this.ratesField;
+            }
+            set {
+                this.ratesField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.1")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
     public partial class HotelRoom {
         
         private string idField;
@@ -10204,6 +10642,8 @@ namespace OpenAPITest {
         private string roomCodesField;
         
         private string capacityField;
+        
+        private string facilitiesField;
         
         /// <remarks/>
         [System.Xml.Serialization.XmlAttributeAttribute()]
@@ -10323,6 +10763,17 @@ namespace OpenAPITest {
             }
             set {
                 this.capacityField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string Facilities {
+            get {
+                return this.facilitiesField;
+            }
+            set {
+                this.facilitiesField = value;
             }
         }
     }
