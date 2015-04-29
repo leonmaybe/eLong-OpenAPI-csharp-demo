@@ -56,7 +56,7 @@ namespace OpenAPITest
             //var test = new ValidateTest();
             //var test = new RatePlanTest();
 
-            var test = new CreateOrderTest();
+           // var test = new CreateOrderTest();
             //var test = new InstantOrderTest();
             //var test = new OrderDetailTest();
             // var test = new UpdateOrderTest();
@@ -66,7 +66,7 @@ namespace OpenAPITest
             //var test = new IncrRateTest();
 
             //var test = new HotelListTest();
-            //var test = new HotelDetailTest();
+            var test = new HotelDetailTest();
             //var test = new InvValidateTest();
             //var test = new IncrStateTest();
 

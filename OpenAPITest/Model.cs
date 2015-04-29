@@ -21,6 +21,215 @@ namespace OpenAPITest {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
+    public partial class SubmitOrderPaymentInfoRequest {
+        
+        private long orderIdField;
+        
+        private bool isGuaranteeOrChargedField;
+        
+        private CreditCard creditCardField;
+        
+        private decimal amountField;
+        
+        /// <remarks/>
+        public long OrderId {
+            get {
+                return this.orderIdField;
+            }
+            set {
+                this.orderIdField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public bool IsGuaranteeOrCharged {
+            get {
+                return this.isGuaranteeOrChargedField;
+            }
+            set {
+                this.isGuaranteeOrChargedField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public CreditCard CreditCard {
+            get {
+                return this.creditCardField;
+            }
+            set {
+                this.creditCardField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public decimal Amount {
+            get {
+                return this.amountField;
+            }
+            set {
+                this.amountField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(CreditCardWithStatus))]
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
+    public partial class CreditCard {
+        
+        private string numberField;
+        
+        private string cVVField;
+        
+        private int expirationYearField;
+        
+        private int expirationMonthField;
+        
+        private string holderNameField;
+        
+        private EnumIdType idTypeField;
+        
+        private string idNoField;
+        
+        /// <remarks/>
+        public string Number {
+            get {
+                return this.numberField;
+            }
+            set {
+                this.numberField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string CVV {
+            get {
+                return this.cVVField;
+            }
+            set {
+                this.cVVField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public int ExpirationYear {
+            get {
+                return this.expirationYearField;
+            }
+            set {
+                this.expirationYearField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public int ExpirationMonth {
+            get {
+                return this.expirationMonthField;
+            }
+            set {
+                this.expirationMonthField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string HolderName {
+            get {
+                return this.holderNameField;
+            }
+            set {
+                this.holderNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public EnumIdType IdType {
+            get {
+                return this.idTypeField;
+            }
+            set {
+                this.idTypeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string IdNo {
+            get {
+                return this.idNoField;
+            }
+            set {
+                this.idNoField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
+    [System.SerializableAttribute()]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=false)]
+    public enum EnumIdType {
+        
+        /// <remarks/>
+        IdentityCard,
+        
+        /// <remarks/>
+        Passport,
+        
+        /// <remarks/>
+        Other,
+        
+        /// <remarks/>
+        OfficerCertificate,
+        
+        /// <remarks/>
+        PoliceID,
+        
+        /// <remarks/>
+        ReentryPermit,
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
+    public partial class SubmitOrderPaymentInfoResponse {
+        
+        private bool isSuccessField;
+        
+        private string notesField;
+        
+        /// <remarks/>
+        public bool IsSuccess {
+            get {
+                return this.isSuccessField;
+            }
+            set {
+                this.isSuccessField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string Notes {
+            get {
+                return this.notesField;
+            }
+            set {
+                this.notesField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
     public partial class IsOntimeConfirmRoom {
         
         private string sHotelIDField;
@@ -763,6 +972,8 @@ namespace OpenAPITest {
         
         private string isChineseOnlyField;
         
+        private string isMerchantHotelField;
+        
         /// <remarks/>
         public string Name {
             get {
@@ -1170,6 +1381,16 @@ namespace OpenAPITest {
             }
             set {
                 this.isChineseOnlyField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string IsMerchantHotel {
+            get {
+                return this.isMerchantHotelField;
+            }
+            set {
+                this.isMerchantHotelField = value;
             }
         }
     }
@@ -1592,6 +1813,8 @@ namespace OpenAPITest {
         
         private string isCoverImageField;
         
+        private string authorTypeField;
+        
         /// <remarks/>
         public string IsRoomCoverImage {
             get {
@@ -1641,6 +1864,17 @@ namespace OpenAPITest {
             }
             set {
                 this.isCoverImageField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlAttributeAttribute()]
+        public string AuthorType {
+            get {
+                return this.authorTypeField;
+            }
+            set {
+                this.authorTypeField = value;
             }
         }
     }
@@ -7310,6 +7544,8 @@ namespace OpenAPITest {
         
         private EnumPaymentType paymentTypeField;
         
+        private int checkInPersonAmountField;
+        
         private string optionsField;
         
         /// <remarks/>
@@ -7369,6 +7605,16 @@ namespace OpenAPITest {
             }
             set {
                 this.paymentTypeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public int CheckInPersonAmount {
+            get {
+                return this.checkInPersonAmountField;
+            }
+            set {
+                this.checkInPersonAmountField = value;
             }
         }
         
@@ -10014,116 +10260,7 @@ namespace OpenAPITest {
     }
     
     /// <remarks/>
-    [System.Xml.Serialization.XmlIncludeAttribute(typeof(CreditCardWithStatus))]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
-    public partial class CreditCard {
-        
-        private string numberField;
-        
-        private string cVVField;
-        
-        private int expirationYearField;
-        
-        private int expirationMonthField;
-        
-        private string holderNameField;
-        
-        private EnumIdType idTypeField;
-        
-        private string idNoField;
-        
-        /// <remarks/>
-        public string Number {
-            get {
-                return this.numberField;
-            }
-            set {
-                this.numberField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string CVV {
-            get {
-                return this.cVVField;
-            }
-            set {
-                this.cVVField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public int ExpirationYear {
-            get {
-                return this.expirationYearField;
-            }
-            set {
-                this.expirationYearField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public int ExpirationMonth {
-            get {
-                return this.expirationMonthField;
-            }
-            set {
-                this.expirationMonthField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string HolderName {
-            get {
-                return this.holderNameField;
-            }
-            set {
-                this.holderNameField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public EnumIdType IdType {
-            get {
-                return this.idTypeField;
-            }
-            set {
-                this.idTypeField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string IdNo {
-            get {
-                return this.idNoField;
-            }
-            set {
-                this.idNoField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
-    [System.SerializableAttribute()]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=false)]
-    public enum EnumIdType {
-        
-        /// <remarks/>
-        IdentityCard,
-        
-        /// <remarks/>
-        Passport,
-        
-        /// <remarks/>
-        Other,
-    }
-    
-    /// <remarks/>
+    [System.Xml.Serialization.XmlIncludeAttribute(typeof(UpdateOrderResult))]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
     [System.SerializableAttribute()]
     [System.Diagnostics.DebuggerStepThroughAttribute()]
@@ -10137,7 +10274,13 @@ namespace OpenAPITest {
         
         private decimal guaranteeAmountField;
         
-        private EnumCurrencyCode currencyCodeField;
+        private System.Nullable<EnumCurrencyCode> currencyCodeField;
+        
+        private System.Nullable<bool> isInstantConfirmField;
+        
+        private System.Nullable<System.DateTime> paymentDeadlineTimeField;
+        
+        private string paymentMessageField;
         
         /// <remarks/>
         public long OrderId {
@@ -10170,12 +10313,45 @@ namespace OpenAPITest {
         }
         
         /// <remarks/>
-        public EnumCurrencyCode CurrencyCode {
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public System.Nullable<EnumCurrencyCode> CurrencyCode {
             get {
                 return this.currencyCodeField;
             }
             set {
                 this.currencyCodeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public System.Nullable<bool> IsInstantConfirm {
+            get {
+                return this.isInstantConfirmField;
+            }
+            set {
+                this.isInstantConfirmField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public System.Nullable<System.DateTime> PaymentDeadlineTime {
+            get {
+                return this.paymentDeadlineTimeField;
+            }
+            set {
+                this.paymentDeadlineTimeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string PaymentMessage {
+            get {
+                return this.paymentMessageField;
+            }
+            set {
+                this.paymentMessageField = value;
             }
         }
     }
@@ -10193,6 +10369,12 @@ namespace OpenAPITest {
         private EnumCreditCardStatus statusField;
         
         private System.Nullable<decimal> amountField;
+        
+        private System.Nullable<System.DateTime> latestPayTimeField;
+        
+        private string notesField;
+        
+        private System.Nullable<bool> isPayableField;
         
         /// <remarks/>
         public EnumCreditCardProcessType ProcessType {
@@ -10222,6 +10404,38 @@ namespace OpenAPITest {
             }
             set {
                 this.amountField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public System.Nullable<System.DateTime> LatestPayTime {
+            get {
+                return this.latestPayTimeField;
+            }
+            set {
+                this.latestPayTimeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string Notes {
+            get {
+                return this.notesField;
+            }
+            set {
+                this.notesField = value;
+            }
+        }
+        
+        /// <remarks/>
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public System.Nullable<bool> IsPayable {
+            get {
+                return this.isPayableField;
+            }
+            set {
+                this.isPayableField = value;
             }
         }
     }
@@ -11516,59 +11730,11 @@ namespace OpenAPITest {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
-    public partial class UpdateOrderResult {
-        
-        private long orderIdField;
-        
-        private System.DateTime cancelTimeField;
-        
-        private decimal guaranteeAmountField;
-        
-        private EnumCurrencyCode guaranteeCurrencyCodeField;
+    public partial class UpdateOrderResult : CreateOrderResult {
         
         private decimal totalPriceField;
         
-        private EnumCurrencyCode currencyCodeField;
-        
-        /// <remarks/>
-        public long OrderId {
-            get {
-                return this.orderIdField;
-            }
-            set {
-                this.orderIdField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public System.DateTime CancelTime {
-            get {
-                return this.cancelTimeField;
-            }
-            set {
-                this.cancelTimeField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public decimal GuaranteeAmount {
-            get {
-                return this.guaranteeAmountField;
-            }
-            set {
-                this.guaranteeAmountField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public EnumCurrencyCode GuaranteeCurrencyCode {
-            get {
-                return this.guaranteeCurrencyCodeField;
-            }
-            set {
-                this.guaranteeCurrencyCodeField = value;
-            }
-        }
+        private EnumCurrencyCode guaranteeCurrencyCodeField;
         
         /// <remarks/>
         public decimal TotalPrice {
@@ -11581,12 +11747,12 @@ namespace OpenAPITest {
         }
         
         /// <remarks/>
-        public EnumCurrencyCode CurrencyCode {
+        public EnumCurrencyCode GuaranteeCurrencyCode {
             get {
-                return this.currencyCodeField;
+                return this.guaranteeCurrencyCodeField;
             }
             set {
-                this.currencyCodeField = value;
+                this.guaranteeCurrencyCodeField = value;
             }
         }
     }
@@ -11691,6 +11857,27 @@ namespace OpenAPITest {
             }
             set {
                 this.errorMessageField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
+    public partial class PushOrderToConfirmResult {
+        
+        private string adjustTimeField;
+        
+        /// <remarks/>
+        public string AdjustTime {
+            get {
+                return this.adjustTimeField;
+            }
+            set {
+                this.adjustTimeField = value;
             }
         }
     }

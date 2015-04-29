@@ -102,7 +102,7 @@ namespace OpenAPITest
             string res = HttpRequest.Get(url);
 
 
-            String filePath = @"c:\api-res." + _format;
+            String filePath = @"d:\t\api-res." + _format;
             System.IO.File.AppendAllText(filePath, res);
             System.IO.File.AppendAllText(filePath, "<!-- \r\n ");
             System.IO.File.AppendAllText(filePath, url);
