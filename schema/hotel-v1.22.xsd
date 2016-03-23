@@ -463,6 +463,8 @@
       <xs:element minOccurs="1" maxOccurs="1" name="ArrivalDate" type="xs:dateTime" />
       <xs:element minOccurs="1" maxOccurs="1" name="DepartureDate" type="xs:dateTime" />
       <xs:element minOccurs="1" maxOccurs="1" name="PaymentType" type="EnumPaymentType" />
+      <xs:element minOccurs="1" maxOccurs="1" name="isNeedInstantConfirm" type="xs:boolean" />
+      <xs:element minOccurs="1" maxOccurs="1" name="IsRatesWithDRR" type="xs:boolean" />
     </xs:sequence>
   </xs:complexType>
   <xs:simpleType name="EnumPaymentType">
@@ -515,6 +517,14 @@
       <xs:element minOccurs="1" maxOccurs="1" name="MinDays" type="xs:int" />
       <xs:element minOccurs="1" maxOccurs="1" name="MaxDays" type="xs:int" />
       <xs:element minOccurs="1" maxOccurs="1" name="PaymentType" type="EnumPaymentType" />
+      <xs:element minOccurs="0" maxOccurs="1" name="HourlyRoomInfo" type="HourlyRoomInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:complexType name="HourlyRoomInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="1" name="EarliestArrivalTime" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="LastestArrivalTime" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="MaxStayTime" type="xs:string" />
     </xs:sequence>
   </xs:complexType>
   <xs:simpleType name="EnumGuestTypeCode">
@@ -802,6 +812,9 @@
       <xs:element minOccurs="1" maxOccurs="1" name="EndDate" type="xs:dateTime" />
       <xs:element minOccurs="0" maxOccurs="1" name="StartTime" type="xs:string" />
       <xs:element minOccurs="0" maxOccurs="1" name="EndTime" type="xs:string" />
+      <xs:element minOccurs="1" maxOccurs="1" name="IsInstantConfirm" nillable="true" type="xs:boolean" />
+      <xs:element minOccurs="0" maxOccurs="1" name="IC_BeginTime" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="IC_EndTime" type="xs:string" />
     </xs:sequence>
     <xs:attribute name="RoomTypeId" type="xs:string" />
     <xs:attribute name="Date" type="xs:dateTime" use="required" />
@@ -894,6 +907,7 @@
       <xs:element minOccurs="0" maxOccurs="1" name="RoomTypeId" type="xs:string" />
       <xs:element minOccurs="1" maxOccurs="1" name="StartDate" type="xs:dateTime" />
       <xs:element minOccurs="1" maxOccurs="1" name="EndDate" type="xs:dateTime" />
+      <xs:element minOccurs="1" maxOccurs="1" name="IsNeedInstantConfirm" type="xs:boolean" />
     </xs:sequence>
   </xs:complexType>
   <xs:element name="ValidateInventoryCondition" nillable="true" type="ValidateInventoryCondition" />
@@ -1270,6 +1284,7 @@
       <xs:element minOccurs="0" maxOccurs="1" name="RatePlans" type="ArrayOfListRatePlan" />
       <xs:element minOccurs="0" maxOccurs="1" name="Comments" type="xs:string" />
       <xs:element minOccurs="0" maxOccurs="1" name="Capcity" type="xs:string" />
+      <xs:element minOccurs="0" maxOccurs="1" name="RoomAmenityIds" type="xs:string" />
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="ArrayOfListRatePlan">
@@ -1424,6 +1439,7 @@
       <xs:element minOccurs="1" maxOccurs="1" name="ExtraBedPrice" nillable="true" type="xs:decimal" />
       <xs:element minOccurs="1" maxOccurs="1" name="AverageBaseRate" nillable="true" type="xs:decimal" />
       <xs:element minOccurs="1" maxOccurs="1" name="Coupon" nillable="true" type="xs:decimal" />
+      <xs:element minOccurs="1" maxOccurs="1" name="CouponInRed" nillable="true" type="xs:decimal" />
       <xs:element minOccurs="1" maxOccurs="1" name="CurrencyCode" type="EnumCurrencyCode" />
       <xs:element minOccurs="1" maxOccurs="1" name="CurrentAlloment" type="xs:int" />
       <xs:element minOccurs="1" maxOccurs="1" name="CancelRuleType" type="xs:int" />
@@ -1594,6 +1610,7 @@
       <xs:enumeration value="AdvanceBooking" />
       <xs:enumeration value="LongStayBooking" />
       <xs:enumeration value="DiscountSale" />
+      <xs:enumeration value="HourlyRoom" />
     </xs:restriction>
   </xs:simpleType>
   <xs:element name="EnumPromotionType" type="EnumPromotionType" />
@@ -1715,6 +1732,7 @@
   <xs:complexType name="IncrCondition">
     <xs:sequence>
       <xs:element minOccurs="1" maxOccurs="1" name="LastId" type="xs:long" />
+      <xs:element minOccurs="1" maxOccurs="1" name="Count" type="xs:int" />
     </xs:sequence>
   </xs:complexType>
   <xs:element name="IncrHotel" nillable="true" type="IncrHotel" />
@@ -1894,6 +1912,7 @@
   </xs:complexType>
   <xs:element name="Inventory" nillable="true" type="Inventory" />
   <xs:element name="BaseRatePlan" nillable="true" type="BaseRatePlan" />
+  <xs:element name="HourlyRoomInfo" nillable="true" type="HourlyRoomInfo" />
   <xs:element name="BaseBookingRule" nillable="true" type="BaseBookingRule" />
   <xs:element name="BaseDrrRule" nillable="true" type="BaseDrrRule" />
   <xs:element name="EnumChangeDataTypeNo" type="EnumChangeDataTypeNo" />
@@ -2073,6 +2092,7 @@
       <xs:element minOccurs="1" maxOccurs="1" name="LatestArrivalTime" type="xs:dateTime" />
       <xs:element minOccurs="1" maxOccurs="1" name="CurrencyCode" type="EnumCurrencyCode" />
       <xs:element minOccurs="1" maxOccurs="1" name="TotalPrice" type="xs:decimal" />
+      <xs:element minOccurs="1" maxOccurs="1" name="CustomerPrice" type="xs:decimal" />
       <xs:element minOccurs="1" maxOccurs="1" name="ConfirmationType" type="EnumConfirmationType" />
       <xs:element minOccurs="0" maxOccurs="1" name="NoteToHotel" type="xs:string" />
       <xs:element minOccurs="0" maxOccurs="1" name="NoteToElong" type="xs:string" />
