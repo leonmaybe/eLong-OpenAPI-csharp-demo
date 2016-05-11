@@ -10999,8 +10999,6 @@ namespace OpenAPITest {
         
         private CreditCard creditCardField;
         
-        private System.Nullable<bool> isForceGuaranteeField;
-        
         private bool isCreateOrderOnlyField;
         
         private OrderValidation orderValidationField;
@@ -11112,17 +11110,6 @@ namespace OpenAPITest {
             }
             set {
                 this.creditCardField = value;
-            }
-        }
-        
-        /// <remarks/>
-        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
-        public System.Nullable<bool> IsForceGuarantee {
-            get {
-                return this.isForceGuaranteeField;
-            }
-            set {
-                this.isForceGuaranteeField = value;
             }
         }
         

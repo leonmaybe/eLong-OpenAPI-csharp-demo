@@ -2180,7 +2180,6 @@
           <xs:element minOccurs="0" maxOccurs="1" name="OrderRooms" type="ArrayOfCreateOrderRoom" />
           <xs:element minOccurs="0" maxOccurs="1" name="Invoice" type="Invoice" />
           <xs:element minOccurs="0" maxOccurs="1" name="CreditCard" type="CreditCard" />
-          <xs:element minOccurs="1" maxOccurs="1" name="IsForceGuarantee" nillable="true" type="xs:boolean" />
           <xs:element minOccurs="1" maxOccurs="1" name="IsCreateOrderOnly" type="xs:boolean" />
           <xs:element minOccurs="0" maxOccurs="1" name="OrderValidation" type="OrderValidation" />
         </xs:sequence>
