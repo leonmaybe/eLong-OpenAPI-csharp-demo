@@ -11001,6 +11001,10 @@ namespace OpenAPITest {
         
         private System.Nullable<bool> isForceGuaranteeField;
         
+        private bool isCreateOrderOnlyField;
+        
+        private OrderValidation orderValidationField;
+        
         /// <remarks/>
         public string AffiliateConfirmationId {
             get {
@@ -11119,6 +11123,26 @@ namespace OpenAPITest {
             }
             set {
                 this.isForceGuaranteeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public bool IsCreateOrderOnly {
+            get {
+                return this.isCreateOrderOnlyField;
+            }
+            set {
+                this.isCreateOrderOnlyField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public OrderValidation OrderValidation {
+            get {
+                return this.orderValidationField;
+            }
+            set {
+                this.orderValidationField = value;
             }
         }
     }
@@ -11533,39 +11557,6 @@ namespace OpenAPITest {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
-    public partial class CouponInfo {
-        
-        private decimal amountField;
-        
-        private string promotionIdsField;
-        
-        /// <remarks/>
-        public decimal Amount {
-            get {
-                return this.amountField;
-            }
-            set {
-                this.amountField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string PromotionIds {
-            get {
-                return this.promotionIdsField;
-            }
-            set {
-                this.promotionIdsField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
     public partial class OrderValidation {
         
         private DateBreakFast[] dateBreakFastListField;
@@ -11647,6 +11638,39 @@ namespace OpenAPITest {
             }
             set {
                 this.breakFastCountField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
+    public partial class CouponInfo {
+        
+        private decimal amountField;
+        
+        private string promotionIdsField;
+        
+        /// <remarks/>
+        public decimal Amount {
+            get {
+                return this.amountField;
+            }
+            set {
+                this.amountField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string PromotionIds {
+            get {
+                return this.promotionIdsField;
+            }
+            set {
+                this.promotionIdsField = value;
             }
         }
     }
