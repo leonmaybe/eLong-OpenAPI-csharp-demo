@@ -39,7 +39,7 @@ namespace OpenAPITest {
         
         private string operaterField;
         
-        private int ratePlanIdField;
+        private long ratePlanIdField;
         
         private string roomTypeIdField;
         
@@ -49,8 +49,12 @@ namespace OpenAPITest {
         
         private float valueField;
         
+        private int settlementTypeField;
+        
+        private int sourceField;
+        
         /// <remarks/>
-        public string beginDate {
+        public string BeginDate {
             get {
                 return this.beginDateField;
             }
@@ -60,7 +64,7 @@ namespace OpenAPITest {
         }
         
         /// <remarks/>
-        public bool enable {
+        public bool Enable {
             get {
                 return this.enableField;
             }
@@ -70,7 +74,7 @@ namespace OpenAPITest {
         }
         
         /// <remarks/>
-        public string endDate {
+        public string EndDate {
             get {
                 return this.endDateField;
             }
@@ -80,7 +84,7 @@ namespace OpenAPITest {
         }
         
         /// <remarks/>
-        public string hotelId {
+        public string HotelId {
             get {
                 return this.hotelIdField;
             }
@@ -90,7 +94,7 @@ namespace OpenAPITest {
         }
         
         /// <remarks/>
-        public long incrementId {
+        public long IncrementId {
             get {
                 return this.incrementIdField;
             }
@@ -100,7 +104,7 @@ namespace OpenAPITest {
         }
         
         /// <remarks/>
-        public string operateIp {
+        public string OperateIp {
             get {
                 return this.operateIpField;
             }
@@ -110,7 +114,7 @@ namespace OpenAPITest {
         }
         
         /// <remarks/>
-        public string operateTime {
+        public string OperateTime {
             get {
                 return this.operateTimeField;
             }
@@ -120,7 +124,7 @@ namespace OpenAPITest {
         }
         
         /// <remarks/>
-        public string operater {
+        public string Operater {
             get {
                 return this.operaterField;
             }
@@ -130,7 +134,7 @@ namespace OpenAPITest {
         }
         
         /// <remarks/>
-        public int ratePlanId {
+        public long RatePlanId {
             get {
                 return this.ratePlanIdField;
             }
@@ -140,7 +144,7 @@ namespace OpenAPITest {
         }
         
         /// <remarks/>
-        public string roomTypeId {
+        public string RoomTypeId {
             get {
                 return this.roomTypeIdField;
             }
@@ -150,7 +154,7 @@ namespace OpenAPITest {
         }
         
         /// <remarks/>
-        public long ruleId {
+        public long RuleId {
             get {
                 return this.ruleIdField;
             }
@@ -160,7 +164,7 @@ namespace OpenAPITest {
         }
         
         /// <remarks/>
-        public int calculationType {
+        public int CalculationType {
             get {
                 return this.calculationTypeField;
             }
@@ -170,12 +174,32 @@ namespace OpenAPITest {
         }
         
         /// <remarks/>
-        public float value {
+        public float Value {
             get {
                 return this.valueField;
             }
             set {
                 this.valueField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public int SettlementType {
+            get {
+                return this.settlementTypeField;
+            }
+            set {
+                this.settlementTypeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public int Source {
+            get {
+                return this.sourceField;
+            }
+            set {
+                this.sourceField = value;
             }
         }
     }
@@ -300,7 +324,7 @@ namespace OpenAPITest {
         
         private string roomTypeIdField;
         
-        private int ratePlanIdField;
+        private long ratePlanIdField;
         
         /// <remarks/>
         public System.DateTime date {
@@ -353,7 +377,7 @@ namespace OpenAPITest {
         }
         
         /// <remarks/>
-        public int ratePlanId {
+        public long ratePlanId {
             get {
                 return this.ratePlanIdField;
             }
@@ -969,6 +993,459 @@ namespace OpenAPITest {
             }
             set {
                 this.checkInTimeField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
+    public partial class ObjectEffectiveStatus {
+        
+        private int mhotelStatusField;
+        
+        private int mroomStatusField;
+        
+        private int ratePlanStausField;
+        
+        private int shotelStatusField;
+        
+        private int sroomStatusField;
+        
+        private int sroomRatePlanRelationField;
+        
+        /// <remarks/>
+        public int mhotelStatus {
+            get {
+                return this.mhotelStatusField;
+            }
+            set {
+                this.mhotelStatusField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public int mroomStatus {
+            get {
+                return this.mroomStatusField;
+            }
+            set {
+                this.mroomStatusField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public int ratePlanStaus {
+            get {
+                return this.ratePlanStausField;
+            }
+            set {
+                this.ratePlanStausField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public int shotelStatus {
+            get {
+                return this.shotelStatusField;
+            }
+            set {
+                this.shotelStatusField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public int sroomStatus {
+            get {
+                return this.sroomStatusField;
+            }
+            set {
+                this.sroomStatusField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public int sroomRatePlanRelation {
+            get {
+                return this.sroomRatePlanRelationField;
+            }
+            set {
+                this.sroomRatePlanRelationField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
+    public partial class CheckMinitor {
+        
+        private string agentIdField;
+        
+        private string agentNameField;
+        
+        private string orderCheckTimeField;
+        
+        private string orderCheckStatusField;
+        
+        private string roomNightsCountField;
+        
+        private string orderCheckCodeField;
+        
+        private string checkFailureReasonField;
+        
+        /// <remarks/>
+        public string agentId {
+            get {
+                return this.agentIdField;
+            }
+            set {
+                this.agentIdField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string agentName {
+            get {
+                return this.agentNameField;
+            }
+            set {
+                this.agentNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string orderCheckTime {
+            get {
+                return this.orderCheckTimeField;
+            }
+            set {
+                this.orderCheckTimeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string orderCheckStatus {
+            get {
+                return this.orderCheckStatusField;
+            }
+            set {
+                this.orderCheckStatusField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string roomNightsCount {
+            get {
+                return this.roomNightsCountField;
+            }
+            set {
+                this.roomNightsCountField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string orderCheckCode {
+            get {
+                return this.orderCheckCodeField;
+            }
+            set {
+                this.orderCheckCodeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string checkFailureReason {
+            get {
+                return this.checkFailureReasonField;
+            }
+            set {
+                this.checkFailureReasonField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
+    public partial class OrderFromResult {
+        
+        private int codeField;
+        
+        private OrderFromData dataField;
+        
+        private string msgField;
+        
+        /// <remarks/>
+        public int code {
+            get {
+                return this.codeField;
+            }
+            set {
+                this.codeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public OrderFromData data {
+            get {
+                return this.dataField;
+            }
+            set {
+                this.dataField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string msg {
+            get {
+                return this.msgField;
+            }
+            set {
+                this.msgField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
+    public partial class OrderFromData {
+        
+        private string projectNameField;
+        
+        private string proxyIdField;
+        
+        private long cardNoField;
+        
+        /// <remarks/>
+        public string projectName {
+            get {
+                return this.projectNameField;
+            }
+            set {
+                this.projectNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string proxyId {
+            get {
+                return this.proxyIdField;
+            }
+            set {
+                this.proxyIdField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public long cardNo {
+            get {
+                return this.cardNoField;
+            }
+            set {
+                this.cardNoField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
+    public partial class OrderMinitor {
+        
+        private string orderNoField;
+        
+        private string orderSubmitTimeField;
+        
+        private string agentIdField;
+        
+        private string agentNameField;
+        
+        private string paymentTypeField;
+        
+        private string roomNightsCountField;
+        
+        private string bookingTimeField;
+        
+        private string departureDateField;
+        
+        private string serverIpField;
+        
+        private string serverNameField;
+        
+        private string instantConfirmField;
+        
+        private string orderSubmitLengthField;
+        
+        private string orderSubmitStatusField;
+        
+        private string submitFailureReasonField;
+        
+        private string cityNameField;
+        
+        /// <remarks/>
+        public string orderNo {
+            get {
+                return this.orderNoField;
+            }
+            set {
+                this.orderNoField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string orderSubmitTime {
+            get {
+                return this.orderSubmitTimeField;
+            }
+            set {
+                this.orderSubmitTimeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string agentId {
+            get {
+                return this.agentIdField;
+            }
+            set {
+                this.agentIdField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string agentName {
+            get {
+                return this.agentNameField;
+            }
+            set {
+                this.agentNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string paymentType {
+            get {
+                return this.paymentTypeField;
+            }
+            set {
+                this.paymentTypeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string roomNightsCount {
+            get {
+                return this.roomNightsCountField;
+            }
+            set {
+                this.roomNightsCountField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string bookingTime {
+            get {
+                return this.bookingTimeField;
+            }
+            set {
+                this.bookingTimeField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string departureDate {
+            get {
+                return this.departureDateField;
+            }
+            set {
+                this.departureDateField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string serverIp {
+            get {
+                return this.serverIpField;
+            }
+            set {
+                this.serverIpField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string serverName {
+            get {
+                return this.serverNameField;
+            }
+            set {
+                this.serverNameField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string instantConfirm {
+            get {
+                return this.instantConfirmField;
+            }
+            set {
+                this.instantConfirmField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string orderSubmitLength {
+            get {
+                return this.orderSubmitLengthField;
+            }
+            set {
+                this.orderSubmitLengthField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string orderSubmitStatus {
+            get {
+                return this.orderSubmitStatusField;
+            }
+            set {
+                this.orderSubmitStatusField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string submitFailureReason {
+            get {
+                return this.submitFailureReasonField;
+            }
+            set {
+                this.submitFailureReasonField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string cityName {
+            get {
+                return this.cityNameField;
+            }
+            set {
+                this.cityNameField = value;
             }
         }
     }
@@ -3286,6 +3763,8 @@ namespace OpenAPITest {
         
         private Rate[] ratesField;
         
+        private ObjectEffectiveStatus objectEffectiveStatusField;
+        
         /// <remarks/>
         public RatePlan RatePlan {
             get {
@@ -3345,6 +3824,16 @@ namespace OpenAPITest {
             }
             set {
                 this.ratesField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public ObjectEffectiveStatus ObjectEffectiveStatus {
+            get {
+                return this.objectEffectiveStatusField;
+            }
+            set {
+                this.objectEffectiveStatusField = value;
             }
         }
     }
@@ -10999,9 +11488,7 @@ namespace OpenAPITest {
         
         private CreditCard creditCardField;
         
-        private bool isCreateOrderOnlyField;
-        
-        private OrderValidation orderValidationField;
+        private System.Nullable<bool> isForceGuaranteeField;
         
         /// <remarks/>
         public string AffiliateConfirmationId {
@@ -11114,22 +11601,13 @@ namespace OpenAPITest {
         }
         
         /// <remarks/>
-        public bool IsCreateOrderOnly {
+        [System.Xml.Serialization.XmlElementAttribute(IsNullable=true)]
+        public System.Nullable<bool> IsForceGuarantee {
             get {
-                return this.isCreateOrderOnlyField;
+                return this.isForceGuaranteeField;
             }
             set {
-                this.isCreateOrderOnlyField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public OrderValidation OrderValidation {
-            get {
-                return this.orderValidationField;
-            }
-            set {
-                this.orderValidationField = value;
+                this.isForceGuaranteeField = value;
             }
         }
     }
@@ -11544,6 +12022,39 @@ namespace OpenAPITest {
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.ComponentModel.DesignerCategoryAttribute("code")]
     [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
+    public partial class CouponInfo {
+        
+        private decimal amountField;
+        
+        private string promotionIdsField;
+        
+        /// <remarks/>
+        public decimal Amount {
+            get {
+                return this.amountField;
+            }
+            set {
+                this.amountField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public string PromotionIds {
+            get {
+                return this.promotionIdsField;
+            }
+            set {
+                this.promotionIdsField = value;
+            }
+        }
+    }
+    
+    /// <remarks/>
+    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
+    [System.SerializableAttribute()]
+    [System.Diagnostics.DebuggerStepThroughAttribute()]
+    [System.ComponentModel.DesignerCategoryAttribute("code")]
+    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
     public partial class OrderValidation {
         
         private DateBreakFast[] dateBreakFastListField;
@@ -11625,39 +12136,6 @@ namespace OpenAPITest {
             }
             set {
                 this.breakFastCountField = value;
-            }
-        }
-    }
-    
-    /// <remarks/>
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("xsd", "4.0.30319.33440")]
-    [System.SerializableAttribute()]
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.ComponentModel.DesignerCategoryAttribute("code")]
-    [System.Xml.Serialization.XmlRootAttribute(Namespace="", IsNullable=true)]
-    public partial class CouponInfo {
-        
-        private decimal amountField;
-        
-        private string promotionIdsField;
-        
-        /// <remarks/>
-        public decimal Amount {
-            get {
-                return this.amountField;
-            }
-            set {
-                this.amountField = value;
-            }
-        }
-        
-        /// <remarks/>
-        public string PromotionIds {
-            get {
-                return this.promotionIdsField;
-            }
-            set {
-                this.promotionIdsField = value;
             }
         }
     }
@@ -13045,6 +13523,10 @@ namespace OpenAPITest {
         
         private string noteToHotelField;
         
+        private bool isDoubleCostOrderField;
+        
+        private decimal costPriceField;
+        
         /// <remarks/>
         public long OrderId {
             get {
@@ -13204,6 +13686,26 @@ namespace OpenAPITest {
             }
             set {
                 this.noteToHotelField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public bool IsDoubleCostOrder {
+            get {
+                return this.isDoubleCostOrderField;
+            }
+            set {
+                this.isDoubleCostOrderField = value;
+            }
+        }
+        
+        /// <remarks/>
+        public decimal CostPrice {
+            get {
+                return this.costPriceField;
+            }
+            set {
+                this.costPriceField = value;
             }
         }
     }
